@@ -1,5 +1,4 @@
 /* ----------  HEADER*/
-
 header {
   position: absolute;
   top: 0;
@@ -225,6 +224,13 @@ header .container {
   gap: 4rem;
   margin-top: 4rem;
 }
+.list-reason .list-item{
+  cursor: pointer;
+}
+.list-reason .list-item:hover h5{
+  color: #fbb03b;
+  transition: .3s;
+}
 .list-reason .list-item .icon {
   height: 70px;
   width: 70px;
@@ -307,11 +313,11 @@ footer {
   background: #fbb03b;
 }
 footer .container {
-  width: 85%;
-  margin: auto;
+  border-bottom: 1px solid #FFFFFF;
 }
 .footer-top{
-  margin-top: 3rem;
+  width: 85%;
+  margin: 3rem auto;
 }
 .footer-top .about-us .footer-logo {
 }
@@ -328,4 +334,21 @@ footer .container {
 .footer-top .about-us .list-info{
   gap: 2rem;
   margin-top: 4rem;
+}
+.footer-top .list-info .list-item .title{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.footer-top .list-info .list-item .list-subinfo{
+  margin-top: 2rem;
+}
+.list-subinfo .list-item{
+  margin-top: 1.5rem;
+}
+.list-subinfo .list-item .list-item-link{
+  color: #FFFFFF;
+}
+.footer-bottom{
+  padding: 1.5rem 0;
+  color: #FFFFFF;
 }
