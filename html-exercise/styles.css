@@ -1,26 +1,7 @@
-html,
-body {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-}
-* {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-
 /* ----------  HEADER*/
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   width: 100%;
@@ -33,45 +14,28 @@ header .container {
   margin: 0 auto;
   margin-top: 55px;
 
-  display: flex;
-  justify-content: space-between;
+  z-index: 1;
 }
 .header-logo {
-  display: flex;
-  align-items: center;
   gap: 1rem;
-}
-.header-logo .title {
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 19px;
-
   color: #ffffff;
 }
 
 .nav-list {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
   gap: 8rem;
 }
 .nav-list .nav-item .nav-link {
   font-weight: bold;
   font-size: 18px;
-  text-align: center;
 
   color: #fbb03b;
 }
 .header-options .list-options {
-  display: flex;
-  align-items: center;
   gap: 2rem;
 }
 .list-options .list-item .list-link {
   font-size: 16px;
   color: #ffffff;
-
-  cursor: pointer;
 }
 
 /* ----------  BANNER*/
@@ -102,13 +66,9 @@ header .container {
   left: 16%;
   top: 25%;
 
-  display: flex;
-  flex-direction: column;
-
   z-index: 1;
 }
 .banner-content .title {
-  font-weight: 700;
   font-size: 72px;
   color: #ffffff;
 }
@@ -120,17 +80,13 @@ header .container {
   color: #fbb03b;
 }
 .banner-content .shopnow {
-  display: flex;
   gap: 2rem;
-  align-items: center;
-
   margin-top: 2rem;
 }
 .banner-content .shopnow .shop {
   font-weight: bold;
   font-size: 24px;
   color: #ffffff;
-
   text-decoration: underline;
 }
 .banner-content .shopnow .icon {
@@ -138,42 +94,26 @@ header .container {
   height: 36px;
   border-radius: 50%;
   background: #fbb03b;
-
   color: #ffffff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .section-services {
   position: absolute;
   bottom: 0;
   left: 0;
-
   width: 78.5%;
   height: 125px;
   padding-right: 100px;
   border-radius: 0px 70px 0px 0px;
-
-  display: flex;
   gap: 3rem;
-  align-items: center;
-  justify-content: flex-end;
-
   background: #ffffff;
-
   z-index: 1;
 }
 .section-services .list-services {
-  width: 78%;
-
-  display: flex;
   gap: 2rem;
-  justify-content: flex-end;
+  width: 78%;
 }
 .list-services .list-item {
   flex: 1;
-  display: flex;
   gap: 1.5rem;
 }
 .list-services .list-item .icon {
@@ -181,18 +121,211 @@ header .container {
   height: 36px;
   border-radius: 8px;
 }
-.list-services .list-item .main {
-}
-.list-services .list-item .main h5 {
-  font-weight: bold;
+.list-services .list-item .content .title {
   font-size: 14px;
-
-  color: #333333;
 }
-.list-services .list-item .main span {
+.list-services .list-item .content .description {
   font-size: 12px;
   line-height: 18px;
-
   color: #a8a8a8;
 }
 
+/* ------------- COLLECTIONS */
+.section-colections {
+  width: 85%;
+  margin: 3rem auto;
+}
+.section-colections .container .list-colections {
+  gap: 20px;
+}
+.list-colections .list-item {
+  position: relative;
+  max-width: 100%;
+}
+.list-colections .list-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #333333;
+  opacity: 0.5;
+}
+.list-colections .list-item img {
+  width: 100%;
+  height: 100%;
+}
+.list-colections .list-item .content {
+  position: absolute;
+  top: 45%;
+  left: 40px;
+  bottom: 50px;
+
+  z-index: 1;
+}
+.list-colections .list-item .content .title {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* ----------  PRODUCTS  */
+
+.section-products {
+  width: 85%;
+  margin: 5rem auto;
+}
+.section-products .container .section-title h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+.section-products .container .list-products {
+  margin-top: 40px;
+  gap: 20px;
+}
+.list-products .product-item .product-image {
+  position: relative;
+}
+.list-products .product-item .product-image img {
+  width: 100%;
+  height: 100%;
+}
+.list-products .product-item .product-image .sale {
+  position: absolute;
+  top: 24px;
+  left: 18px;
+}
+.product-item .product-content .prices {
+  font-size: 20px;
+}
+.product-item .product-content .prices .price {
+  color: #333333;
+}
+.product-item .product-content .prices .new-price {
+  color: #ff0000;
+}
+.product-item .product-content .prices .old-price {
+  color: #cecece;
+}
+
+/* ---------- REASON */
+.section-reason {
+  margin: 5rem auto;
+
+  background: #f7f7f7;
+}
+.section-reason .container {
+  width: 85%;
+  margin: auto;
+  padding: 4rem 0;
+}
+.section-reason .container .list-reason {
+  gap: 4rem;
+  margin-top: 4rem;
+}
+.list-reason .list-item .icon {
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  border-radius: 10px;
+
+  background: #ffffff;
+  text-align: center;
+}
+.list-reason .list-item h5 {
+  margin-top: 3rem;
+  font-size: 16px;
+  color: #333333;
+}
+.list-reason .list-item h6 {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  color: #808080;
+}
+
+/* ---------------- CONTACT */
+.section-contact {
+  background: url("./assets/images/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 240px;
+  position: relative;
+}
+.section-contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(90deg, #000000 33.28%, rgba(0, 0, 0, 0) 94.05%);
+  opacity: 0.7;
+}
+.section-contact .container {
+  gap: 30px;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+}
+.section-contact .container .description {
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #ffffff;
+}
+.section-contact .container .form {
+  gap: 2rem;
+}
+.section-contact .container .form .input {
+  width: 100%;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 61px;
+
+  border: none;
+  outline: none;
+}
+.section-contact .container .form button {
+  padding: 1rem 3rem;
+}
+
+/* ---------------- FOOTER */
+footer {
+  background: #fbb03b;
+}
+footer .container {
+  width: 85%;
+  margin: auto;
+}
+.footer-top{
+  margin-top: 3rem;
+}
+.footer-top .about-us .footer-logo {
+}
+.footer-top .about-us .footer-logo .title {
+  font-family: Helvetica;
+  font-size: 19px;
+  color: #ffffff;
+}
+.footer-top .about-us .description {
+  color: #ffffff;
+  margin-top: 2rem;
+  padding-right: 150px;
+}
+.footer-top .about-us .list-info{
+  gap: 2rem;
+  margin-top: 4rem;
+}
