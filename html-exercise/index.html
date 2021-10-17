@@ -9,8 +9,8 @@
     <meta name="description" content="Fashion, " />
     <meta name="keywords" content="Pant, Shirt, FreeShipping" />
 
+    <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./styles.css" />
 
     <link
@@ -71,7 +71,7 @@
       <div class="banner-content row flex-column">
         <h2 class="title">
           <p class="title-content">Sale of the</p>
-          <p class="active">summer</p>
+          <p class="text-primary">summer</p>
           <p class="title-content">collection</p>
         </h2>
 
@@ -79,7 +79,7 @@
           <span class="icon row align-items-center justify-content-center"
             ><i class="fal fa-arrow-right"></i
           ></span>
-          <span class="shop">SHOP NOW</span>
+          <span class="btn-shop">SHOP NOW</span>
         </a>
       </div>
 
@@ -89,17 +89,15 @@
             <img
               class="icon"
               src="./assets/images/icons/services1.svg"
-              alt="shop now"
+              alt="Free Shipping"
             />
-
             <div class="content">
               <h5 class="title">Free Shipping</h5>
               <span class="description">On purchases over $199</span>
             </div>
           </li>
           <li class="list-item row">
-            <img class="icon" src="./assets/images/icons/services2.svg" />
-
+            <img class="icon" src="./assets/images/icons/services2.svg" alt="99% Satisfied Customers" />
             <div class="content">
               <h5 class="title">99% Satisfied Customers</h5>
               <span class="description"
@@ -108,8 +106,7 @@
             </div>
           </li>
           <li class="list-item row">
-            <img class="icon" src="./assets/images/icons/services3.svg" />
-
+            <img class="icon" src="./assets/images/icons/services3.svg" alt="Originality Guaranteed" />
             <div class="content">
               <h5 class="title">Originality Guaranteed</h5>
               <span class="description"
@@ -131,7 +128,7 @@
                 alt="New arrivalsare now in"
                 class="image"
               />
-              <div class="content row flex-column justify-content-between">
+              <div class="content">
                 <h4 class="title">New arrivalsare now in!</h4>
                 <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
               </div>
@@ -142,7 +139,7 @@
                 alt="Basic t-shirts"
                 class="image"
               />
-              <div class="content row flex-column justify-content-between">
+              <div class="content">
                 <h4 class="title">
                   Basic t-shirts
                   <p class="price">$29,99</p>
@@ -156,14 +153,11 @@
                 class="image"
                 alt="Sale this summer"
               />
-              <div class="more-item-sale">
-                <span class="more-item-content-sale">-50%</span>
+              <div class="sale">
+                <span class="btn-sale">-50%</span>
               </div>
-              <div class="content row flex-column justify-content-between">
-                <h4 class="title">
-                  Sale this
-                  <p>summer</p>
-                </h4>
+              <div class="content">
+                <h4 class="title">Sale this summer</h4>
                 <a href="" class="btn btn-secondary">VIEW ALL</a>
               </div>
             </li>
@@ -193,7 +187,7 @@
                 </div>
               </div>
               <div class="product-content">
-                <h5 class="name name-product">T-Shirt Summer Vibes</h5>
+                <h4 class="name name-product">T-Shirt Summer Vibes</h4>
                 <div
                   class="prices row justify-content-between align-items-center"
                 >
@@ -211,7 +205,7 @@
                 />
               </div>
               <div class="product-content">
-                <h5 class="name name-product">Loose Knit 3/4 Sleeve</h5>
+                <h4 class="name name-product">Loose Knit 3/4 Sleeve</h4>
                 <div
                   class="prices row align-items-center justify-content-between"
                 >
@@ -228,7 +222,7 @@
                 />
               </div>
               <div class="product-content">
-                <h5 class="name name-product">Basic Slim Fit T-Shirt</h5>
+                <h4 class="name name-product">Basic Slim Fit T-Shirt</h4>
                 <div
                   class="prices row align-items-center justify-content-between"
                 >
@@ -238,10 +232,10 @@
             </li>
             <li class="product-item col-3">
               <div class="product-image">
-                <img src="./assets/images/product4.png" alt="" class="image" />
+                <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
               <div class="product-content">
-                <h5 class="name name-product">Loose Textured T-Shirt</h5>
+                <h4 class="name name-product">Loose Textured T-Shirt</h4>
                 <div
                   class="prices row align-items-center justify-content-between"
                 >
@@ -255,64 +249,58 @@
 
       <section class="section-reason">
         <div class="container">
-          <h3 class="section-title title-center">
-            <span class="content">Why should you choose us?</span>
-          </h3>
+          <h3 class="section-title title-center">Why should you choose us?</h3>
 
           <ul class="list-reason row">
             <li class="list-item col-3">
               <div class="icon row justify-content-center align-items-center">
-                <img src="./assets/images/icons/icon1.svg" />
+                <img src="./assets/images/icons/icon1.svg" alt="Free Shipping" />
               </div>
-              <h5 class="service">Free Shipping</h5>
-              <h6 class="description">
+              <h4 class="service">Free Shipping</h4>
+              <h5 class="description">
                 All purchases over $199 are eligible forfree shipping via USPS
                 First Class Mail.
-              </h6>
+              </h5>
             </li>
             <li class="list-item col-3">
               <div class="icon row justify-content-center align-items-center">
-                <img src="./assets/images/icons/icon2.svg" />
+                <img src="./assets/images/icons/icon2.svg" alt="Easy Payments"/>
               </div>
 
-              <h5 class="service">Easy Payments</h5>
-              <h6 class="description">
+              <h4 class="service">Easy Payments</h4>
+              <h5 class="description">
                 All payments are processed instantlyover a secure payment
                 protocol.
-              </h6>
+              </h5>
             </li>
             <li class="list-item col-3">
               <div class="icon row justify-content-center align-items-center">
-                <img src="./assets/images/icons/icon3.svg" />
+                <img src="./assets/images/icons/icon3.svg" alt="Money-Back Guarantee"/>
               </div>
 
-              <h5 class="service">Money-Back Guarantee</h5>
-              <h6 class="description">
+              <h4 class="service">Money-Back Guarantee</h4>
+              <h5 class="description">
                 If an item arrived damaged or you'vechanged your mind, you can
                 send itback for a full refund.
-              </h6>
+              </h5>
             </li>
             <li class="list-item col-3">
               <div class="icon row justify-content-center align-items-center">
-                <img src="./assets/images/icons/icon4.svg" />
+                <img src="./assets/images/icons/icon4.svg" alt="Finest Quality"/>
               </div>
-              <h5 class="service">Finest Quality</h5>
-              <h6 class="description">
+              <h4 class="service">Finest Quality</h4>
+              <h5 class="description">
                 Designed to last, each of our products hasbeen crafted with the
                 finest materials.
-              </h6>
+              </h5>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section-products">
+      <section class="section-products today">
         <div class="container">
-          <div
-            class="section-title row justify-content-center align-items-center"
-          >
-            <h3 class="content title-center">Products in today</h3>
-          </div>
+          <h3 class="section-title title-center">Products in today</h3>
 
           <ul class="list-products row">
             <li class="product-item col-3">
@@ -327,7 +315,7 @@
                 </div>
               </div>
               <div class="product-content">
-                <h5 class="name name-product">T-Shirt Summer Vibes</h5>
+                <h4 class="name name-product">T-Shirt Summer Vibes</h4>
                 <div
                   class="prices row justify-content-between align-items-center"
                 >
@@ -345,7 +333,7 @@
                 />
               </div>
               <div class="product-content">
-                <h5 class="name name-product">Loose Knit 3/4 Sleeve</h5>
+                <h4 class="name name-product">Loose Knit 3/4 Sleeve</h4>
                 <div
                   class="prices row align-items-center justify-content-between"
                 >
@@ -362,7 +350,7 @@
                 />
               </div>
               <div class="product-content">
-                <h5 class="name name-product">Basic Slim Fit T-Shirt</h5>
+                <h4 class="name name-product">Basic Slim Fit T-Shirt</h4>
                 <div
                   class="prices row align-items-center justify-content-between"
                 >
@@ -372,10 +360,10 @@
             </li>
             <li class="product-item col-3">
               <div class="product-image">
-                <img src="./assets/images/product4.png" alt="" class="image" />
+                <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
               <div class="product-content">
-                <h5 class="name name-product">Loose Textured T-Shirt</h5>
+                <h4 class="name name-product">Loose Textured T-Shirt</h4>
                 <div
                   class="prices row align-items-center justify-content-between"
                 >
@@ -407,10 +395,9 @@
         <div class="footer-top row">
           <div class="about-us col-6">
             <div class="footer-logo row">
-              <img src="./assets/images/" alt="" class="image" />
+              <img src="./assets/images/" alt="E-Shop" class="image" />
               <h3 class="title">E-Shop</h3>
             </div>
-
             <p class="description">
               House My Brand designs clothing for the young, the old &everyone
               in between – but most importantly, for the fashionable
@@ -419,27 +406,27 @@
             <ul class="list-info row">
               <li class="list-item">
                 <a class="list-item-link" href=""
-                  ><img src="./assets/images/icons/facebook.svg"
+                  ><img src="./assets/images/icons/facebook.svg" alt="facebook"
                 /></a>
               </li>
               <li class="list-item">
                 <a class="list-item-link" href="">
-                  <img src="./assets/images/icons/twitter.svg"
+                  <img src="./assets/images/icons/twitter.svg" alt="twitter"
                 /></a>
               </li>
               <li class="list-item">
                 <a class="list-item-link" href=""
-                  ><img src="./assets/images/icons/instagram.svg"
+                  ><img src="./assets/images/icons/instagram.svg" alt="instagram"
                 /></a>
               </li>
               <li class="list-item">
                 <a class="list-item-link" href=""
-                  ><img src="./assets/images/icons/LinkedIn.svg"
+                  ><img src="./assets/images/icons/LinkedIn.svg" alt="LinkedIn"
                 /></a>
               </li>
               <li class="list-item">
                 <a class="list-item-link" href=""
-                  ><img src="./assets/images/icons/youtube.svg"
+                  ><img src="./assets/images/icons/youtube.svg" alt="youtube"
                 /></a>
               </li>
             </ul>
@@ -507,7 +494,7 @@
 
       <div class="footer-bottom row justify-content-center align-items-center">
         <span class="content"
-          >DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</span
+          >DESIGN BY ICEO.CO - &#169 2019. ALL RIGHTS RESERVED.</span
         >
       </div>
     </footer>
