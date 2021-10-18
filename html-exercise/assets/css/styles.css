@@ -54,7 +54,7 @@ header .container {
 }
 .banner-content {
   position: absolute;
-  left: 16%;
+  left: 17.5%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -163,11 +163,14 @@ header .container {
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
-  min-height: 140px;
+  min-height: 120px;
 }
 /* ----------  PRODUCTS  */
 .section-products {
   margin: 5rem auto;
+}
+.section-products-top{
+  padding: 0 0.625rem;
 }
 .section-products .list-products {
   margin-top: 40px;
@@ -201,18 +204,14 @@ header .container {
 }
 /* ---------- REASON */
 .section-reason {
+  padding: 4rem 0;
   margin: 5rem auto;
   background: #f7f7f7;
 }
-.section-reason .container {
-  padding: 4rem 0;
-}
 .section-reason .container .list-reason {
-  margin: 0 -64px;
   margin-top: 4rem;
 }
 .list-reason .list-item {
-  padding: 0 64px;
   cursor: pointer;
 }
 .list-reason .list-item:hover .reason-service {
@@ -295,10 +294,10 @@ footer {
 }
 footer .footer-top {
   border-bottom: 1px solid #ffffff;
+  padding: 3rem 0;
 }
 .footer-top .container {
   display: flex;
-  padding: 3rem 0;
 }
 .footer-logo .footer-title {
   font-family: Helvetica;
