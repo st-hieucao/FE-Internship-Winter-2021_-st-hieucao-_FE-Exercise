@@ -1,15 +1,21 @@
 /* --------------- LAYOUT  */
-.row {
-  display: flex;
-}
 .col-6 {
-  flex: 2;
+  width: 50%;
+  padding: 0 0.625rem;
 }
 .col-3 {
-  flex: 1;
+  width: 25%;
+  padding: 0 0.625rem;
 }
-
+.container {
+  width: 85%;
+  margin: auto;
+}
 /* --------------- FLEX  */
+.d-flex {
+  display: flex;
+  margin: 0 -0.625rem;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -28,9 +34,13 @@
 .align-items-center {
   align-items: center;
 }
-
 /* --------------- TEXT  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   color: #333333;
 }
@@ -39,31 +49,27 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   line-height: 48px;
 }
-.title-center {
+.txt-center {
   text-align: center;
 }
 .name-product {
   font-weight: 300;
   font-size: 16px;
 }
-.text-primary{
+.text-primary {
   color: #fbb03b;
 }
-
-
 /* --------------- BUTTON  */
 .btn {
   font-weight: bold;
   font-size: 13px;
   text-align: center;
-
-  padding: 0 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
   color: #333333;
-
   border: none;
   border-radius: 33px;
   outline: none;
-
   cursor: pointer;
 }
 .btn-primary {
@@ -76,22 +82,23 @@ h1, h2, h3, h4, h5, h6 {
   background: #fbb03b;
   transition: 0.3s;
 }
-.btn-border {
+.btn-outline {
   border: 1px solid #c4c4c4;
 }
-.btn-border:hover {
+.btn-outline:hover {
   background: #fbb03b;
   transition: 0.3s;
   border: 1px solid #fbb03b;
 }
-.btn-sale {
-  color: #ffffff;
-  background: #ff0000;
+/* -------------- BADGE */
+.badge {
   border-radius: 20px;
-
   padding: 10px 10px;
-
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+}
+.badge-primary {
+  color: #ffffff;
+  background: #ff0000;
 }

@@ -1,12 +1,21 @@
-@font-face{
+@font-face {
   src: url(../fonts/Poppins-Black.ttf);
+  src: url(../fonts/Poppins-BlackItalic.ttf);
   src: url(../fonts/Poppins-Bold.ttf);
+  src: url(../fonts/Poppins-BoldItalic.ttf);
+  src: url(../fonts/Poppins-ExtraBold.ttf);
+  src: url(../fonts/Poppins-ExtraBoldItalic.ttf);
   src: url(../fonts/Poppins-ExtraLight.ttf);
-  src: url(../fonts/Poppins-Medium.ttf);
-  src: url(../fonts/Poppins-Regular.ttf);
-  src: url(../fonts/Poppins-Thin.ttf);
+  src: url(../fonts/Poppins-ExtraLightItalic.ttf);
   src: url(../fonts/Poppins-Italic.ttf);
+  src: url(../fonts/Poppins-Light.ttf);
+  src: url(../fonts/Poppins-LightItalic.ttf);
+  src: url(../fonts/Poppins-Medium.ttf);
   src: url(../fonts/Poppins-MediumItalic.ttf);
+  src: url(../fonts/Poppins-Regular.ttf);
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  src: url(../fonts/Poppins-SemiBoldItalic.ttf);
+  src: url(../fonts/Poppins-Thin.ttf);
   src: url(../fonts/Poppins-ThinItalic.ttf);
 }
 html,
@@ -15,7 +24,7 @@ body {
   font-style: normal;
   font-size: 14px;
   font-weight: 400;
-  color: #333333;
+  color: #808080;
 }
 * {
   margin: 0;

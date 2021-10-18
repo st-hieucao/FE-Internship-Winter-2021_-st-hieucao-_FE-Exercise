@@ -11,12 +11,8 @@
 
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./styles.css" />
-
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css?fbclid=IwAR34A7kjQKkOfVF7Ad8tcx0t0dvEUt7MntsBu5PhGIXfMgV1V45PYpIYK4M"
-    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,138 +23,146 @@
 
   <body>
     <header>
-      <div class="container row justify-content-between align-items-center">
-        <h1 class="header-logo row align-items-center">
-          <a class="title">
-            <img
-              class="image"
-              src="./assets/images/social-media-icon/logo.svg"
-              alt=""
-            />
-            E-SHOP
-          </a>
-        </h1>
-        <nav class="nav-main">
-          <ul class="nav-list row align-items-center">
-            <li class="nav-item"><a class="nav-link" href="">Men</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Women</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
-          </ul>
-        </nav>
-        <div class="header-options">
-          <ul class="list-options row align-items-center">
-            <li class="list-item">
-              <a class="list-link" href=""
-                ><img src="./assets/images/icons/option1.svg" alt="search"
-              /></a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href="">
-                <img src="./assets/images/icons/option2.svg" alt="cart"
-              /></a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href="">
-                <img src="./assets/images/icons/option3.svg" alt="login"
-              /></a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="header-logo d-flex align-items-center">
+            <a class="header-title d-flex align-items-center">
+              <img
+                class="header-image"
+                src="./assets/images/logo.png"
+                alt="logo e-shop"
+              />
+              E-SHOP
+            </a>
+          </h1>
+          <nav class="nav-main">
+            <ul class="nav-list d-flex align-items-center">
+              <li class="nav-item"><a class="nav-link" href="">Men</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Women</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+            </ul>
+          </nav>
+          <div class="header-options">
+            <ul class="list-options d-flex align-items-center">
+              <li class="list-item">
+                <a class="list-link" href="">
+                  <img src="./assets/images/icons/option1.svg" alt="search"/>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="list-link" href="">
+                  <img src="./assets/images/icons/option2.svg" alt="cart"/>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="list-link" href="">
+                  <img src="./assets/images/icons/option3.svg" alt="login"/>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="section-banner">
-      <div class="banner-content row flex-column">
-        <h2 class="title">
-          <p class="title-content">Sale of the</p>
-          <p class="text-primary">summer</p>
-          <p class="title-content">collection</p>
-        </h2>
-
-        <a href="" class="shopnow row align-items-center">
-          <span class="icon row align-items-center justify-content-center"
-            ><i class="fal fa-arrow-right"></i
-          ></span>
-          <span class="btn-shop">SHOP NOW</span>
-        </a>
-      </div>
-
-      <div class="section-services row align-items-center justify-content-end">
-        <ul class="list-services row justify-content-end">
-          <li class="list-item row">
-            <img
-              class="icon"
-              src="./assets/images/icons/services1.svg"
-              alt="Free Shipping"
-            />
-            <div class="content">
-              <h5 class="title">Free Shipping</h5>
-              <span class="description">On purchases over $199</span>
-            </div>
-          </li>
-          <li class="list-item row">
-            <img class="icon" src="./assets/images/icons/services2.svg" alt="99% Satisfied Customers" />
-            <div class="content">
-              <h5 class="title">99% Satisfied Customers</h5>
-              <span class="description"
-                >Our clients' opinions speak for themselves</span
-              >
-            </div>
-          </li>
-          <li class="list-item row">
-            <img class="icon" src="./assets/images/icons/services3.svg" alt="Originality Guaranteed" />
-            <div class="content">
-              <h5 class="title">Originality Guaranteed</h5>
-              <span class="description"
-                >30 days warranty for each product from our store</span
-              >
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <main>
+      <section class="section-banner">
+        <div class="banner-content d-flex flex-column">
+          <h2 class="banner-title">
+            <p class="title-content">Sale of the</p>
+            <p class="text-primary">summer</p>
+            <p class="title-content">collection</p>
+          </h2>
+  
+          <a href="" class="shopnow">
+            <div class="shop-icon">
+              <img src="./assets/images/icons/arrow.svg">
+            </div>
+            SHOP NOW
+          </a>
+        </div>
+  
+        <div class="section-services d-flex align-items-center justify-content-end">
+          <ul class="list-services d-flex justify-content-end">
+            <li class="list-item d-flex">
+              <img
+                class="service-icon"
+                src="./assets/images/icons/services1.svg"
+                alt="Free Shipping"
+              />
+              <div class="service-content">
+                <h5 class="service-title">Free Shipping</h5>
+                <span class="service-description">On purchases over $199</span>
+              </div>
+            </li>
+            <li class="list-item d-flex">
+              <img class="service-icon" src="./assets/images/icons/services2.svg" alt="99% Satisfied Customers" />
+              <div class="service-content">
+                <h5 class="service-title">99% Satisfied Customers</h5>
+                <span class="service-description"
+                  >Our clients' opinions speak for themselves</span
+                >
+              </div>
+            </li>
+            <li class="list-item d-flex">
+              <img class="service-icon" src="./assets/images/icons/services3.svg" alt="Originality Guaranteed" />
+              <div class="service-content">
+                <h5 class="service-title">Originality Guaranteed</h5>
+                <span class="service-description"
+                  >30 days warranty for each product from our store</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section class="section-colections">
         <div class="container">
-          <ul class="list-colections row">
+          <ul class="list-colections d-flex">
             <li class="list-item col-6">
-              <img
+              <div class="card">
+                <img
                 src="./assets/images/collection1.png"
                 alt="New arrivalsare now in"
-                class="image"
+                class="colection-image"
               />
-              <div class="content">
-                <h4 class="title">New arrivalsare now in!</h4>
+              <div class="colection-content">
+                <h4 class="colection-title">New arrivalsare now in!</h4>
                 <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
+              </div>
               </div>
             </li>
             <li class="list-item col-3">
-              <img
+              <div class="card">
+                <img
                 src="./assets/images/collection2.png"
                 alt="Basic t-shirts"
-                class="image"
+                class="colection-image"
               />
-              <div class="content">
-                <h4 class="title">
+              <div class="colection-content">
+                <h4 class="colection-title">
                   Basic t-shirts
                   <p class="price">$29,99</p>
                 </h4>
                 <a href="" class="btn btn-secondary">MORE DETAILS</a>
               </div>
+              </div>
             </li>
             <li class="list-item col-3">
-              <img
+              <div class="card">
+                <img
                 src="./assets/images/collection3.png"
-                class="image"
+                class="colection-image"
                 alt="Sale this summer"
               />
               <div class="sale">
-                <span class="btn-sale">-50%</span>
+                <span class="badge badge-primary">-50%</span>
               </div>
-              <div class="content">
-                <h4 class="title">Sale this summer</h4>
+              <div class="colection-content">
+                <h4 class="colection-title">Sale this summer</h4>
                 <a href="" class="btn btn-secondary">VIEW ALL</a>
+              </div>
               </div>
             </li>
           </ul>
@@ -168,13 +172,13 @@
       <section class="section-products">
         <div class="container">
           <div
-            class="section-title row justify-content-between align-items-center"
+            class="section-products-top d-flex justify-content-between align-items-center"
           >
-            <h3 class="content">Selected just for you</h3>
-            <a href="" class="btn btn-secondary btn-border">SHOW MORE</a>
+            <h3 class="section-title">Selected just for you</h3>
+            <a href="" class="btn btn-outline">SHOW MORE</a>
           </div>
 
-          <ul class="list-products row">
+          <ul class="list-products d-flex">
             <li class="product-item col-3">
               <div class="product-image">
                 <img
@@ -182,14 +186,14 @@
                   alt="T-Shirt Summer Vibes"
                   class="image"
                 />
-                <div class="sale">
-                  <span class="btn-sale">-50%</span>
+                <div class="product-sale">
+                  <span class="badge badge-primary">-50%</span>
                 </div>
               </div>
               <div class="product-content">
-                <h4 class="name name-product">T-Shirt Summer Vibes</h4>
+                <h4 class="name-product">T-Shirt Summer Vibes</h4>
                 <div
-                  class="prices row justify-content-between align-items-center"
+                  class="prices"
                 >
                   <span class="new-price">$89.99</span>
                   <span class="old-price">$119.99</span>
@@ -205,9 +209,9 @@
                 />
               </div>
               <div class="product-content">
-                <h4 class="name name-product">Loose Knit 3/4 Sleeve</h4>
+                <h4 class="name-product">Loose Knit 3/4 Sleeve</h4>
                 <div
-                  class="prices row align-items-center justify-content-between"
+                  class="prices"
                 >
                   <span class="price">$119.99</span>
                 </div>
@@ -222,9 +226,9 @@
                 />
               </div>
               <div class="product-content">
-                <h4 class="name name-product">Basic Slim Fit T-Shirt</h4>
+                <h4 class="name-product">Basic Slim Fit T-Shirt</h4>
                 <div
-                  class="prices row align-items-center justify-content-between"
+                  class="prices"
                 >
                   <span class="price">$79.99</span>
                 </div>
@@ -235,9 +239,9 @@
                 <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
               <div class="product-content">
-                <h4 class="name name-product">Loose Textured T-Shirt</h4>
+                <h4 class="name-product">Loose Textured T-Shirt</h4>
                 <div
-                  class="prices row align-items-center justify-content-between"
+                  class="prices"
                 >
                   <span class="price">$119.99</span>
                 </div>
@@ -249,60 +253,60 @@
 
       <section class="section-reason">
         <div class="container">
-          <h3 class="section-title title-center">Why should you choose us?</h3>
+          <h3 class="section-title txt-center">Products in today</h3>
 
-          <ul class="list-reason row">
+          <ul class="list-reason d-flex">
             <li class="list-item col-3">
-              <div class="icon row justify-content-center align-items-center">
+              <div class="reason-icon d-flex justify-content-center align-items-center">
                 <img src="./assets/images/icons/icon1.svg" alt="Free Shipping" />
               </div>
-              <h4 class="service">Free Shipping</h4>
-              <h5 class="description">
+              <h4 class="reason-service">Free Shipping</h4>
+              <p class="reason-description">
                 All purchases over $199 are eligible forfree shipping via USPS
                 First Class Mail.
-              </h5>
+              </p>
             </li>
             <li class="list-item col-3">
-              <div class="icon row justify-content-center align-items-center">
+              <div class="reason-icon d-flex justify-content-center align-items-center">
                 <img src="./assets/images/icons/icon2.svg" alt="Easy Payments"/>
               </div>
 
-              <h4 class="service">Easy Payments</h4>
-              <h5 class="description">
+              <h4 class="reason-service">Easy Payments</h4>
+              <p class="reason-description">
                 All payments are processed instantlyover a secure payment
                 protocol.
-              </h5>
+              </p>
             </li>
             <li class="list-item col-3">
-              <div class="icon row justify-content-center align-items-center">
+              <div class="reason-icon d-flex justify-content-center align-items-center">
                 <img src="./assets/images/icons/icon3.svg" alt="Money-Back Guarantee"/>
               </div>
 
-              <h4 class="service">Money-Back Guarantee</h4>
-              <h5 class="description">
+              <h4 class="reason-service">Money-Back Guarantee</h4>
+              <p class="reason-description">
                 If an item arrived damaged or you'vechanged your mind, you can
                 send itback for a full refund.
-              </h5>
+              </p>
             </li>
             <li class="list-item col-3">
-              <div class="icon row justify-content-center align-items-center">
+              <div class="reason-icon d-flex justify-content-center align-items-center">
                 <img src="./assets/images/icons/icon4.svg" alt="Finest Quality"/>
               </div>
-              <h4 class="service">Finest Quality</h4>
-              <h5 class="description">
+              <h4 class="reason-service">Finest Quality</h4>
+              <p class="reason-description">
                 Designed to last, each of our products hasbeen crafted with the
                 finest materials.
-              </h5>
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section-products today">
+      <section class="section-products section-products-today">
         <div class="container">
-          <h3 class="section-title title-center">Products in today</h3>
+          <h3 class="section-title txt-center">Selected just for you</h3>
 
-          <ul class="list-products row">
+          <ul class="list-products d-flex">
             <li class="product-item col-3">
               <div class="product-image">
                 <img
@@ -310,14 +314,14 @@
                   alt="T-Shirt Summer Vibes"
                   class="image"
                 />
-                <div class="sale">
-                  <span class="btn-sale">-50%</span>
+                <div class="product-sale">
+                  <span class="badge badge-primary">-50%</span>
                 </div>
               </div>
               <div class="product-content">
-                <h4 class="name name-product">T-Shirt Summer Vibes</h4>
+                <h4 class="name-product">T-Shirt Summer Vibes</h4>
                 <div
-                  class="prices row justify-content-between align-items-center"
+                  class="prices"
                 >
                   <span class="new-price">$89.99</span>
                   <span class="old-price">$119.99</span>
@@ -333,9 +337,9 @@
                 />
               </div>
               <div class="product-content">
-                <h4 class="name name-product">Loose Knit 3/4 Sleeve</h4>
+                <h4 class="name-product">Loose Knit 3/4 Sleeve</h4>
                 <div
-                  class="prices row align-items-center justify-content-between"
+                  class="prices"
                 >
                   <span class="price">$119.99</span>
                 </div>
@@ -350,9 +354,9 @@
                 />
               </div>
               <div class="product-content">
-                <h4 class="name name-product">Basic Slim Fit T-Shirt</h4>
+                <h4 class="name-product">Basic Slim Fit T-Shirt</h4>
                 <div
-                  class="prices row align-items-center justify-content-between"
+                  class="prices"
                 >
                   <span class="price">$79.99</span>
                 </div>
@@ -363,9 +367,9 @@
                 <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
               <div class="product-content">
-                <h4 class="name name-product">Loose Textured T-Shirt</h4>
+                <h4 class="name-product">Loose Textured T-Shirt</h4>
                 <div
-                  class="prices row align-items-center justify-content-between"
+                  class="prices"
                 >
                   <span class="price">$119.99</span>
                 </div>
@@ -376,34 +380,40 @@
       </section>
 
       <section class="section-contact">
-        <div class="container row align-items-center">
-          <p class="description col-6">
-            Subscribe to our newsletter andreceive exclusive offers every week
-          </p>
-          <form
-            class="form col-6 row align-items-center justify-content-center"
-          >
-            <input type="email" placeholder="Enter your email" class="input" />
-            <button class="btn btn-primary">SUBSCRIBE</button>
-          </form>
+        <div class="container">
+          <div class="contact-content">
+            <p class="contact-description col-6">
+              Subscribe to our newsletter andreceive exclusive offers every week
+            </p>
+            <form
+              class="form col-6 d-flex align-items-center justify-content-center"
+            >
+              <input type="email" placeholder="Enter your email" class="input" />
+              <button class="btn btn-primary">SUBSCRIBE</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container row flex-column">
-        <div class="footer-top row">
+      <div class="footer-top">
+        <div class="container">
           <div class="about-us col-6">
-            <div class="footer-logo row">
-              <img src="./assets/images/" alt="E-Shop" class="image" />
-              <h3 class="title">E-Shop</h3>
+            <div class="footer-logo d-flex align-items-center">
+              <img
+                class="footer-image"
+                src="./assets/images/logo.png"
+                alt="logo e-shop"
+              />
+              <h3 class="footer-title">E-Shop</h3>
             </div>
-            <p class="description">
+            <p class="footer-description">
               House My Brand designs clothing for the young, the old &everyone
               in between – but most importantly, for the fashionable
             </p>
 
-            <ul class="list-info row">
+            <ul class="list-info d-flex">
               <li class="list-item">
                 <a class="list-item-link" href=""
                   ><img src="./assets/images/icons/facebook.svg" alt="facebook"
@@ -432,7 +442,7 @@
             </ul>
           </div>
 
-          <ul class="list-info col-6 row justify-content-between">
+          <ul class="list-info col-6 d-flex justify-content-between">
             <li class="list-item">
               <h4 class="title">Shopping online</h4>
               <ul class="list-subinfo">
@@ -492,7 +502,7 @@
         </div>
       </div>
 
-      <div class="footer-bottom row justify-content-center align-items-center">
+      <div class="footer-bottom">
         <span class="content"
           >DESIGN BY ICEO.CO - &#169 2019. ALL RIGHTS RESERVED.</span
         >
