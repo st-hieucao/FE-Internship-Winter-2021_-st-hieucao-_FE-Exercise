@@ -10,7 +10,12 @@ header {
   align-items: center;
   color: #ffffff;
 }
-.header-title .header-image {
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
   padding-right: 1rem;
 }
 .nav-list .nav-item {
@@ -20,6 +25,10 @@ header {
   font-weight: bold;
   font-size: 18px;
   color: #fbb03b;
+}
+.list-options {
+  display: flex;
+  align-items: center;
 }
 .list-options .list-item {
   padding: 0 1rem;
@@ -58,12 +67,7 @@ header {
 .banner-content .banner-title {
   font-size: 72px;
   color: #ffffff;
-}
-.banner-title {
   line-height: 80px;
-}
-.banner-content .banner-button {
-  margin-top: 2rem;
 }
 .banner-content .banner-button {
   font-weight: bold;
@@ -71,6 +75,7 @@ header {
   color: #ffffff;
   text-decoration: underline;
   display: flex;
+  margin-top: 2rem;
 }
 .banner-button-icon {
   width: 36px;
@@ -98,9 +103,11 @@ header {
 }
 .section-services .list-services {
   width: 77.5%;
+  display: flex;
 }
 .list-services .list-item {
   padding-right: 3rem;
+  display: flex;
   flex: 1;
 }
 .list-services .list-item .service-icon {
@@ -119,15 +126,6 @@ header {
 /* ------------- COLLECTIONS */
 .section-colections {
   margin: 3rem auto;
-}
-.list-colections .list-item .card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.colection-image {
-  width: 100%;
-  height: 100%;
 }
 .list-colections .list-item .badge {
   position: absolute;
@@ -173,6 +171,9 @@ header {
   transition: 0.3s;
 }
 .list-reason .list-item .reason-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 70px;
   width: 70px;
   line-height: 70px;
@@ -220,6 +221,9 @@ header {
   color: #ffffff;
 }
 .contact-content .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px;
 }
 .contact-content .form .input {
@@ -242,6 +246,10 @@ footer .footer-top {
   border-bottom: 1px solid #ffffff;
   padding: 3rem 0;
 }
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
 .footer-logo .footer-title {
   font-family: Helvetica;
   font-size: 19px;
@@ -255,14 +263,20 @@ footer .footer-top {
   margin-top: 2rem;
   padding-right: 150px;
 }
-.footer-top .about-us .list-info {
+.footer-top .about-us .list-media {
+  display: flex;
   margin-left: -2rem;
   margin-top: 4rem;
 }
-.about-us .list-info .list-item {
+.about-us .list-media .list-item {
   padding-left: 2rem;
 }
-.list-info .list-item .title {
+.footer-top .list-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-info .title {
   font-size: 16px;
   color: #ffffff;
 }
