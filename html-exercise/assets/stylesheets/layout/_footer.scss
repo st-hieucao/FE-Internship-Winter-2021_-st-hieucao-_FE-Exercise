@@ -1,7 +1,7 @@
 footer {
-  background: #fbb03b;
+  background: map-get($color, "primary-color");
   .footer-top {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid map-get($color, "white-color");
     padding: 3rem 0;
     .footer-logo {
       display: flex;
@@ -9,12 +9,12 @@ footer {
       .footer-title {
         font-family: Helvetica;
         font-size: 19px;
-        color: #ffffff;
+        color: map-get($color, "white-color");
         padding-left: 1rem;
       }
     }
     .footer-description {
-      color: #ffffff;
+      color: map-get($color, "white-color");
       margin-top: 2rem;
       padding-right: 150px;
     }
@@ -31,15 +31,17 @@ footer {
       justify-content: space-between;
       .title {
         font-size: 16px;
-        color: #ffffff;
+        color: map-get($color, "white-color");
       }
       .list-item {
-        margin-top: 1.5rem;
         .list-subinfo {
           margin-top: 2.5rem;
+          .list-item{
+            margin-top: 1.5rem;
+          }
         }
         .list-item-link {
-          color: #ffffff;
+          color: map-get($color, "white-color");
         }
       }
     }
@@ -47,6 +49,6 @@ footer {
   .footer-bottom {
     text-align: center;
     padding: 1.5rem 0;
-    color: #ffffff;
+    color: map-get($color, "white-color");
   }
 }

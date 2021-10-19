@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  color: #333333;
+  color: map-get($color, "black-color");
 }
 .section-title {
   font-weight: 300;
@@ -14,5 +14,5 @@ h6 {
   text-align: center;
 }
 .text-primary {
-  color: #fbb03b;
+  color: map-get($color, "primary-color");
 }

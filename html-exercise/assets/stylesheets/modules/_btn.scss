@@ -4,33 +4,33 @@
   text-align: center;
   text-transform: uppercase;
   padding: 10px 20px;
-  color: #333333;
+  color: map-get($color, "black-color");
   border: none;
   border-radius: 33px;
   outline: none;
   cursor: pointer;
   &.btn-primary {
-    background: #fbb03b;
+    background: map-get($color, "primary-color");
   }
   &.btn-secondary {
-    background: #ffffff;
+    background: map-get($color, "white-color");
     &:hover {
-      background: #fbb03b;
+      background: map-get($color, "primary-color");
       transition: 0.3s;
     }
   }
   &.btn-outline {
-    border: 1px solid #c4c4c4;
+    border: 1px solid map-get($color, "gray-light");
     &:hover {
-      background: #fbb03b;
+      background: map-get($color, "primary-color");
       transition: 0.3s;
-      border: 1px solid #fbb03b;
+      border: 1px solid map-get($color, "primary-color");
     }
   }
   &.btn-primary {
-    background: #fbb03b;
+    background: map-get($color, "primary-color");
   }
   &.btn-primary {
-    background: #fbb03b;
+    background: map-get($color, "primary-color");
   }
 }

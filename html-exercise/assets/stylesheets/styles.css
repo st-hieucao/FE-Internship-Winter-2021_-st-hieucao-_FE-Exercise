@@ -115,7 +115,6 @@ header .list-options .list-item {
 }
 header .list-options .list-item .list-link {
   font-size: 16px;
-  color: #ffffff;
 }
 
 footer {
@@ -156,11 +155,11 @@ footer .footer-top .list-info .title {
   font-size: 16px;
   color: #ffffff;
 }
-footer .footer-top .list-info .list-item {
-  margin-top: 1.5rem;
-}
 footer .footer-top .list-info .list-item .list-subinfo {
   margin-top: 2.5rem;
+}
+footer .footer-top .list-info .list-item .list-subinfo .list-item {
+  margin-top: 1.5rem;
 }
 footer .footer-top .list-info .list-item .list-item-link {
   color: #ffffff;
@@ -388,7 +387,7 @@ footer .footer-bottom {
 .section-reason {
   padding: 4rem 0;
   margin: 5rem auto;
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 .section-reason .list-reason {
   margin-top: 4rem;

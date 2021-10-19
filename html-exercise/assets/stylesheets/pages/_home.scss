@@ -24,14 +24,14 @@
     z-index: 1;
     .banner-title {
       font-size: 72px;
-      color: #ffffff;
+      color: map-get($color, "white-color");
       line-height: 80px;
     }
     .banner-button {
       margin-top: 2rem;
       font-weight: bold;
       font-size: 24px;
-      color: #ffffff;
+      color: map-get($color, "white-color");
       text-decoration: underline;
       display: flex;
       .banner-button-icon {
@@ -39,8 +39,8 @@
         height: 36px;
         border-radius: 50%;
         margin-right: 2rem;
-        background: #fbb03b;
-        color: #ffffff;
+        background: map-get($color, "primary-color");
+        color: map-get($color, "white-color");
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,7 +54,7 @@
     width: 78%;
     height: 125px;
     border-radius: 0px 70px 0px 0px;
-    background: #ffffff;
+    background: map-get($color, "white-color");
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -77,7 +77,7 @@
         .service-description {
           font-size: 12px;
           line-height: 18px;
-          color: #a8a8a8;
+          color: map-get($color, "gray-metal");
         }
       }
     }
@@ -98,7 +98,7 @@
     padding-right: 70px;
     z-index: 1;
     .colection-title {
-      color: #ffffff;
+      color: map-get($color, "white-color");
       font-size: 24px;
       font-weight: 400;
       line-height: 35px;
@@ -115,13 +115,13 @@
 .section-reason {
   padding: 4rem 0;
   margin: 5rem auto;
-  background: #f7f7f7;
+  background: map-get($color, "gray-fog");
   .list-reason {
     margin-top: 4rem;
     .list-item {
       cursor: pointer;
       &:hover .reason-service {
-        color: #fbb03b;
+        color: map-get($color, "primary-color");
         transition: 0.3s;
       }
       .reason-icon {
@@ -132,13 +132,13 @@
         width: 70px;
         line-height: 70px;
         border-radius: 10px;
-        background: #ffffff;
+        background: map-get($color, "white-color");
         text-align: center;
       }
       .reason-service {
         margin-top: 3rem;
         font-size: 16px;
-        color: #333333;
+        color: map-get($color, "black-color");
       }
       .reason-description {
         margin-top: 1.5rem;
@@ -172,7 +172,7 @@
     .contact-description {
       font-size: 24px;
       line-height: 36px;
-      color: #ffffff;
+      color: map-get($color, "white-color");
     }
     .form {
       display: flex;
@@ -181,7 +181,7 @@
       padding: 0 10px;
       .input {
         width: 100%;
-        background: #ffffff;
+        background: map-get($color, "white-color");
         padding: 1rem 2rem;
         border-radius: 61px;
         border: none;
