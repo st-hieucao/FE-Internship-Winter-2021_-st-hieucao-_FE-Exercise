@@ -20,12 +20,11 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header>
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h1 class="header-logo d-flex align-items-center">
+        <div class="header-content d-flex justify-content-between align-items-center">
+          <h1 class="header-logo">
             <a class="header-title d-flex align-items-center">
               <img
                 class="header-image"
@@ -67,23 +66,23 @@
 
     <main>
       <section class="section-banner">
-        <div class="banner-content d-flex flex-column">
+        <div class="banner-content">
           <h2 class="banner-title">
             <p class="title-content">Sale of the</p>
             <p class="text-primary">summer</p>
             <p class="title-content">collection</p>
           </h2>
   
-          <a href="" class="shopnow">
-            <div class="shop-icon">
+          <a href="" class="banner-button">
+            <div class="banner-button-icon">
               <img src="./assets/images/icons/arrow.svg">
             </div>
             SHOP NOW
           </a>
         </div>
   
-        <div class="section-services d-flex align-items-center justify-content-end">
-          <ul class="list-services d-flex justify-content-end">
+        <div class="section-services">
+          <ul class="list-services row">
             <li class="list-item d-flex">
               <img
                 class="service-icon"
@@ -119,50 +118,50 @@
 
       <section class="section-colections">
         <div class="container">
-          <ul class="list-colections d-flex">
+          <ul class="list-colections row">
             <li class="list-item col-6">
-              <div class="card">
+              <div class="card-colection">
                 <img
                 src="./assets/images/collection1.png"
                 alt="New arrivalsare now in"
                 class="colection-image"
-              />
-              <div class="colection-content">
+                />
+                <div class="colection-content">
                 <h4 class="colection-title">New arrivalsare now in!</h4>
                 <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
-              </div>
+                </div>
               </div>
             </li>
             <li class="list-item col-3">
-              <div class="card">
+              <div class="card-colection">
                 <img
                 src="./assets/images/collection2.png"
                 alt="Basic t-shirts"
                 class="colection-image"
-              />
-              <div class="colection-content">
-                <h4 class="colection-title">
-                  Basic t-shirts
-                  <p class="price">$29,99</p>
-                </h4>
-                <a href="" class="btn btn-secondary">MORE DETAILS</a>
-              </div>
+                />
+                <div class="colection-content">
+                  <h4 class="colection-title">
+                    Basic t-shirts
+                    <p class="price">$29,99</p>
+                  </h4>
+                  <a href="" class="btn btn-secondary">MORE DETAILS</a>
+                </div>
               </div>
             </li>
             <li class="list-item col-3">
-              <div class="card">
+              <div class="card-colection">
                 <img
                 src="./assets/images/collection3.png"
                 class="colection-image"
                 alt="Sale this summer"
-              />
-              <div class="sale">
-                <span class="badge badge-primary">-50%</span>
-              </div>
-              <div class="colection-content">
+                />
+                <div class="badge-content">
+                  <span class="badge badge-danger">-50%</span>
+                </div>
+                <div class="colection-content">
                 <h4 class="colection-title">Sale this summer</h4>
                 <a href="" class="btn btn-secondary">VIEW ALL</a>
-              </div>
+                </div>
               </div>
             </li>
           </ul>
@@ -178,71 +177,61 @@
             <a href="" class="btn btn-outline">SHOW MORE</a>
           </div>
 
-          <ul class="list-products d-flex">
-            <li class="product-item col-3">
-              <div class="product-image">
+          <ul class="list-products row">
+            <li class="col-3 card">
+              <div class="card-image">
                 <img
                   src="./assets/images/product1.png"
                   alt="T-Shirt Summer Vibes"
                   class="image"
                 />
-                <div class="product-sale">
-                  <span class="badge badge-primary">-50%</span>
-                </div>
+                <p class="badge badge-danger">-50%</p>
               </div>
-              <div class="product-content">
+              <div class="card-body card-body">
                 <h4 class="name-product">T-Shirt Summer Vibes</h4>
-                <div
-                  class="prices"
-                >
+                <div class="prices">
                   <span class="new-price">$89.99</span>
                   <span class="old-price">$119.99</span>
                 </div>
               </div>
             </li>
-            <li class="product-item col-3">
-              <div class="product-image">
+            <li class="col-3 card">
+              <div class="card-image">
                 <img
                   src="./assets/images/product2.png"
                   alt="Loose Knit 3/4 Sleeve"
                   class="image"
                 />
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">Loose Knit 3/4 Sleeve</h4>
-                <div
-                  class="prices"
-                >
+                <div class="prices">
                   <span class="price">$119.99</span>
                 </div>
               </div>
             </li>
-            <li class="product-item col-3">
-              <div class="product-image">
+            <li class="card col-3">
+              <div class="card-image">
                 <img
                   src="./assets/images/product3.png"
                   alt="Basic Slim Fit T-Shirt"
                   class="image"
                 />
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">Basic Slim Fit T-Shirt</h4>
-                <div
-                  class="prices"
-                >
+                <div class="prices">
                   <span class="price">$79.99</span>
                 </div>
               </div>
             </li>
-            <li class="product-item col-3">
-              <div class="product-image">
+            <li class="card col-3">
+              <div class="card-image">
                 <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">Loose Textured T-Shirt</h4>
-                <div
-                  class="prices"
-                >
+                <div class="prices">
                   <span class="price">$119.99</span>
                 </div>
               </div>
@@ -255,7 +244,7 @@
         <div class="container">
           <h3 class="section-title txt-center">Products in today</h3>
 
-          <ul class="list-reason d-flex">
+          <ul class="list-reason row">
             <li class="list-item col-3">
               <div class="reason-icon d-flex justify-content-center align-items-center">
                 <img src="./assets/images/icons/icon1.svg" alt="Free Shipping" />
@@ -306,19 +295,17 @@
         <div class="container">
           <h3 class="section-title txt-center">Selected just for you</h3>
 
-          <ul class="list-products d-flex">
-            <li class="product-item col-3">
-              <div class="product-image">
+          <ul class="list-products row">
+            <li class="card col-3">
+              <div class="card-image">
                 <img
                   src="./assets/images/product1.png"
                   alt="T-Shirt Summer Vibes"
                   class="image"
                 />
-                <div class="product-sale">
-                  <span class="badge badge-primary">-50%</span>
-                </div>
+                <p class="badge badge-danger">-50%</p>
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">T-Shirt Summer Vibes</h4>
                 <div
                   class="prices"
@@ -328,15 +315,15 @@
                 </div>
               </div>
             </li>
-            <li class="product-item col-3">
-              <div class="product-image">
+            <li class="card col-3">
+              <div class="card-image">
                 <img
                   src="./assets/images/product2.png"
                   alt="Loose Knit 3/4 Sleeve"
                   class="image"
                 />
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">Loose Knit 3/4 Sleeve</h4>
                 <div
                   class="prices"
@@ -345,15 +332,15 @@
                 </div>
               </div>
             </li>
-            <li class="product-item col-3">
-              <div class="product-image">
+            <li class="card col-3">
+              <div class="card-image">
                 <img
                   src="./assets/images/product3.png"
                   alt="Basic Slim Fit T-Shirt"
                   class="image"
                 />
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">Basic Slim Fit T-Shirt</h4>
                 <div
                   class="prices"
@@ -362,11 +349,11 @@
                 </div>
               </div>
             </li>
-            <li class="product-item col-3">
-              <div class="product-image">
+            <li class="card col-3">
+              <div class="card-image">
                 <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
-              <div class="product-content">
+              <div class="card-body">
                 <h4 class="name-product">Loose Textured T-Shirt</h4>
                 <div
                   class="prices"
