@@ -1,0 +1,55 @@
+footer{
+    background: #fbb03b;
+    .footer-top{
+        border-bottom: 1px solid #ffffff;
+        padding: 3rem 0;
+        .container{
+            display: flex;
+            .about-us{
+                .footer-logo{
+                    .footer-title{
+                        font-family: Helvetica;
+                        font-size: 19px;
+                        color: #ffffff;
+                    }
+                }
+                .footer-description{
+                    color: #ffffff;
+                    margin-top: 2rem;
+                    padding-right: 150px;
+                }
+                .list-info{
+                    margin-left: -2rem;
+                    margin-top: 4rem;
+                    .list-item{
+                        padding-left: 2rem;
+                    }
+                }
+            }
+            .list-info{
+                .list-item{
+                    .title{
+                        font-size: 16px;
+                        color: #ffffff;
+                    }
+                    .list-subinfo{
+                        margin-top: 2.5rem;
+                        .list-item{
+                            margin-top: 1.5rem;
+                            .list-item-link{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+        color: #ffffff;
+    }
+}

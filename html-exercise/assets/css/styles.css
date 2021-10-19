@@ -1,12 +1,9 @@
 /* ----------  HEADER*/
 header {
   position: absolute;
-  top: 0;
+  top: 55px;
   width: 100%;
   z-index: 1;
-}
-.header-content {
-  margin-top: 55px;
 }
 .header-logo {
   display: flex;
@@ -67,8 +64,6 @@ header {
 }
 .banner-content .banner-button {
   margin-top: 2rem;
-}
-.banner-content .banner-button {
   font-weight: bold;
   font-size: 24px;
   color: #ffffff;
@@ -123,15 +118,6 @@ header {
 .section-colections {
   margin: 3rem auto;
 }
-.list-colections .list-item .card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.colection-image {
-  width: 100%;
-  height: 100%;
-}
 .list-colections .list-item .badge-content {
   position: absolute;
   top: 35%;
@@ -165,7 +151,7 @@ header {
   margin: 5rem auto;
   background: #f7f7f7;
 }
-.section-reason .container .list-reason {
+.section-reason .list-reason {
   margin-top: 4rem;
 }
 .list-reason .list-item {
@@ -222,7 +208,6 @@ header {
   z-index: 5;
 }
 .contact-content {
-  display: flex;
   width: 100%;
 }
 .contact-content .contact-description {
@@ -260,9 +245,7 @@ footer .footer-top {
   font-family: Helvetica;
   font-size: 19px;
   color: #ffffff;
-}
-.footer-logo .footer-image {
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .footer-top .about-us .footer-description {
   color: #ffffff;
@@ -290,9 +273,7 @@ footer .footer-top {
   color: #ffffff;
 }
 .footer-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 1.5rem 0;
   color: #ffffff;
+  text-align: center;
 }
