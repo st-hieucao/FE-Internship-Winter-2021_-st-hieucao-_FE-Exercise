@@ -95,7 +95,7 @@ header {
   z-index: 1;
 }
 .section-services .list-services {
-  width: 78.5%;
+  width: 77.5%;
 }
 .list-services .list-item {
   padding-right: 3rem;
@@ -118,9 +118,9 @@ header {
 .section-colections {
   margin: 3rem auto;
 }
-.list-colections .list-item .badge-content {
+.list-colections .list-item .badge {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 45px;
   z-index: 1;
 }
@@ -183,7 +183,7 @@ header {
 .section-contact {
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
-  min-height: 240px;
+  height: 240px;
   width: 100%;
   position: relative;
 }
@@ -197,18 +197,9 @@ header {
   background: linear-gradient(90deg, #000000 33.28%, rgba(0, 0, 0, 0) 94.05%);
   opacity: 0.7;
 }
-.section-contact .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  z-index: 5;
-}
 .contact-content {
   width: 100%;
+  z-index: 1;
 }
 .contact-content .contact-description {
   font-size: 24px;
@@ -237,9 +228,6 @@ footer {
 footer .footer-top {
   border-bottom: 1px solid #ffffff;
   padding: 3rem 0;
-}
-.footer-top .container {
-  display: flex;
 }
 .footer-logo .footer-title {
   font-family: Helvetica;
