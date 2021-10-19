@@ -94,18 +94,26 @@ header .header-logo {
 header .header-logo .header-image {
   padding-right: 1rem;
 }
-header .nav-item {
+header .nav-list {
+  display: flex;
+  align-items: center;
+}
+header .nav-list .nav-item {
   padding: 0 4rem;
 }
-header .nav-item .nav-link {
+header .nav-list .nav-item .nav-link {
   font-weight: bold;
   font-size: 18px;
   color: #fbb03b;
 }
-header .list-item {
+header .list-options {
+  display: flex;
+  align-items: center;
+}
+header .list-options .list-item {
   padding: 0 1rem;
 }
-header .list-item .list-link {
+header .list-options .list-item .list-link {
   font-size: 16px;
   color: #ffffff;
 }
@@ -117,34 +125,44 @@ footer .footer-top {
   border-bottom: 1px solid #ffffff;
   padding: 3rem 0;
 }
+footer .footer-top .footer-logo {
+  display: flex;
+  align-items: center;
+}
 footer .footer-top .footer-logo .footer-title {
   font-family: Helvetica;
   font-size: 19px;
   color: #ffffff;
+  padding-left: 1rem;
 }
 footer .footer-top .footer-description {
   color: #ffffff;
   margin-top: 2rem;
   padding-right: 150px;
 }
-footer .footer-top .list-info {
+footer .footer-top .list-media {
+  display: flex;
   margin-left: -2rem;
   margin-top: 4rem;
 }
-footer .footer-top .list-info .list-item {
+footer .footer-top .list-media .list-item {
   padding-left: 2rem;
 }
-footer .list-item .title {
+footer .footer-top .list-info {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-top .list-info .title {
   font-size: 16px;
   color: #ffffff;
 }
-footer .list-item .list-subinfo {
-  margin-top: 2.5rem;
-}
-footer .list-item .list-subinfo .list-item {
+footer .footer-top .list-info .list-item {
   margin-top: 1.5rem;
 }
-footer .list-item .list-subinfo .list-item .list-item-link {
+footer .footer-top .list-info .list-item .list-subinfo {
+  margin-top: 2.5rem;
+}
+footer .footer-top .list-info .list-item .list-item-link {
   color: #ffffff;
 }
 footer .footer-bottom {
@@ -315,9 +333,11 @@ footer .footer-bottom {
 }
 .section-banner .section-services .list-services {
   width: 77.5%;
+  display: flex;
 }
 .section-banner .section-services .list-services .list-item {
   padding-right: 3rem;
+  display: flex;
   flex: 1;
 }
 .section-banner .section-services .list-services .list-item .service-icon {
@@ -381,6 +401,9 @@ footer .footer-bottom {
   transition: 0.3s;
 }
 .section-reason .list-reason .list-item .reason-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 70px;
   width: 70px;
   line-height: 70px;
@@ -405,6 +428,7 @@ footer .footer-bottom {
   height: 240px;
   width: 100%;
   position: relative;
+  display: flex;
 }
 .section-contact::after {
   content: "";
@@ -417,6 +441,7 @@ footer .footer-bottom {
   opacity: 0.7;
 }
 .section-contact .contact-content {
+  display: flex;
   width: 100%;
   z-index: 1;
 }
@@ -426,6 +451,9 @@ footer .footer-bottom {
   color: #ffffff;
 }
 .section-contact .contact-content .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px;
 }
 .section-contact .contact-content .form .input {

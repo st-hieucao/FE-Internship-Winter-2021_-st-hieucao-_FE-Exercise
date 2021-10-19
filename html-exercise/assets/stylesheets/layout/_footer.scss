@@ -4,10 +4,13 @@ footer {
     border-bottom: 1px solid #ffffff;
     padding: 3rem 0;
     .footer-logo {
+      display: flex;
+      align-items: center;
       .footer-title {
         font-family: Helvetica;
         font-size: 19px;
         color: #ffffff;
+        padding-left: 1rem;
       }
     }
     .footer-description {
@@ -15,23 +18,26 @@ footer {
       margin-top: 2rem;
       padding-right: 150px;
     }
-    .list-info {
+    .list-media {
+      display: flex;
       margin-left: -2rem;
       margin-top: 4rem;
       .list-item {
         padding-left: 2rem;
       }
     }
-  }
-  .list-item {
-    .title {
-      font-size: 16px;
-      color: #ffffff;
-    }
-    .list-subinfo {
-      margin-top: 2.5rem;
+    .list-info {
+      display: flex;
+      justify-content: space-between;
+      .title {
+        font-size: 16px;
+        color: #ffffff;
+      }
       .list-item {
         margin-top: 1.5rem;
+        .list-subinfo {
+          margin-top: 2.5rem;
+        }
         .list-item-link {
           color: #ffffff;
         }

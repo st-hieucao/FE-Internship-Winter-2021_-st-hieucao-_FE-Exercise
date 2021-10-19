@@ -10,13 +10,12 @@ header {
   align-items: center;
   color: #ffffff;
 }
+.header-image {
+  padding-right: 1rem;
+}
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.header-image {
-  padding-right: 1rem;
 }
 .nav-list .nav-item {
   padding: 0 4rem;
@@ -254,9 +253,7 @@ footer .footer-top {
   font-family: Helvetica;
   font-size: 19px;
   color: #ffffff;
-}
-.footer-logo .footer-image {
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .footer-top .about-us .footer-description {
   color: #ffffff;
@@ -275,16 +272,15 @@ footer .footer-top {
   display: flex;
   justify-content: space-between;
 }
-
 .list-info .title {
   font-size: 16px;
   color: #ffffff;
 }
-.list-info .list-item .list-subinfo {
-  margin-top: 2.5rem;
-}
 .list-subinfo .list-item {
   margin-top: 1.5rem;
+}
+.list-info .list-item .list-subinfo {
+  margin-top: 2.5rem;
 }
 .list-subinfo .list-item .list-item-link {
   color: #ffffff;

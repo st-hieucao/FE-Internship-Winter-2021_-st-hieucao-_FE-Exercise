@@ -61,8 +61,10 @@
     z-index: 1;
     .list-services {
       width: 77.5%;
+      display: flex;
       .list-item {
         padding-right: 3rem;
+        display: flex;
         flex: 1;
         .service-icon {
           height: 36px;
@@ -123,6 +125,9 @@
         transition: 0.3s;
       }
       .reason-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 70px;
         width: 70px;
         line-height: 70px;
@@ -149,6 +154,7 @@
   height: 240px;
   width: 100%;
   position: relative;
+  display: flex;
   &::after {
     content: "";
     position: absolute;
@@ -160,6 +166,7 @@
     opacity: 0.7;
   }
   .contact-content {
+    display: flex;
     width: 100%;
     z-index: 1;
     .contact-description {
@@ -168,6 +175,9 @@
       color: #ffffff;
     }
     .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 0 10px;
       .input {
         width: 100%;
@@ -184,4 +194,3 @@
     }
   }
 }
-
