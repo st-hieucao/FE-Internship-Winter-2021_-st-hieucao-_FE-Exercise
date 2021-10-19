@@ -1,0 +1,53 @@
+.card-colection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    opacity: 0.5;
+  }
+  .colection-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card {
+  .card-image {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    p {
+      position: absolute;
+      top: 24px;
+      left: 18px;
+    }
+  }
+  .card-name {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .card-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    .price {
+      color: #333333;
+    }
+    .new-price {
+      color: #ff0000;
+    }
+    .old-price {
+      color: #cecece;
+    }
+  }
+}

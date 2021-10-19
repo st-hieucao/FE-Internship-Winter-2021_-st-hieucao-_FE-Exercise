@@ -1,0 +1,26 @@
+$color: (
+  primary-color: #fbb03b,
+  secondary-color: #fff3df,
+  white: #ffffff,
+  red: #ff0000,
+  black: #333333,
+
+  gray-fog: #f6f6f6,
+  gray-light: #c4c4c4,
+  gray-cloudy: #cecece,
+  gray-mouse: #ababab,
+  gray-metal: #a8a8a8,
+  gray-bold: #808080,
+);
+
+$font-size: (
+  xs: 11px,
+  sm: 13px,
+  normal: 16px,
+  lg: 18px,
+  xl: 20px,
+  xxl: 24px,
+  xxxl: 30px,
+);
+
+$font-body: Poppins, sans-serif;

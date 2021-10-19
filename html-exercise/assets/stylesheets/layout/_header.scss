@@ -1,0 +1,29 @@
+header {
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  z-index: 1;
+  .header-logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    .header-image {
+      padding-right: 1rem;
+    }
+  }
+  .nav-item {
+    padding: 0 4rem;
+    .nav-link {
+      font-weight: bold;
+      font-size: 18px;
+      color: #fbb03b;
+    }
+  }
+  .list-item {
+    padding: 0 1rem;
+    .list-link {
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.btn {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #333333;
+  border: none;
+  border-radius: 33px;
+  outline: none;
+  cursor: pointer;
+  &.btn-primary {
+    background: #fbb03b;
+  }
+  &.btn-secondary {
+    background: #ffffff;
+    &:hover {
+      background: #fbb03b;
+      transition: 0.3s;
+    }
+  }
+  &.btn-outline {
+    border: 1px solid #c4c4c4;
+    &:hover {
+      background: #fbb03b;
+      transition: 0.3s;
+      border: 1px solid #fbb03b;
+    }
+  }
+  &.btn-primary {
+    background: #fbb03b;
+  }
+  &.btn-primary {
+    background: #fbb03b;
+  }
+}

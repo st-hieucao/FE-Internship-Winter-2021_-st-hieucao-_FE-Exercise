@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-body;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: map-get($color, "gray-bold");
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
