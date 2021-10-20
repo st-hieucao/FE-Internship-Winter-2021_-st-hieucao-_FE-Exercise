@@ -46,16 +46,14 @@ const students = [
 ];
 
 // ------------------- BAI5.1
-students.forEach((student) => {
-  student.coding = function (age) {
-    if (age >= 28) {
-      console.log("coding master");
-    } else {
-      console.log("learning code");
-    }
-  };
-  student.coding(student.age);
-});
+Student.prototype.coding = function () {
+  if (this.age >= 28) {
+    console.log("coding master");
+  } else {
+    console.log("learning code");
+  }
+};
+students[0].coding();
 
 // ------------------- BAI6
 const findRepeatNumber = (arr) => {
@@ -66,7 +64,6 @@ console.log(findRepeatNumber([1, 1, 2, 2, 3, 3, 4, 4, 5]));
 // ------------------- BAI7
 const sumCharacterNumber = (number) => {
   let numberCharacter = number.toString().split("");
-  console.log(numberCharacter);
   return numberCharacter.reduce(
     (item, sum) => parseInt(item) + parseInt(sum),
     0
