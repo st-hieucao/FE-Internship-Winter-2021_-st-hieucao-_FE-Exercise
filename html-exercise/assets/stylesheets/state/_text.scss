@@ -9,7 +9,7 @@ h6 {
 }
 .section-title {
   font-weight: 300;
-  font-size: 32px;
+  font-size: map-get($color, "xxxxl");
   line-height: 48px;
   text-align: center;
 }

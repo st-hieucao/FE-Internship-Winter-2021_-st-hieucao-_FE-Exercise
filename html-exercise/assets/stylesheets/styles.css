@@ -7,7 +7,6 @@
 body {
   font-family: Poppins, sans-serif;
   font-style: normal;
-  font-size: 14px;
   font-weight: 400;
   color: #808080;
 }
@@ -51,7 +50,7 @@ li {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -0.625rem;
+  margin: -0.625rem;
 }
 
 .col {
@@ -103,7 +102,6 @@ header .nav-list .nav-item {
 }
 header .nav-list .nav-item .nav-link {
   font-weight: bold;
-  font-size: 18px;
   color: #fbb03b;
 }
 header .list-options {
@@ -114,7 +112,6 @@ header .list-options .option-item {
   padding: 0 1rem;
 }
 header .list-options .option-item .list-link {
-  font-size: 16px;
   color: #ffffff;
 }
 
@@ -175,7 +172,6 @@ footer .footer-bottom {
   border-radius: 20px;
   padding: 10px 10px;
   font-weight: bold;
-  font-size: 12px;
   text-align: center;
 }
 .badge.badge-danger {
@@ -185,7 +181,6 @@ footer .footer-bottom {
 
 .btn {
   font-weight: bold;
-  font-size: 13px;
   text-align: center;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -212,12 +207,6 @@ footer .footer-bottom {
   background: #fbb03b;
   transition: 0.3s;
   border: 1px solid #fbb03b;
-}
-.btn.btn-primary {
-  background: #fbb03b;
-}
-.btn.btn-primary {
-  background: #fbb03b;
 }
 
 .card-collection {
@@ -254,13 +243,11 @@ footer .footer-bottom {
 }
 .card-product .card-name {
   font-weight: 300;
-  font-size: 16px;
 }
 .card-product .card-prices {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
 }
 .card-product .card-prices .price {
   color: #333333;
@@ -295,14 +282,12 @@ footer .footer-bottom {
   z-index: 1;
 }
 .section-banner .banner-content .banner-title {
-  font-size: 72px;
   color: #ffffff;
   line-height: 80px;
 }
 .section-banner .banner-content .banner-button {
   margin-top: 2rem;
   font-weight: bold;
-  font-size: 24px;
   color: #ffffff;
   text-decoration: underline;
   display: flex;
@@ -345,11 +330,7 @@ footer .footer-bottom {
   border-radius: 8px;
   padding-right: 2rem;
 }
-.section-banner .section-services .list-services .service-item .service-title {
-  font-size: 14px;
-}
 .section-banner .section-services .list-services .service-item .service-description {
-  font-size: 12px;
   line-height: 18px;
   color: #a8a8a8;
 }
@@ -378,7 +359,6 @@ footer .footer-bottom {
 }
 .section-collections .collection-content .collection-title {
   color: #ffffff;
-  font-size: 24px;
   font-weight: 400;
   line-height: 35px;
 }
@@ -421,13 +401,11 @@ footer .footer-bottom {
 }
 .section-reason .list-reason .reason-item .reason-service {
   margin-top: 3rem;
-  font-size: 16px;
   color: #333333;
 }
 .section-reason .list-reason .reason-item .reason-description {
   margin-top: 1.5rem;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .section-contact {
@@ -454,7 +432,6 @@ footer .footer-bottom {
   z-index: 1;
 }
 .section-contact .contact-content .contact-description {
-  font-size: 24px;
   line-height: 36px;
   color: #ffffff;
 }
@@ -489,7 +466,6 @@ h6 {
 
 .section-title {
   font-weight: 300;
-  font-size: 32px;
   line-height: 48px;
   text-align: center;
 }

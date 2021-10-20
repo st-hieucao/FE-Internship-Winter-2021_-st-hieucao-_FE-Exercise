@@ -33,13 +33,13 @@
   }
   .card-name {
     font-weight: 300;
-    font-size: 16px;
+    font-size: map-get($color, "ls");
   }
   .card-prices {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: map-get($color, "xl");
     .price {
       color: map-get($color, "black-midnight");
     }

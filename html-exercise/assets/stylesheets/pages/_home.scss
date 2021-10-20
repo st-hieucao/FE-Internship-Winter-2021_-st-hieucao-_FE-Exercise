@@ -23,14 +23,14 @@
     transform: translateY(-50%);
     z-index: 1;
     .banner-title {
-      font-size: 72px;
+      font-size: map-get($color, "xxxxxl");
       color: map-get($color, "white-snow");
       line-height: 80px;
     }
     .banner-button {
       margin-top: 2rem;
       font-weight: bold;
-      font-size: 24px;
+      font-size: map-get($color, "xxl");
       color: map-get($color, "white-snow");
       text-decoration: underline;
       display: flex;
@@ -72,10 +72,10 @@
           padding-right: 2rem;
         }
         .service-title {
-          font-size: 14px;
+          font-size: map-get($color, "normal");
         }
         .service-description {
-          font-size: 12px;
+          font-size: map-get($color, "xxs");
           line-height: 18px;
           color: map-get($color, "gray-metal");
         }
@@ -105,7 +105,7 @@
     z-index: 1;
     .collection-title {
       color: map-get($color, "white-snow");
-      font-size: 24px;
+      font-size: map-get($color, "xxl");
       font-weight: 400;
       line-height: 35px;
     }
@@ -145,13 +145,13 @@
       }
       .reason-service {
         margin-top: 3rem;
-        font-size: 16px;
+        font-size: map-get($color, "ls");
         color: map-get($color, "black-midnight");
       }
       .reason-description {
         margin-top: 1.5rem;
         font-weight: 500;
-        font-size: 14px;
+        font-size: map-get($color, "normal");
       }
     }
   }
@@ -178,7 +178,7 @@
     width: 100%;
     z-index: 1;
     .contact-description {
-      font-size: 24px;
+      font-size: map-get($color, "xxl");
       line-height: 36px;
       color: map-get($color, "white-snow");
     }

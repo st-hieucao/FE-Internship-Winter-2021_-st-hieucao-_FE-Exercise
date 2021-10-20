@@ -6,7 +6,7 @@
 body {
   font-family: $font-body;
   font-style: normal;
-  font-size: 14px;
+  font-size: map-get($color, "normal");
   font-weight: 400;
   color: map-get($color, "gray-bold");
 }

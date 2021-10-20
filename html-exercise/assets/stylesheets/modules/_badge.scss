@@ -2,7 +2,7 @@
   border-radius: 20px;
   padding: 10px 10px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: map-get($color, "xxs");
   text-align: center;
   &.badge-danger {
     color: map-get($color, "white-snow");

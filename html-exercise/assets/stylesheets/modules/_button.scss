@@ -1,6 +1,6 @@
 .btn {
   font-weight: bold;
-  font-size: 13px;
+  font-size: map-get($color, "sm");
   text-align: center;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -26,11 +26,5 @@
       transition: 0.3s;
       border: 1px solid map-get($color, "primary");
     }
-  }
-  &.btn-primary {
-    background: map-get($color, "primary");
-  }
-  &.btn-primary {
-    background: map-get($color, "primary");
   }
 }
