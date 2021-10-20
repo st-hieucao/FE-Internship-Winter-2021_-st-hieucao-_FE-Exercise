@@ -10,13 +10,12 @@ header {
   align-items: center;
   color: #ffffff;
 }
+.header-image {
+  padding-right: 1rem;
+}
 .nav-list {
   display: flex;
   align-items: center;
-}
-
-.header-image {
-  padding-right: 1rem;
 }
 .nav-list .nav-item {
   padding: 0 4rem;
@@ -30,10 +29,10 @@ header {
   display: flex;
   align-items: center;
 }
-.list-options .list-item {
+.list-options .option-item {
   padding: 0 1rem;
 }
-.list-options .list-item .list-link {
+.list-options .option-item .list-link {
   font-size: 16px;
   color: #ffffff;
 }
@@ -105,47 +104,52 @@ header {
   width: 77.5%;
   display: flex;
 }
-.list-services .list-item {
+.list-services .service-item {
   padding-right: 3rem;
   display: flex;
   flex: 1;
 }
-.list-services .list-item .service-icon {
+.list-services .service-item .service-icon {
   height: 36px;
   border-radius: 8px;
   padding-right: 2rem;
 }
-.service-content .service-title {
+.list-services .service-item .service-title {
   font-size: 14px;
 }
-.service-content .service-description {
+.list-services .service-item .service-description {
   font-size: 12px;
   line-height: 18px;
   color: #a8a8a8;
 }
 /* ------------- COLLECTIONS */
-.section-colections {
+.section-collections {
   margin: 3rem auto;
 }
-.list-colections .list-item .badge {
+.list-collections .collection-item .badge {
   position: absolute;
-  top: 30%;
-  left: 45px;
+  top: 35%;
+  left: 40px;
   z-index: 1;
 }
-.colection-content {
+.list-collections .collection-item .collection-content {
   position: absolute;
-  top: 45%;
-  left: 45px;
-  padding-right: 70px;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  padding: 0 40px 53px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   z-index: 1;
 }
-.colection-content .colection-title {
+.list-collections .collection-item .collection-title {
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
-  min-height: 120px;
 }
 /* ----------  PRODUCTS  */
 .section-products {
@@ -163,14 +167,18 @@ header {
 .section-reason .list-reason {
   margin-top: 4rem;
 }
-.list-reason .list-item {
+.list-reason .reason-item {
   cursor: pointer;
 }
-.list-reason .list-item:hover .reason-service {
+.list-reason .reason-item .reason-title {
+  margin-top: 4rem;
+}
+
+.list-reason .reason-item:hover .reason-title {
   color: #fbb03b;
   transition: 0.3s;
 }
-.list-reason .list-item .reason-icon {
+.list-reason .reason-item .reason-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,12 +189,12 @@ header {
   background: #ffffff;
   text-align: center;
 }
-.list-reason .list-item .reason-service {
+.list-reason .reason-item .reason-service {
   margin-top: 3rem;
   font-size: 16px;
   color: #333333;
 }
-.list-reason .list-item .reason-description {
+.list-reason .reason-item .reason-description {
   margin-top: 1.5rem;
   font-weight: 500;
   font-size: 14px;
@@ -254,9 +262,7 @@ footer .footer-top {
   font-family: Helvetica;
   font-size: 19px;
   color: #ffffff;
-}
-.footer-logo .footer-image {
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .footer-top .about-us .footer-description {
   color: #ffffff;
@@ -268,23 +274,22 @@ footer .footer-top {
   margin-left: -2rem;
   margin-top: 4rem;
 }
-.about-us .list-media .list-item {
+.about-us .list-media .media-item {
   padding-left: 2rem;
 }
 .footer-top .list-info {
   display: flex;
   justify-content: space-between;
 }
-
 .list-info .title {
   font-size: 16px;
   color: #ffffff;
 }
-.list-info .list-item .list-subinfo {
-  margin-top: 2.5rem;
-}
 .list-subinfo .list-item {
   margin-top: 1.5rem;
+}
+.list-info .info-item .list-subinfo {
+  margin-top: 2.5rem;
 }
 .list-subinfo .list-item .list-item-link {
   color: #ffffff;
