@@ -115,7 +115,6 @@ header .list-options .option-item {
 }
 header .list-options .option-item .list-link {
   font-size: 16px;
-  color: #ffffff;
 }
 
 footer {
@@ -359,21 +358,15 @@ footer .footer-bottom {
 }
 .section-collections .badge {
   position: absolute;
-  top: 35%;
-  left: 40px;
+  top: 30%;
+  left: 45px;
   z-index: 1;
 }
 .section-collections .collection-content {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50%;
-  width: 100%;
-  padding: 0 40px 53px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  top: 45%;
+  left: 45px;
+  padding-right: 70px;
   z-index: 1;
 }
 .section-collections .collection-content .collection-title {
@@ -381,6 +374,7 @@ footer .footer-bottom {
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
+  min-height: 120px;
 }
 
 .section-products {
@@ -401,12 +395,9 @@ footer .footer-bottom {
 .section-reason .list-reason .reason-item {
   cursor: pointer;
 }
-.section-reason .list-reason .reason-item:hover .reason-title {
+.section-reason .list-reason .reason-item:hover .reason-service {
   color: #fbb03b;
   transition: 0.3s;
-}
-.section-reason .list-reason .reason-item .reason-title {
-  margin-top: 4rem;
 }
 .section-reason .list-reason .reason-item .reason-icon {
   display: flex;
@@ -498,4 +489,4 @@ h6 {
   color: #fbb03b;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=all.map */

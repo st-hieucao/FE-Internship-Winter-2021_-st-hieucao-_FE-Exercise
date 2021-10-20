@@ -1,20 +1,20 @@
 footer {
-  background: map-get($color, "primary-color");
+  background: map-get($color, "primary");
   .footer-top {
-    border-bottom: 1px solid map-get($color, "white-color");
+    border-bottom: 1px solid map-get($color, "white-snow");
     padding: 3rem 0;
     .footer-logo {
       display: flex;
       align-items: center;
       .footer-title {
         font-family: Helvetica;
-        font-size: 19px;
-        color: map-get($color, "white-color");
+        font-size: map-get($font-size, "xlg");
+        color: map-get($color, "white-snow");
         padding-left: 1rem;
       }
     }
     .footer-description {
-      color: map-get($color, "white-color");
+      color: map-get($color, "white-snow");
       margin-top: 2rem;
       padding-right: 150px;
     }
@@ -22,7 +22,7 @@ footer {
       display: flex;
       margin-left: -2rem;
       margin-top: 4rem;
-      .list-item {
+      .media-item {
         padding-left: 2rem;
       }
     }
@@ -30,10 +30,10 @@ footer {
       display: flex;
       justify-content: space-between;
       .title {
-        font-size: 16px;
-        color: map-get($color, "white-color");
+        font-size: map-get($font-size, "ls");
+        color: map-get($color, "white-snow");
       }
-      .list-item {
+      .info-item {
         .list-subinfo {
           margin-top: 2.5rem;
           .list-item{
@@ -41,7 +41,7 @@ footer {
           }
         }
         .list-item-link {
-          color: map-get($color, "white-color");
+          color: map-get($color, "white-snow");
         }
       }
     }
@@ -49,6 +49,6 @@ footer {
   .footer-bottom {
     text-align: center;
     padding: 1.5rem 0;
-    color: map-get($color, "white-color");
+    color: map-get($color, "white-snow");
   }
 }

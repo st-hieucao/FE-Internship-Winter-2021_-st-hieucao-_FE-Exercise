@@ -4,33 +4,33 @@
   text-align: center;
   text-transform: uppercase;
   padding: 10px 20px;
-  color: map-get($color, "black-color");
+  color: map-get($color, "black-midnight");
   border: none;
   border-radius: 33px;
   outline: none;
   cursor: pointer;
   &.btn-primary {
-    background: map-get($color, "primary-color");
+    background: map-get($color, "primary");
   }
   &.btn-secondary {
-    background: map-get($color, "white-color");
+    background: map-get($color, "white-snow");
     &:hover {
-      background: map-get($color, "primary-color");
+      background: map-get($color, "primary");
       transition: 0.3s;
     }
   }
   &.btn-outline {
     border: 1px solid map-get($color, "gray-light");
     &:hover {
-      background: map-get($color, "primary-color");
+      background: map-get($color, "primary");
       transition: 0.3s;
-      border: 1px solid map-get($color, "primary-color");
+      border: 1px solid map-get($color, "primary");
     }
   }
   &.btn-primary {
-    background: map-get($color, "primary-color");
+    background: map-get($color, "primary");
   }
   &.btn-primary {
-    background: map-get($color, "primary-color");
+    background: map-get($color, "primary");
   }
 }

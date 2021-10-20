@@ -1,26 +1,30 @@
 $color: (
-  primary-color: #fbb03b,
-  secondary-color: #fff3df,
-  white-color: #ffffff,
-  red-color: #ff0000,
-  black-color: #333333,
-
+  primary: #fbb03b,
+  secondary: #fff3df,
+  white-snow: #ffffff,
+  red-fire: #ff0000,
+  black-midnight: #333333,
   gray-fog: #f6f6f6,
   gray-light: #c4c4c4,
   gray-cloudy: #cecece,
   gray-mouse: #ababab,
   gray-metal: #a8a8a8,
-  gray-bold: #808080,
+  gray-bold: #808080
 );
-
 $font-size: (
   xs: 11px,
+  xxs: 12px,
   sm: 13px,
-  normal: 16px,
+  normal: 14px,
+  ls: 16px,
   lg: 18px,
+  xlg: 19px,
   xl: 20px,
   xxl: 24px,
   xxxl: 30px,
+  xxxxl: 72px,
 );
-
 $font-body: Poppins, sans-serif;
+$space: (
+  xs: 0.625rem
+)

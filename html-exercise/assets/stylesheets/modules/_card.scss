@@ -1,4 +1,4 @@
-.card-colection {
+.card-collection {
   position: relative;
   width: 100%;
   height: 100%;
@@ -9,16 +9,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: map-get($color, "black-color");
+    background: map-get($color, "black-midnight");
     opacity: 0.5;
   }
-  .colection-image {
+  .card-image {
     width: 100%;
     height: 100%;
   }
 }
 
-.card {
+.card-product {
   .card-image {
     position: relative;
     img {
@@ -41,10 +41,10 @@
     justify-content: space-between;
     font-size: 20px;
     .price {
-      color: map-get($color, "black-color");
+      color: map-get($color, "black-midnight");
     }
     .new-price {
-      color: map-get($color, "red-color");
+      color: map-get($color, "red-fire");
     }
     .old-price {
       color: map-get($color, "gray-cloudy");

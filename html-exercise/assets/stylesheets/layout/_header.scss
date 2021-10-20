@@ -6,7 +6,7 @@ header {
   .header-logo {
     display: flex;
     align-items: center;
-    color: map-get($color, "white-color");
+    color: map-get($color, "white-snow");
     .header-image {
       padding-right: 1rem;
     }
@@ -19,18 +19,18 @@ header {
       .nav-link {
         font-weight: bold;
         font-size: 18px;
-        color: map-get($color, "primary-color");
+        color: map-get($color, "primary");
       }
     }
   }
   .list-options {
     display: flex;
     align-items: center;
-    .list-item {
+    .option-item {
       padding: 0 1rem;
       .list-link {
         font-size: 16px;
-        color: map-get($color, "white");
+        color: map-get($color, "white-snow");
       }
     }
   }

@@ -5,7 +5,7 @@
   font-size: 12px;
   text-align: center;
   &.badge-danger {
-    color: map-get($color, "white-color");
-    background: map-get($color, "red-color");
+    color: map-get($color, "white-snow");
+    background: map-get($color, "red-fire");
   }
 }

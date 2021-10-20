@@ -24,14 +24,14 @@
     z-index: 1;
     .banner-title {
       font-size: 72px;
-      color: map-get($color, "white-color");
+      color: map-get($color, "white-snow");
       line-height: 80px;
     }
     .banner-button {
       margin-top: 2rem;
       font-weight: bold;
       font-size: 24px;
-      color: map-get($color, "white-color");
+      color: map-get($color, "white-snow");
       text-decoration: underline;
       display: flex;
       .banner-button-icon {
@@ -39,8 +39,8 @@
         height: 36px;
         border-radius: 50%;
         margin-right: 2rem;
-        background: map-get($color, "primary-color");
-        color: map-get($color, "white-color");
+        background: map-get($color, "primary");
+        color: map-get($color, "white-snow");
         display: flex;
         align-items: center;
         justify-content: center;
@@ -54,7 +54,7 @@
     width: 78%;
     height: 125px;
     border-radius: 0px 70px 0px 0px;
-    background: map-get($color, "white-color");
+    background: map-get($color, "white-snow");
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -62,7 +62,7 @@
     .list-services {
       width: 77.5%;
       display: flex;
-      .list-item {
+      .service-item {
         padding-right: 3rem;
         display: flex;
         flex: 1;
@@ -83,26 +83,31 @@
     }
   }
 }
-.section-colections {
+.section-collections {
   margin: 3rem auto;
   .badge {
     position: absolute;
-    top: 30%;
-    left: 45px;
+    top: 35%;
+    left: 40px;
     z-index: 1;
   }
-  .colection-content {
+  .collection-content {
     position: absolute;
-    top: 45%;
-    left: 45px;
-    padding-right: 70px;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    padding: 0 40px 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     z-index: 1;
-    .colection-title {
-      color: map-get($color, "white-color");
+    .collection-title {
+      color: map-get($color, "white-snow");
       font-size: 24px;
       font-weight: 400;
       line-height: 35px;
-      min-height: 120px;
     }
   }
 }
@@ -118,11 +123,14 @@
   background: map-get($color, "gray-fog");
   .list-reason {
     margin-top: 4rem;
-    .list-item {
+    .reason-item {
       cursor: pointer;
-      &:hover .reason-service {
-        color: map-get($color, "primary-color");
+      &:hover .reason-title {
+        color: map-get($color, "primary");
         transition: 0.3s;
+      }
+      .reason-title {
+        margin-top: 4rem;
       }
       .reason-icon {
         display: flex;
@@ -132,13 +140,13 @@
         width: 70px;
         line-height: 70px;
         border-radius: 10px;
-        background: map-get($color, "white-color");
+        background: map-get($color, "white-snow");
         text-align: center;
       }
       .reason-service {
         margin-top: 3rem;
         font-size: 16px;
-        color: map-get($color, "black-color");
+        color: map-get($color, "black-midnight");
       }
       .reason-description {
         margin-top: 1.5rem;
@@ -172,7 +180,7 @@
     .contact-description {
       font-size: 24px;
       line-height: 36px;
-      color: map-get($color, "white-color");
+      color: map-get($color, "white-snow");
     }
     .form {
       display: flex;
@@ -181,7 +189,7 @@
       padding: 0 10px;
       .input {
         width: 100%;
-        background: map-get($color, "white-color");
+        background: map-get($color, "white-snow");
         padding: 1rem 2rem;
         border-radius: 61px;
         border: none;
