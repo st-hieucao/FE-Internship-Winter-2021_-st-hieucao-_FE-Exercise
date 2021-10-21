@@ -244,21 +244,51 @@
       margin-top: 0;
     }
   }
+  .section-reason{
+    padding: 1.5rem 0;
+    .list-reason{
+      margin-top: 1rem;
+      padding: 0 10px;
+    }
+    .reason-item{
+      display: flex;
+      margin-bottom: .5rem;
+      .reason-icon{
+        min-width: 68px;
+      }
+      .reason-content{
+        padding-left: 1rem;
+        padding-top: .5rem;
+        .reason-title{
+          margin: 0;
+          font-size: map-get($font-size, "xxs");
+        }
+        .reason-description{
+          margin-top: .5rem;
+          font-size: map-get($font-size , "xss");
+        }
+      }
+    }
+  }
   .section-contact{
     .contact-content{
       .contact-description{
         font-size: 14px;
         line-height: 21px;
         padding-right: 40%;
+        padding-left: 10px;
       }
       .form{
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 1rem;
         .input{
           padding: 8px 1rem;
         }
         button{
-          margin: 0;
+          margin: 1rem 0;
+          padding: 10px 20px;
+          font-weight: bold;
         }
       }
     }
