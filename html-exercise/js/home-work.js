@@ -1,36 +1,40 @@
 // ------------------- BAI1
-var mang = [
+var arrayNumbers = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 ];
 
-const oddTotals = (arr) => {
-  let newArr = arr.filter((item) => item % 2 === 1);
-  return newArr.reduce((x, sum) => x + sum, 0);
-};
-console.log(oddTotals(mang));
+function getOddTotalsInArray(arr) {
+  var newArr = arr.filter(function (item) {
+    item % 2 === 1;
+  });
+  return newArr.reduce(function (x, sum) {
+    x + sum;
+  }, 0);
+}
+console.log(getOddTotalsInArray(arrayNumbers));
 
 // ------------------- BAI2
-const cutString = (string) => {
+function cutString(string) {
   if (string.length > 15) {
-    let firstTenCharacter = string.slice(0, 10);
-    return `${string}${firstTenCharacter}`;
+    var firstTenCharacter = string.slice(0, 10);
+    return firstTenCharacter + "...";
   }
   return string;
-};
+}
 console.log(cutString("caokhahieucaokhahieu"));
 
 // ------------------- BAI3
-const capitalizeFirstLetter = (string) => {
-  let firstCharacter = string.slice(0, 1);
-  let restCharacter = string.slice(1, string.length);
-  return `${firstCharacter.toUpperCase()}${restCharacter.toLowerCase()}`;
-};
-console.log(capitalizeFirstLetter("caoKHAHIEU"));
+function capitalizeFirstvarter(string) {
+  var firstCharacter = string.slice(0, 1);
+  var restCharacter = string.slice(1);
+  return firstCharacter.toUpperCase() + restCharacter.toLowerCase();
+}
+console.log(capitalizeFirstvarter("caoKHAHIEU"));
 
 // ------------------- BAI4
-const getMinNumber = (arr) => {
+function getMinNumber(arr) {
   return Math.min(...arr);
-};
+}
 console.log(getMinNumber([1, 2, 3, 4, 5, 7]));
 
 // ------------------- BAI5
@@ -39,7 +43,7 @@ function Student(name, age, school) {
   this.age = age;
   this.school = school;
 }
-const students = [
+var students = [
   new Student("John", 26, "Cambridge"),
   new Student("Mark", 30, "Oxford"),
   new Student("Bill", 28, "Havard"),
@@ -56,17 +60,17 @@ Student.prototype.coding = function () {
 students[0].coding();
 
 // ------------------- BAI6
-const findRepeatNumber = (arr) => {
-  return arr.filter((item, index) => arr.indexOf(item) !== index);
-};
-console.log(findRepeatNumber([1, 1, 2, 2, 3, 3, 4, 4, 5]));
+function findDuplicateNumberOf2Array(arr1, arr2) {
+  return arr1.filter((item) => arr2.indexOf(item) != -1);
+}
+console.log(findDuplicateNumberOf2Array([1, 2, 3, 4, 5], [1, 2, 3]));
 
 // ------------------- BAI7
-const sumCharacterNumber = (number) => {
-  let numberCharacter = number.toString().split("");
+function getTotalDigit(number) {
+  var numberCharacter = number.toString().split("");
   return numberCharacter.reduce(
     (item, sum) => parseInt(item) + parseInt(sum),
     0
   );
-};
-console.log(sumCharacterNumber(1234));
+}
+console.log(getTotalDigit(1234));
