@@ -10,7 +10,7 @@ console.log(getTotalNumberByEachCase(10, 5));
 //bai2
 const calculateDifferenceWith19ByEachCase = (a) => {
   if (a > 19) {
-    return (19 - a) * 3;
+    return (a - 19) * 3;
   } else {
     return 19 - a;
   }

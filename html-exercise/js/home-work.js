@@ -33,7 +33,14 @@ console.log(capitalizeFirstvarter("caoKHAHIEU"));
 
 // ------------------- BAI4
 function getMinNumber(arr) {
-  return Math.min(...arr);
+  var len = arr.length;
+  var result = 0;
+  while (len--) {
+    if (arr[len] < result) {
+      result = arr[len];
+    }
+  }
+  return result;
 }
 console.log(getMinNumber([1, 2, 3, 4, 5, 7]));
 
@@ -61,16 +68,18 @@ students[0].coding();
 
 // ------------------- BAI6
 function findDuplicateNumberOf2Array(arr1, arr2) {
-  return arr1.filter((item) => arr2.indexOf(item) != -1);
+  return arr1.filter(function (item) {
+    console.log(arr2.indexOf(item) !== -1);
+    return arr2.indexOf(item) !== -1;
+  });
 }
 console.log(findDuplicateNumberOf2Array([1, 2, 3, 4, 5], [1, 2, 3]));
 
 // ------------------- BAI7
 function getTotalDigit(number) {
   var numberCharacter = number.toString().split("");
-  return numberCharacter.reduce(
-    (item, sum) => parseInt(item) + parseInt(sum),
-    0
-  );
+  return numberCharacter.reduce(function (item, sum) {
+    return parseInt(item) + parseInt(sum);
+  }, 0);
 }
 console.log(getTotalDigit(1234));
