@@ -23,17 +23,18 @@
     transform: translateY(-50%);
     z-index: 1;
     .banner-title {
-      font-size: map-get($color, "xxxxxl");
+      font-size: map-get($font-size, "xxxxxl");
       color: map-get($color, "white-snow");
       line-height: 80px;
     }
     .banner-button {
       margin-top: 2rem;
       font-weight: bold;
-      font-size: map-get($color, "xxl");
+      font-size: map-get($font-size, "xxl");
       color: map-get($color, "white-snow");
       text-decoration: underline;
       display: flex;
+      align-items: center;
       .banner-button-icon {
         width: 36px;
         height: 36px;
@@ -41,9 +42,7 @@
         margin-right: 2rem;
         background: map-get($color, "primary");
         color: map-get($color, "white-snow");
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
       }
     }
   }
@@ -72,10 +71,10 @@
           padding-right: 2rem;
         }
         .service-title {
-          font-size: map-get($color, "normal");
+          font-size: map-get($font-size, "normal");
         }
         .service-description {
-          font-size: map-get($color, "xxs");
+          font-size: map-get($font-size, "xxs");
           line-height: 18px;
           color: map-get($color, "gray-metal");
         }
@@ -85,6 +84,9 @@
 }
 .section-collections {
   margin: 3rem auto;
+  .list-collections{
+    overflow: hidden;
+  }
   .badge {
     position: absolute;
     top: 35%;
@@ -105,7 +107,7 @@
     z-index: 1;
     .collection-title {
       color: map-get($color, "white-snow");
-      font-size: map-get($color, "xxl");
+      font-size: map-get($font-size, "xxl");
       font-weight: 400;
       line-height: 35px;
     }
@@ -133,9 +135,7 @@
         margin-top: 4rem;
       }
       .reason-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         height: 70px;
         width: 70px;
         line-height: 70px;
@@ -145,13 +145,13 @@
       }
       .reason-service {
         margin-top: 3rem;
-        font-size: map-get($color, "ls");
+        font-size: map-get($font-size, "ls");
         color: map-get($color, "black-midnight");
       }
       .reason-description {
         margin-top: 1.5rem;
         font-weight: 500;
-        font-size: map-get($color, "normal");
+        font-size: map-get($font-size, "normal");
       }
     }
   }
@@ -163,6 +163,8 @@
   width: 100%;
   position: relative;
   display: flex;
+  align-items: center;
+  z-index: 1;
   &::after {
     content: "";
     position: absolute;
@@ -178,14 +180,12 @@
     width: 100%;
     z-index: 1;
     .contact-description {
-      font-size: map-get($color, "xxl");
+      font-size: map-get($font-size, "xxl");
       line-height: 36px;
       color: map-get($color, "white-snow");
     }
     .form {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center;
       padding: 0 10px;
       .input {
         width: 100%;
@@ -198,6 +198,63 @@
       button {
         padding: 1rem 2rem;
         margin-left: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .section-banner{
+    .banner-content{
+      left: 24px;
+      .banner-title {
+        font-size: 48px;
+        line-height: 50px;
+      }
+      .banner-button{
+        margin-top: 1rem;
+        font-size: 14px;
+        .banner-button-icon{
+          width: 32px;
+          height: 32px;
+          margin-right: 1rem;
+        }
+      }
+    }
+    .section-services{
+      display: none;
+    }
+  }
+  .section-collections{
+    margin: 0;
+    .collection-item{
+      
+    }
+    .collection-content{
+      align-items: inherit;
+      width: 50%;
+      padding: 0 16px 16px;
+      .collection-title{
+        font-size: 14px;
+      }
+    }
+  }
+  .section-contact{
+    .contact-content{
+      .contact-description{
+        font-size: 14px;
+        line-height: 21px;
+        padding-right: 40%;
+      }
+      .form{
+        flex-direction: column;
+        align-items: flex-start;
+        .input{
+          padding: 8px 1rem;
+        }
+        button{
+          margin: 0;
+        }
       }
     }
   }

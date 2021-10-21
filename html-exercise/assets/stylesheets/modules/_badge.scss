@@ -1,11 +1,17 @@
 .badge {
   border-radius: 20px;
-  padding: 10px 10px;
+  padding: 6px 8px;
   font-weight: bold;
-  font-size: map-get($color, "xxs");
+  font-size: map-get($font-size, "xxs");
   text-align: center;
   &.badge-danger {
     color: map-get($color, "white-snow");
     background: map-get($color, "red-fire");
+  }
+}
+@media screen and (max-width: 480px){
+  .badge{
+    padding: 4px 8px;
+    font-size: 8px;
   }
 }

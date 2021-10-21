@@ -33,13 +33,13 @@
   }
   .card-name {
     font-weight: 300;
-    font-size: map-get($color, "ls");
+    font-size: map-get($font-size, "ls");
   }
   .card-prices {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: map-get($color, "xl");
+    font-size: map-get($font-size, "xl");
     .price {
       color: map-get($color, "black-midnight");
     }
@@ -51,3 +51,19 @@
     }
   }
 }
+// @media screen and (max-width: 480px){
+//   .card-product{
+//     .card-image{
+//       p{
+//         top: 10px;
+//         left: 10px;
+//       }
+//     }
+//     .card-name{
+//       font-size: 12px;
+//     }
+//     .card-prices{
+//       font-size: 12px;
+//     }
+//   }
+// }
