@@ -1,7 +1,7 @@
 /* ----------  HEADER*/
 header {
   position: absolute;
-  top: 55px;
+  top: 3.438rem;
   width: 100%;
   z-index: 1;
 }
@@ -22,7 +22,7 @@ header {
 }
 .nav-list .nav-item .nav-link {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fbb03b;
 }
 .list-options {
@@ -33,7 +33,7 @@ header {
   padding: 0 1rem;
 }
 .list-options .option-item .list-link {
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
 }
 /* ----------  BANNER*/
@@ -64,25 +64,24 @@ header {
   z-index: 1;
 }
 .banner-content .banner-title {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #ffffff;
-  line-height: 80px;
+  line-height: 5rem;
 }
 .banner-content .banner-button {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: underline;
   display: flex;
   margin-top: 2rem;
 }
 .banner-button-icon {
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
   margin-right: 2rem;
   background: #fbb03b;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,8 +91,8 @@ header {
   bottom: 0;
   left: 0;
   width: 78%;
-  height: 125px;
-  border-radius: 0px 70px 0px 0px;
+  height: 7.813rem;
+  border-radius: 0 4.375rem 0 0;
   background: #ffffff;
   display: flex;
   justify-content: flex-end;
@@ -110,16 +109,16 @@ header {
   flex: 1;
 }
 .list-services .service-item .service-icon {
-  height: 36px;
-  border-radius: 8px;
+  height: 2.25rem;
+  border-radius: 0.5rem;
   padding-right: 2rem;
 }
 .list-services .service-item .service-title {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .list-services .service-item .service-description {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   color: #a8a8a8;
 }
 /* ------------- COLLECTIONS */
@@ -129,7 +128,7 @@ header {
 .list-collections .collection-item .badge {
   position: absolute;
   top: 35%;
-  left: 40px;
+  left: 2.5rem;
   z-index: 1;
 }
 .list-collections .collection-item .collection-content {
@@ -138,7 +137,7 @@ header {
   left: 0;
   height: 50%;
   width: 100%;
-  padding: 0 40px 53px;
+  padding: 0 2.5rem 3.313rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,16 +146,16 @@ header {
 }
 .list-collections .collection-item .collection-title {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 2.188rem;
 }
 /* ----------  PRODUCTS  */
 .section-products {
   margin: 5rem auto;
 }
 .section-products .list-products {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 /* ---------- REASON */
 .section-reason {
@@ -182,28 +181,28 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
-  width: 70px;
-  line-height: 70px;
-  border-radius: 10px;
+  height: 4.375rem;
+  width: 4.375rem;
+  line-height: 4.375rem;
+  border-radius: 0.625rem;
   background: #ffffff;
   text-align: center;
 }
 .list-reason .reason-item .reason-service {
   margin-top: 3rem;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333333;
 }
 .list-reason .reason-item .reason-description {
   margin-top: 1.5rem;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* ---------------- CONTACT */
 .section-contact {
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
-  height: 240px;
+  height: 15rem;
   width: 100%;
   position: relative;
   display: flex;
@@ -224,21 +223,21 @@ header {
   z-index: 1;
 }
 .contact-content .contact-description {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   color: #ffffff;
 }
 .contact-content .form {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 .contact-content .form .input {
   width: 100%;
   background: #ffffff;
   padding: 1rem 2rem;
-  border-radius: 61px;
+  border-radius: 3.813rem;
   border: none;
   outline: none;
 }
@@ -251,7 +250,7 @@ footer {
   background: #fbb03b;
 }
 footer .footer-top {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 0.063rem solid #ffffff;
   padding: 3rem 0;
 }
 .footer-logo {
@@ -260,21 +259,21 @@ footer .footer-top {
 }
 .footer-logo .footer-title {
   font-family: Helvetica;
-  font-size: 19px;
+  font-size: 1.188rem;
   color: #ffffff;
   padding-left: 1rem;
 }
-.footer-top .about-us .footer-description {
+.footer-top .about-us .about-us-description {
   color: #ffffff;
   margin-top: 2rem;
-  padding-right: 150px;
+  width: 70%;
 }
-.footer-top .about-us .list-media {
+.footer-top .about-us .list-social {
   display: flex;
   margin-left: -2rem;
   margin-top: 4rem;
 }
-.about-us .list-media .media-item {
+.about-us .list-social .social-item {
   padding-left: 2rem;
 }
 .footer-top .list-info {
@@ -282,16 +281,16 @@ footer .footer-top {
   justify-content: space-between;
 }
 .list-info .title {
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
 }
-.list-subinfo .list-item {
+.list-subinfo .subinfo-item {
   margin-top: 1.5rem;
 }
 .list-info .info-item .list-subinfo {
   margin-top: 2.5rem;
 }
-.list-subinfo .list-item .list-item-link {
+.list-subinfo .subinfo-item .subinfo-link {
   color: #ffffff;
 }
 .footer-bottom {
