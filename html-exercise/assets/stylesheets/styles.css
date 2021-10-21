@@ -90,12 +90,12 @@ li {
     padding: 4px;
   }
 
-  .col-sm-6 {
+  .col-ls-6 {
     width: 50%;
     padding: 4px;
   }
 
-  .col-sm-3 {
+  .col-ls-3 {
     width: 50%;
     padding: 4px;
   }
@@ -299,6 +299,18 @@ footer .footer-bottom {
   color: #cecece;
 }
 
+@media screen and (max-width: 480px) {
+  .card-product .card-image .badge {
+    top: 10px;
+    left: 10px;
+  }
+  .card-product .card-name {
+    font-size: 12px;
+  }
+  .card-product .card-prices {
+    font-size: 12px;
+  }
+}
 .section-banner {
   background: url("../images/banner.png") no-repeat;
   background-size: cover;
@@ -541,6 +553,10 @@ footer .footer-bottom {
   }
   .section-collections .collection-content .collection-title {
     font-size: 14px;
+  }
+
+  .section-products .list-products {
+    margin-top: 0;
   }
 
   .section-contact .contact-content .contact-description {

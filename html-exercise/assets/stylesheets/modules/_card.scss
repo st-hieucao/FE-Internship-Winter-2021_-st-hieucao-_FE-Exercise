@@ -51,19 +51,19 @@
     }
   }
 }
-// @media screen and (max-width: 480px){
-//   .card-product{
-//     .card-image{
-//       p{
-//         top: 10px;
-//         left: 10px;
-//       }
-//     }
-//     .card-name{
-//       font-size: 12px;
-//     }
-//     .card-prices{
-//       font-size: 12px;
-//     }
-//   }
-// }
+@media screen and (max-width: 480px){
+  .card-product{
+    .card-image{
+      .badge{
+        top: 10px;
+        left: 10px;
+      }
+    }
+    .card-name{
+      font-size: 12px;
+    }
+    .card-prices{
+      font-size: 12px;
+    }
+  }
+}
