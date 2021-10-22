@@ -17,24 +17,23 @@ console.log(getOddTotalsInArray(arrayNumbers));
 function cutString(string) {
   if (string.length > 15) {
     var firstTenCharacter = string.slice(0, 10);
-    return firstTenCharacter + "...";
+    var dots = "...";
+    return firstTenCharacter.concat(firstTenCharacter, dots);
   }
   return string;
 }
 console.log(cutString("caokhahieucaokhahieu"));
 
 // ------------------- BAI3
-function capitalizeFirstvarter(string) {
-  var firstCharacter = string.slice(0, 1);
-  var restCharacter = string.slice(1);
-  return firstCharacter.toUpperCase() + restCharacter.toLowerCase();
+function capitalizeFirstLetter(string) {
+  return string.slice(0, 1).toUpperCase() + string.slice(1).toLowerCase();
 }
-console.log(capitalizeFirstvarter("caoKHAHIEU"));
+console.log(capitalizeFirstLetter("caoKHAHIEU"));
 
 // ------------------- BAI4
 function getMinNumber(arr) {
   var len = arr.length;
-  var result = 0;
+  var result = arr[0];
   while (len--) {
     if (arr[len] < result) {
       result = arr[len];
@@ -42,7 +41,7 @@ function getMinNumber(arr) {
   }
   return result;
 }
-console.log(getMinNumber([1, 2, 3, 4, 5, 7]));
+console.log(getMinNumber([1, 2, -9, 3, 4, 5, 7, -6]));
 
 // ------------------- BAI5
 function Student(name, age, school) {
