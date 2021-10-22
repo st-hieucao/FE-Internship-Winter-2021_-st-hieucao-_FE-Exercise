@@ -67,7 +67,7 @@
         flex: 1;
         .service-icon {
           height: 2.25rem;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           padding-right: 2rem;
         }
         .service-title {
@@ -86,7 +86,7 @@
   margin: 3rem auto;
   .list-collections {
     padding: 0 10px;
-    & > div{
+    & > div {
       margin-bottom: 8px;
     }
   }
@@ -297,7 +297,7 @@
         align-items: flex-start;
         margin-top: 1rem;
         .input {
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
         }
         button {
           margin: 1rem 0;

@@ -28,7 +28,7 @@
     p {
       position: absolute;
       top: 1.5rem;
-      left:1.125rem;
+      left: 1.125rem;
     }
   }
   .card-name {
@@ -60,7 +60,8 @@
         left: 0.625rem;
       }
     }
-    .card-name,.card-prices {
+    .card-name,
+    .card-prices {
       font-size: map-get($font-size, "xxs");
     }
   }
