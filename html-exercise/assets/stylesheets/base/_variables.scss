@@ -9,7 +9,7 @@ $color: (
   gray-cloudy: #cecece,
   gray-mouse: #ababab,
   gray-metal: #a8a8a8,
-  gray-bold: #808080
+  gray-bold: #808080,
 );
 $font-size: (
   xss: 10px,
@@ -17,14 +17,17 @@ $font-size: (
   xxs: 12px,
   sm: 13px,
   normal: 14px,
-  ls: 16px,
-  lg: 18px,
-  xlg: 19px,
-  xl: 20px,
-  xxl: 24px,
-  xxxl: 30px,
-  xxxxl: 32px,
-  xxxxxl: 72px,
+  lg: 16px,
+  xl: 18px,
+  xxl: 19px,
+  xxxl: 20px,
+  xxxxl: 24px,
+  xxxxxl: 30px,
+  xxxxxxl: 32px,
+  xxxxxxxl: 72px,
 );
 $font-body: Poppins, sans-serif;
-$space: 0.625rem
+$space: (
+  desk: 0.625rem,
+  mobi: 4px,
+);

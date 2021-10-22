@@ -1,22 +1,22 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -$space;
+  margin: 0 -0.625rem;
 }
 .col {
   width: 100%;
-  padding: 0 $space;
+  padding: 0 map-get($space, "desk");
 }
 .col-2 {
   width: 20%;
 }
 .col-3 {
   width: 25%;
-  padding: 0 $space;
+  padding: 0 map-get($space, "desk");
 }
 .col-6 {
   width: 50%;
-  padding: 0 $space;
+  padding: 0 map-get($space, "desk");
 }
 .container {
   padding: 0 10px;
@@ -25,24 +25,16 @@
   max-width: 1170px;
   z-index: 1;
 }
-@media screen and (max-width: 480px){
-  .row{
+@media screen and (max-width: 480px) {
+  .row {
     margin: 0 -4px;
   }
-  .col-lg-6{
-    width: 100%;
-    padding: 0 4px;
-  }
-  .col-ls-6{
+  .col-sm-3 {
     width: 50%;
-    padding: 0 4px;
+    padding: 0 map-get($space, "mobi");
   }
-  .col-ls-3{
-    width: 50%;
-    padding: 4px;
-  }
-  .col-sm-3{
+  .col-12 {
     width: 100%;
-    padding: 4px;
+    padding: 0 map-get($space, "mobi");
   }
 }

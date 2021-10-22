@@ -8,7 +8,7 @@ footer {
       align-items: center;
       .footer-title {
         font-family: Helvetica;
-        font-size: map-get($font-size, "xlg");
+        font-size: map-get($font-size, "xxxl");
         color: map-get($color, "white-snow");
         padding-left: 1rem;
       }
@@ -30,13 +30,13 @@ footer {
       display: flex;
       justify-content: space-between;
       .title {
-        font-size: map-get($font-size, "ls");
+        font-size: map-get($font-size, "lg");
         color: map-get($color, "white-snow");
       }
       .info-item {
         .list-subinfo {
           margin-top: 2.5rem;
-          .subinfo-item{
+          .subinfo-item {
             margin-top: 1.5rem;
           }
         }
@@ -52,26 +52,26 @@ footer {
     color: map-get($color, "white-snow");
   }
 }
-@media screen and (max-width: 480px){
-  footer{
-    .footer-top{
-      .about-us{
+@media screen and (max-width: 480px) {
+  footer {
+    .footer-top {
+      .about-us {
         padding: 0 10px;
-        .about-us-description{
+        .about-us-description {
           width: 90%;
           margin-top: 1rem;
         }
-        .list-media{
+        .list-media {
           display: none;
         }
       }
-      .list-info{
+      .list-info {
         flex-direction: column;
         padding: 0 10px;
         margin-top: 2rem;
-        .info-item{
+        .info-item {
           margin-bottom: 2rem;
-          .list-subinfo{
+          .list-subinfo {
             margin-top: 0;
           }
         }

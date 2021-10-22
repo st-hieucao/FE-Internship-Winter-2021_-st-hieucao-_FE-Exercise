@@ -33,13 +33,13 @@
   }
   .card-name {
     font-weight: 300;
-    font-size: map-get($font-size, "ls");
+    font-size: map-get($font-size, "lg");
   }
   .card-prices {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: map-get($font-size, "xl");
+    font-size: map-get($font-size, "xxxl");
     .price {
       color: map-get($color, "black-midnight");
     }
@@ -51,20 +51,17 @@
     }
   }
 }
-@media screen and (max-width: 480px){
-  .card-product{
+@media screen and (max-width: 480px) {
+  .card-product {
     margin-bottom: 1rem;
-    .card-image{
-      .badge{
+    .card-image {
+      .badge {
         top: 10px;
         left: 10px;
       }
     }
-    .card-name{
-      font-size: 12px;
-    }
-    .card-prices{
-      font-size: 12px;
+    .card-name,.card-prices {
+      font-size: map-get($font-size, "xxs");
     }
   }
 }
