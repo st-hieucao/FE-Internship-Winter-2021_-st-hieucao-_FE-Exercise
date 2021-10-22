@@ -1,6 +1,6 @@
 header {
   position: absolute;
-  top: 55px;
+  top: 3.438rem;
   width: 100%;
   z-index: 1000;
   .header-logo {
@@ -47,9 +47,9 @@ header {
 
 @media screen and (max-width: 480px) {
   header {
-    height: 70px;
-    line-height: 70px;
-    padding: 0 14px;
+    height: 4.375rem;
+    line-height: 4.375rem;
+    padding: 0 0.875rem;
     top: 0;
     background: map-get($color, "white-snow");
     .header-logo {

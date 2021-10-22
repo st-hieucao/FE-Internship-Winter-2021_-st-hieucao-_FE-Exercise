@@ -7,7 +7,7 @@
 body {
   font-family: Poppins, sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #808080;
 }
@@ -74,7 +74,7 @@ li {
 }
 
 .container {
-  padding: 0 10px;
+  padding: 0 0.625rem;
   margin: 0 auto;
   width: 100%;
   max-width: 1170px;
@@ -88,17 +88,17 @@ li {
 
   .col-sm-3 {
     width: 50%;
-    padding: 0 4px;
+    padding: 0 0.25rem;
   }
 
   .col-12 {
     width: 100%;
-    padding: 0 4px;
+    padding: 0 0.25rem;
   }
 }
 header {
   position: absolute;
-  top: 55px;
+  top: 3.438rem;
   width: 100%;
   z-index: 1000;
 }
@@ -122,7 +122,7 @@ header .nav-list .nav-item {
 }
 header .nav-list .nav-item .nav-link {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fbb03b;
 }
 header .header-options.header-options-mobile {
@@ -141,9 +141,9 @@ header .header-options .list-options .option-item .list-link {
 
 @media screen and (max-width: 480px) {
   header {
-    height: 70px;
-    line-height: 70px;
-    padding: 0 14px;
+    height: 4.375rem;
+    line-height: 4.375rem;
+    padding: 0 0.875rem;
     top: 0;
     background: #ffffff;
   }
@@ -187,7 +187,7 @@ footer .footer-top .footer-logo {
 }
 footer .footer-top .footer-logo .footer-title {
   font-family: Helvetica;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ffffff;
   padding-left: 1rem;
 }
@@ -209,7 +209,7 @@ footer .footer-top .list-info {
   justify-content: space-between;
 }
 footer .footer-top .list-info .title {
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
 }
 footer .footer-top .list-info .info-item .list-subinfo {
@@ -229,7 +229,7 @@ footer .footer-bottom {
 
 @media screen and (max-width: 480px) {
   footer .footer-top .about-us {
-    padding: 0 10px;
+    padding: 0 0.625rem;
   }
   footer .footer-top .about-us .about-us-description {
     width: 90%;
@@ -240,7 +240,7 @@ footer .footer-bottom {
   }
   footer .footer-top .list-info {
     flex-direction: column;
-    padding: 0 10px;
+    padding: 0 0.625rem;
     margin-top: 2rem;
   }
   footer .footer-top .list-info .info-item {
@@ -251,10 +251,10 @@ footer .footer-bottom {
   }
 }
 .badge {
-  border-radius: 20px;
-  padding: 6px 8px;
+  border-radius: 1.25rem;
+  padding: 0.25rem 0.5rem;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
 }
 .badge.badge-danger {
@@ -264,19 +264,19 @@ footer .footer-bottom {
 
 @media screen and (max-width: 480px) {
   .badge {
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     font-size: 8px;
   }
 }
 .btn {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.813rem;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   color: #333333;
   border: none;
-  border-radius: 33px;
+  border-radius: 2.063rem;
   outline: none;
   cursor: pointer;
 }
@@ -301,8 +301,8 @@ footer .footer-bottom {
 
 @media screen and (max-width: 480px) {
   .btn {
-    font-size: 10px;
-    padding: 6px 1rem;
+    font-size: 0.625rem;
+    padding: 0.375rem 1rem;
   }
 }
 .card-collection {
@@ -334,18 +334,18 @@ footer .footer-bottom {
 }
 .card-product .card-image p {
   position: absolute;
-  top: 24px;
-  left: 18px;
+  top: 1.5rem;
+  left: 1.125rem;
 }
 .card-product .card-name {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .card-product .card-prices {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .card-product .card-prices .price {
   color: #333333;
@@ -362,11 +362,11 @@ footer .footer-bottom {
     margin-bottom: 1rem;
   }
   .card-product .card-image .badge {
-    top: 10px;
-    left: 10px;
+    top: 0.625rem;
+    left: 0.625rem;
   }
   .card-product .card-name, .card-product .card-prices {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 h1,
@@ -381,8 +381,8 @@ h6 {
 
 .section-title {
   font-weight: 300;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 2rem;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -392,7 +392,7 @@ h6 {
 
 @media screen and (max-width: 480px) {
   .section-title {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 .section-banner {
@@ -418,14 +418,14 @@ h6 {
   z-index: 1;
 }
 .section-banner .banner-content .banner-title {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #ffffff;
   line-height: 5rem;
 }
 .section-banner .banner-content .banner-button {
   margin-top: 2rem;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: underline;
   display: flex;
@@ -470,10 +470,10 @@ h6 {
   padding-right: 2rem;
 }
 .section-banner .section-services .list-services .service-item .service-title {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .section-banner .section-services .list-services .service-item .service-description {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.125rem;
   color: #a8a8a8;
 }
@@ -508,7 +508,7 @@ h6 {
 }
 .section-collections .collection-content .collection-title {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.188rem;
 }
@@ -537,7 +537,7 @@ h6 {
 }
 .section-reason .list-reason .reason-item .reason-title {
   margin-top: 4rem;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333333;
 }
 .section-reason .list-reason .reason-item .reason-icon {
@@ -554,7 +554,7 @@ h6 {
 .section-reason .list-reason .reason-item .reason-description {
   margin-top: 1.5rem;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding-right: 1rem;
 }
 
@@ -584,7 +584,7 @@ h6 {
   z-index: 1;
 }
 .section-contact .contact-content .contact-description {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 2.25rem;
   color: #ffffff;
 }
@@ -674,11 +674,11 @@ h6 {
   }
   .section-reason .reason-item .reason-content .reason-title {
     margin: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .section-reason .reason-item .reason-content .reason-description {
     margin-top: 0.5rem;
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .section-products-today {

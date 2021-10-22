@@ -1,6 +1,6 @@
 .badge {
-  border-radius: 20px;
-  padding: 6px 8px;
+  border-radius: 1.25rem;
+  padding: 0.25rem .5rem;
   font-weight: bold;
   font-size: map-get($font-size, "xxs");
   text-align: center;
@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 480px){
   .badge{
-    padding: 4px 8px;
+    padding: 0.25rem .5rem;
     font-size: 8px;
   }
 }
