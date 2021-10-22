@@ -68,7 +68,6 @@ students[0].coding();
 // ------------------- BAI6
 function findDuplicateNumberOf2Array(arr1, arr2) {
   return arr1.filter(function (item) {
-    console.log(arr2.indexOf(item) !== -1);
     return arr2.indexOf(item) !== -1;
   });
 }

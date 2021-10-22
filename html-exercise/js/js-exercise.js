@@ -1,31 +1,31 @@
 //bai1
-const getTotalNumberByEachCase = (a, b) => {
+function getTotalNumberByEachCase(a, b) {
   if (a === b) {
     return (a + b) * 3;
   }
   return a + b;
-};
+}
 console.log(getTotalNumberByEachCase(10, 5));
 
 //bai2
-const calculateDifferenceWith19ByEachCase = (a) => {
+function calculateDifferenceWith19ByEachCase(a) {
   if (a > 19) {
     return (a - 19) * 3;
   } else {
     return 19 - a;
   }
-};
+}
 console.log(calculateDifferenceWith19ByEachCase(10));
 
 // bai3 & 4
-const findNumberDivisibleByRandomNumber = (number, randomNumber) => {
-  let results = [];
-  let characterNumber = number.split("");
-  let indexSecretNumber = characterNumber.indexOf("*");
+function findNumberDivisibleByRandomNumber(number, randomNumber) {
+  var results = [];
+  var characterNumber = number.split("");
+  var indexSecretNumber = characterNumber.indexOf("*");
 
   for (i = 0; i <= 9; i++) {
     characterNumber[indexSecretNumber] = i;
-    let newNumber = parseInt(characterNumber.join(""));
+    var newNumber = parseInt(characterNumber.join(""));
     if (newNumber % randomNumber === 0) {
       results.push(characterNumber.join(""));
     }
