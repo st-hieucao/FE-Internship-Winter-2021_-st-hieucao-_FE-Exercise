@@ -10,7 +10,7 @@ header {
     color: map-get($color, "white-snow");
     .header-image {
       padding-right: 1rem;
-      &.header-image-mobile{
+      &.header-image-mobile {
         display: none;
       }
     }
@@ -27,8 +27,8 @@ header {
       }
     }
   }
-  .header-options{
-    &.header-options-mobile{
+  .header-options {
+    &.header-options-mobile {
       display: none;
     }
     .list-options {
@@ -45,28 +45,41 @@ header {
   }
 }
 
-@media screen and (max-width: 480px){
-  header{
+@media screen and (max-width: 480px) {
+  header {
     height: 70px;
     line-height: 70px;
+    padding: 0 14px;
     top: 0;
-    background: map-get($color, 'white-snow');
-    .header-logo{
-      color: map-get($color, 'black-midnight');
-      font-size: map-get($font-size , 'normal' );
-        .header-image-mobile{
-          display: none;
-        
+    background: map-get($color, "white-snow");
+    .header-logo {
+      color: map-get($color, "black-midnight");
+      font-size: map-get($font-size, "normal");
+      .header-image{
+        display: none;
+        padding-right: 1rem;
+        &.header-image-mobile {
+          display: block;
+        }
       }
     }
-    .nav-list{
+    .nav-list {
       display: none;
     }
-    .header-options{
-      .header-options-mobile{
+    .header-options {
+      display: none;
+      &.header-options-mobile {
         display: block;
+      }
+      .list-options{
+        .option-item{
+          padding: 0;
+          margin-left: 1.5rem;
+          .list-link{
+            display: flex;
+          }
+        }
       }
     }
   }
 }
-

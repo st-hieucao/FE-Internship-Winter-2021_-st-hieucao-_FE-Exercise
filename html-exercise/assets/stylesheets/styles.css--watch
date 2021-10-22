@@ -155,7 +155,6 @@ header .header-options .list-options .option-item .list-link {
   header {
     height: 70px;
     line-height: 70px;
-    padding: 0 14px;
     top: 0;
     background: #ffffff;
   }
@@ -163,28 +162,14 @@ header .header-options .list-options .option-item .list-link {
     color: #333333;
     font-size: 14px;
   }
-  header .header-logo .header-image {
+  header .header-logo .header-image-mobile {
     display: none;
-    padding-right: 1rem;
-  }
-  header .header-logo .header-image.header-image-mobile {
-    display: block;
   }
   header .nav-list {
     display: none;
   }
-  header .header-options {
-    display: none;
-  }
-  header .header-options.header-options-mobile {
+  header .header-options .header-options-mobile {
     display: block;
-  }
-  header .header-options .list-options .option-item {
-    padding: 0;
-    margin-left: 1.5rem;
-  }
-  header .header-options .list-options .option-item .list-link {
-    display: flex;
   }
 }
 footer {
@@ -371,9 +356,6 @@ footer .footer-bottom {
 }
 
 @media screen and (max-width: 480px) {
-  .card-product {
-    margin-bottom: 1rem;
-  }
   .card-product .card-image .badge {
     top: 10px;
     left: 10px;
@@ -727,4 +709,4 @@ h6 {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css--watch.map */
