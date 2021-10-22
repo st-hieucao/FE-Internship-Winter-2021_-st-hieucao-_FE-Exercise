@@ -54,6 +54,7 @@ header {
     background: map-get($color, "white-snow");
     .header-logo {
       color: map-get($color, "black-midnight");
+      font-size:  map-get($font-size, "xxl");;
       .header-image{
         display: none;
         padding-right: 1rem;

@@ -52,7 +52,7 @@
     left: 0;
     width: 78%;
     height: 7.813rem;
-    border-radius: 0 4.375rem  4.375rem;
+    border-radius: 0 4.375rem 0 0;
     background: map-get($color, "white-snow");
     display: flex;
     justify-content: flex-end;
@@ -85,9 +85,9 @@
 .section-collections {
   margin: 3rem auto;
   .list-collections {
-    overflow: hidden;
-    .collection-item {
-      height: 100%;
+    padding: 0 10px;
+    & > div{
+      margin-bottom: 8px;
     }
   }
   .badge {
