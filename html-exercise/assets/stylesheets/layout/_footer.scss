@@ -13,10 +13,10 @@ footer {
         padding-left: 1rem;
       }
     }
-    .footer-description {
+    .about-us-description {
       color: map-get($color, "white-snow");
       margin-top: 2rem;
-      padding-right: 150px;
+      width: 70%;
     }
     .list-media {
       display: flex;
@@ -36,11 +36,11 @@ footer {
       .info-item {
         .list-subinfo {
           margin-top: 2.5rem;
-          .list-item{
+          .subinfo-item{
             margin-top: 1.5rem;
           }
         }
-        .list-item-link {
+        .subinfo-link {
           color: map-get($color, "white-snow");
         }
       }
@@ -53,5 +53,5 @@ footer {
   }
 }
 @media screen and (max-width: 480px){
-  
+
 }

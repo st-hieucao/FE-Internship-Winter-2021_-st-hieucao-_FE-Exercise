@@ -162,10 +162,10 @@ footer .footer-top .footer-logo .footer-title {
   color: #ffffff;
   padding-left: 1rem;
 }
-footer .footer-top .footer-description {
+footer .footer-top .about-us-description {
   color: #ffffff;
   margin-top: 2rem;
-  padding-right: 150px;
+  width: 70%;
 }
 footer .footer-top .list-media {
   display: flex;
@@ -186,10 +186,10 @@ footer .footer-top .list-info .title {
 footer .footer-top .list-info .info-item .list-subinfo {
   margin-top: 2.5rem;
 }
-footer .footer-top .list-info .info-item .list-subinfo .list-item {
+footer .footer-top .list-info .info-item .list-subinfo .subinfo-item {
   margin-top: 1.5rem;
 }
-footer .footer-top .list-info .info-item .list-item-link {
+footer .footer-top .list-info .info-item .subinfo-link {
   color: #ffffff;
 }
 footer .footer-bottom {
