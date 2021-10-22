@@ -17,18 +17,18 @@ console.log(getOddTotalsInArray(arrayNumbers));
 function cutString(string) {
   if (string.length > 15) {
     var firstTenCharacter = string.slice(0, 10);
-    var dots = "...";
+    var dots = '...';
     return firstTenCharacter.concat(firstTenCharacter, dots);
   }
   return string;
 }
-console.log(cutString("caokhahieucaokhahieu"));
+console.log(cutString('caokhahieucaokhahieu'));
 
 // ------------------- BAI3
 function capitalizeFirstLetter(string) {
   return string.slice(0, 1).toUpperCase() + string.slice(1).toLowerCase();
 }
-console.log(capitalizeFirstLetter("caoKHAHIEU"));
+console.log(capitalizeFirstLetter('caoKHAHIEU'));
 
 // ------------------- BAI4
 function getMinNumber(arr) {
@@ -50,17 +50,17 @@ function Student(name, age, school) {
   this.school = school;
 }
 var students = [
-  new Student("John", 26, "Cambridge"),
-  new Student("Mark", 30, "Oxford"),
-  new Student("Bill", 28, "Havard"),
+  new Student('John', 26, 'Cambridge'),
+  new Student('Mark', 30, 'Oxford'),
+  new Student('Bill', 28, 'Havard'),
 ];
 
 // ------------------- BAI5.1
 Student.prototype.coding = function () {
   if (this.age >= 28) {
-    console.log("coding master");
+    console.log('coding master');
   } else {
-    console.log("learning code");
+    console.log('learning code');
   }
 };
 students[0].coding();
@@ -75,7 +75,7 @@ console.log(findDuplicateNumberOf2Array([1, 2, 3, 4, 5], [1, 2, 3]));
 
 // ------------------- BAI7
 function getTotalDigit(number) {
-  var numberCharacter = number.toString().split("");
+  var numberCharacter = number.toString().split('');
   return numberCharacter.reduce(function (item, sum) {
     return parseInt(item) + parseInt(sum);
   }, 0);
