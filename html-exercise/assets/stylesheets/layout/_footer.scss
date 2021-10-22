@@ -53,5 +53,29 @@ footer {
   }
 }
 @media screen and (max-width: 480px){
-
+  footer{
+    .footer-top{
+      .about-us{
+        padding: 0 10px;
+        .about-us-description{
+          width: 90%;
+          margin-top: 1rem;
+        }
+        .list-media{
+          display: none;
+        }
+      }
+      .list-info{
+        flex-direction: column;
+        padding: 0 10px;
+        margin-top: 2rem;
+        .info-item{
+          margin-bottom: 2rem;
+          .list-subinfo{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 }

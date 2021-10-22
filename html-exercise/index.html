@@ -29,6 +29,7 @@
       <div class="d-flex justify-content-between align-items-center">
         <h1 class="header-logo">
           <a class="d-flex align-items-center">
+            <img class="header-image header-image-mobile" src='./assets/images'>
             <img class="header-image" src="./assets/images/logo.png" alt="logo e-shop" />
             E-SHOP
           </a>
@@ -41,6 +42,25 @@
           </ul>
         </nav>
         <div class="header-options">
+          <ul class="list-options">
+            <li class="option-item">
+              <a class="list-link" href="">
+                <img src="./assets/images/icons/option1.svg" alt="search" />
+              </a>
+            </li>
+            <li class="option-item">
+              <a class="list-link" href="">
+                <img src="./assets/images/icons/option2.svg" alt="cart" />
+              </a>
+            </li>
+            <li class="option-item">
+              <a class="list-link" href="">
+                <img src="./assets/images/icons/option3.svg" alt="login" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-options header-options-mobile">
           <ul class="list-options">
             <li class="option-item">
               <a class="list-link" href="">
@@ -110,37 +130,41 @@
     <section class="section-collections">
       <div class="container">
         <ul class="list-collections row">
-          <li class="collection-item col-6">
-            <div class="card-collection">
-              <img src="./assets/images/collection1.png" alt="New arrivalsare now in" class="card-image" />
-              <div class="collection-content">
-                <h4 class="collection-title">New arrivalsare now in!</h4>
-                <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
+          <div class="col-6 col-lg-6">
+            <li class="collection-item">
+              <div class="card-collection">
+                <img src="./assets/images/collection1.png" alt="New arrivalsare now in" class="card-image" />
+                <div class="collection-content">
+                  <h4 class="collection-title">New arrivalsare now in!</h4>
+                  <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="collection-item col-3">
-            <div class="card-collection">
-              <img src="./assets/images/collection2.png" alt="Basic t-shirts" class="card-image" />
-              <div class="collection-content">
-                <h4 class="collection-title">
-                  Basic t-shirts
-                  <p class="price">$29,99</p>
-                </h4>
-                <a href="" class="btn btn-secondary">MORE DETAILS</a>
+            </li>
+          </div>
+          <div class="row col-6 col-lg-6">
+            <li class="collection-item col-6 col-ls-6">
+              <div class="card-collection">
+                <img src="./assets/images/collection2.png" alt="Basic t-shirts" class="card-image" />
+                <div class="collection-content">
+                  <h4 class="collection-title">
+                    Basic t-shirts
+                    <p class="price">$29,99</p>
+                  </h4>
+                  <a href="" class="btn btn-secondary">MORE DETAILS</a>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="collection-item col-3">
-            <div class="card-collection">
-              <img src="./assets/images/collection3.png" class="card-image" alt="Sale this summer" />
-              <span class="badge badge-danger">-50%</span>
-              <div class="collection-content">
-                <h4 class="collection-title">Sale this summer</h4>
-                <a href="" class="btn btn-secondary">VIEW ALL</a>
+            </li>
+            <li class="collection-item col-6 col-ls-6">
+              <div class="card-collection">
+                <img src="./assets/images/collection3.png" class="card-image" alt="Sale this summer" />
+                <span class="badge badge-danger">-50%</span>
+                <div class="collection-content">
+                  <h4 class="collection-title">Sale this summer</h4>
+                  <a href="" class="btn btn-secondary">VIEW ALL</a>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
@@ -153,7 +177,7 @@
         </div>
 
         <ul class="list-products row">
-          <li class="col-3 card-product">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product1.png" alt="T-Shirt Summer Vibes" class="image" />
               <p class="badge badge-danger">-50%</p>
@@ -166,7 +190,7 @@
               </div>
             </div>
           </li>
-          <li class="col-3 card-product">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product2.png" alt="Loose Knit 3/4 Sleeve" class="image" />
             </div>
@@ -177,7 +201,7 @@
               </div>
             </div>
           </li>
-          <li class="card-product col-3">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product3.png" alt="Basic Slim Fit T-Shirt" class="image" />
             </div>
@@ -188,7 +212,7 @@
               </div>
             </div>
           </li>
-          <li class="card-product col-3">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
             </div>
@@ -266,7 +290,7 @@
         <h3 class="section-title txt-center">Products in today</h3>
 
         <ul class="list-products row">
-          <li class="card-product col-3">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product1.png" alt="T-Shirt Summer Vibes" class="image" />
               <p class="badge badge-danger">-50%</p>
@@ -279,7 +303,7 @@
               </div>
             </div>
           </li>
-          <li class="card-product col-3">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product2.png" alt="Loose Knit 3/4 Sleeve" class="image" />
             </div>
@@ -290,7 +314,7 @@
               </div>
             </div>
           </li>
-          <li class="card-product col-3">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product3.png" alt="Basic Slim Fit T-Shirt" class="image" />
             </div>
@@ -301,7 +325,7 @@
               </div>
             </div>
           </li>
-          <li class="card-product col-3">
+          <li class="card-product col-3 col-ls-6">
             <div class="card-image">
               <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
             </div>
