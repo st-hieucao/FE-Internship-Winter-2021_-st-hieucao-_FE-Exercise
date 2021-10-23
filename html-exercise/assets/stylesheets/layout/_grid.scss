@@ -1,48 +1,32 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -$space;
-}
-.col {
-  width: 100%;
-  padding: 0 $space;
-}
-.col-2 {
-  width: 20%;
-}
-.col-3 {
-  width: 25%;
-  padding: 0 $space;
-}
-.col-6 {
-  width: 50%;
-  padding: 0 $space;
+  margin: 0 -0.625rem;
 }
 .container {
-  padding: 0 10px;
+  padding: 0 0.625rem;
   margin: 0 auto;
   width: 100%;
   max-width: 1170px;
   z-index: 1;
 }
-@media screen and (max-width: 480px){
-  .row{
-    margin: 0 -4px;
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: percentage($i / $grid-columns);
+    padding: 0 map-get($space, "desk");
   }
-  .col-lg-6{
-    width: 100%;
-    padding: 4px;
+}
+@media screen and (max-width: 480px) {
+  .row {
+    margin: 0 - map-get($space, "mobi");
   }
-  .col-ls-6{
-    width: 50%;
-    padding: 4px;
+  .container {
+    padding: 0 1.25rem;
   }
-  .col-ls-3{
-    width: 50%;
-    padding: 4px;
-  }
-  .col-sm-3{
-    width: 100%;
-    padding: 4px;
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      width: percentage($i * 2 / $grid-columns);
+      padding: 0 map-get($space, "mobi");
+    }
   }
 }

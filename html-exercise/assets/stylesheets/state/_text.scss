@@ -9,15 +9,15 @@ h6 {
 }
 .section-title {
   font-weight: 300;
-  font-size: map-get($font-size, "xxxxl");
-  line-height: 48px;
+  font-size: map-get($font-size, "xxxxxxl");
+  line-height: 3rem;
   text-align: center;
 }
 .text-primary {
   color: map-get($color, "primary");
 }
-@media screen and (max-width: 480px){
-  .section-title{
-    font-size: 18px;
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.125rem;
   }
 }

@@ -1,8 +1,8 @@
 .section-banner {
+  @include layer-w-100;
   background: url("../images/banner.png") no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
   &::after {
     content: "";
     position: absolute;
@@ -23,40 +23,38 @@
     transform: translateY(-50%);
     z-index: 1;
     .banner-title {
-      font-size: map-get($font-size, "xxxxxl");
+      font-size: map-get($font-size, "xxxxxxxl");
       color: map-get($color, "white-snow");
-      line-height: 80px;
+      line-height: 5rem;
     }
     .banner-button {
+      @include align-center;
       margin-top: 2rem;
       font-weight: bold;
-      font-size: map-get($font-size, "xxl");
+      font-size: map-get($font-size, "xxxxl");
       color: map-get($color, "white-snow");
       text-decoration: underline;
-      display: flex;
-      align-items: center;
       .banner-button-icon {
-        width: 36px;
-        height: 36px;
+        @include flex-center;
+        width: 2.25rem;
+        height: 2.25rem;
         border-radius: 50%;
         margin-right: 2rem;
         background: map-get($color, "primary");
         color: map-get($color, "white-snow");
-        @include flex-center;
       }
     }
   }
   .section-services {
+    @include align-center;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 78%;
-    height: 125px;
-    border-radius: 0px 70px 0px 0px;
+    height: 7.813rem;
+    border-radius: 0 4.375rem 0 0;
     background: map-get($color, "white-snow");
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
     z-index: 1;
     .list-services {
       width: 77.5%;
@@ -66,8 +64,8 @@
         display: flex;
         flex: 1;
         .service-icon {
-          height: 36px;
-          border-radius: 8px;
+          height: 2.25rem;
+          border-radius: 0.5rem;
           padding-right: 2rem;
         }
         .service-title {
@@ -75,7 +73,7 @@
         }
         .service-description {
           font-size: map-get($font-size, "xxs");
-          line-height: 18px;
+          line-height: 1.125rem;
           color: map-get($color, "gray-metal");
         }
       }
@@ -84,13 +82,15 @@
 }
 .section-collections {
   margin: 3rem auto;
-  .list-collections{
-    overflow: hidden;
+  .list-collections {
+    & > div {
+      margin: 0.5rem 0 0.25rem 0;
+    }
   }
   .badge {
     position: absolute;
     top: 35%;
-    left: 40px;
+    left: 2.5rem;
     z-index: 1;
   }
   .collection-content {
@@ -99,7 +99,7 @@
     left: 0;
     height: 50%;
     width: 100%;
-    padding: 0 40px 53px;
+    padding: 0 2.5rem 3.313rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,16 +107,16 @@
     z-index: 1;
     .collection-title {
       color: map-get($color, "white-snow");
-      font-size: map-get($font-size, "xxl");
+      font-size: map-get($font-size, "xxxxl");
       font-weight: 400;
-      line-height: 35px;
+      line-height: 2.188rem;
     }
   }
 }
 .section-products {
   margin: 5rem auto;
   .list-products {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 }
 .section-reason {
@@ -133,37 +133,33 @@
       }
       .reason-title {
         margin-top: 4rem;
+        font-size: map-get($font-size, "lg");
+        color: map-get($color, "black-midnight");
       }
       .reason-icon {
         @include flex-center;
-        height: 70px;
-        width: 70px;
-        line-height: 70px;
-        border-radius: 10px;
+        height: 4.375rem;
+        width: 4.375rem;
+        line-height: 4.375rem;
+        border-radius: 0.625rem;
         background: map-get($color, "white-snow");
         text-align: center;
-      }
-      .reason-service {
-        margin-top: 3rem;
-        font-size: map-get($font-size, "ls");
-        color: map-get($color, "black-midnight");
       }
       .reason-description {
         margin-top: 1.5rem;
         font-weight: 500;
         font-size: map-get($font-size, "normal");
+        padding-right: 1rem;
       }
     }
   }
 }
 .section-contact {
+  @include layer-w-100;
+  @include align-center;
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
-  height: 240px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
+  height: 15rem;
   z-index: 1;
   &::after {
     content: "";
@@ -180,18 +176,17 @@
     width: 100%;
     z-index: 1;
     .contact-description {
-      font-size: map-get($font-size, "xxl");
-      line-height: 36px;
+      font-size: map-get($font-size, "xxxxl");
+      line-height: 2.25rem;
       color: map-get($color, "white-snow");
     }
     .form {
       @include flex-center;
-      padding: 0 10px;
       .input {
         width: 100%;
         background: map-get($color, "white-snow");
         padding: 1rem 2rem;
-        border-radius: 61px;
+        border-radius: 3.813rem;
         border: none;
         outline: none;
       }
@@ -203,91 +198,100 @@
   }
 }
 
-@media screen and (max-width: 480px){
-  .section-banner{
-    .banner-content{
-      left: 24px;
+@media screen and (max-width: 480px) {
+  .section-banner {
+    .banner-content {
+      left: 1.5rem;
       .banner-title {
-        font-size: 48px;
-        line-height: 50px;
+        font-size: 3rem;
+        line-height: 3.125rem;
       }
-      .banner-button{
+      .banner-button {
         margin-top: 1rem;
-        font-size: 14px;
-        .banner-button-icon{
-          width: 32px;
-          height: 32px;
+        font-size: 0.875rem;
+        .banner-button-icon {
+          width: 2rem;
+          height: 2rem;
           margin-right: 1rem;
         }
       }
     }
-    .section-services{
+    .section-services {
       display: none;
     }
   }
-  .section-collections{
-    margin: 0;
-    .collection-item{
-      
-    }
-    .collection-content{
-      align-items: inherit;
-      width: 50%;
-      padding: 0 16px 16px;
-      .collection-title{
-        font-size: 14px;
+  .section-collections {
+    margin: 1rem 0;
+    .list-collections {
+      .collection-item {
+        .badge {
+          top: 50%;
+          left: 1rem;
+        }
+        .collection-content {
+          align-items: start;
+          height: 40%;
+          padding: 0 1rem 1rem;
+          .collection-title {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+          }
+        }
       }
     }
   }
-  .section-products{
-    .list-products{
+  .section-products {
+    margin: 2rem 0;
+    .list-products {
       margin-top: 0;
     }
   }
-  .section-reason{
+  .section-reason {
     padding: 1.5rem 0;
-    .list-reason{
+    margin: 2rem 0;
+    .list-reason {
       margin-top: 1rem;
-      padding: 0 10px;
     }
-    .reason-item{
+    .reason-item {
       display: flex;
-      margin-bottom: .5rem;
-      .reason-icon{
-        min-width: 68px;
+      margin-bottom: 0.5rem;
+      .reason-icon {
+        min-width: 4.25rem;
       }
-      .reason-content{
+      .reason-content {
         padding-left: 1rem;
-        padding-top: .5rem;
-        .reason-title{
+        padding-top: 0.5rem;
+        .reason-title {
           margin: 0;
           font-size: map-get($font-size, "xxs");
         }
-        .reason-description{
-          margin-top: .5rem;
-          font-size: map-get($font-size , "xss");
+        .reason-description {
+          margin-top: 0.5rem;
+          font-size: map-get($font-size, "xss");
         }
       }
     }
   }
-  .section-contact{
-    .contact-content{
-      .contact-description{
-        font-size: 14px;
-        line-height: 21px;
+  .section-products-today {
+    margin-top: 0;
+  }
+  .section-contact {
+    .contact-content {
+      .contact-description {
+        font-size: 0.875rem;
+        line-height: 1.313rem;
         padding-right: 40%;
-        padding-left: 10px;
       }
-      .form{
+      .form {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 1rem;
-        .input{
-          padding: 8px 1rem;
+        .input {
+          padding: 0.5rem 1rem;
         }
-        button{
+        button {
           margin: 1rem 0;
-          padding: 10px 20px;
+          padding: 0.625rem 1.25rem;
           font-weight: bold;
         }
       }

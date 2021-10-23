@@ -1,6 +1,6 @@
 .badge {
-  border-radius: 20px;
-  padding: 6px 8px;
+  border-radius: 1.25rem;
+  padding: 0.25rem 0.5rem;
   font-weight: bold;
   font-size: map-get($font-size, "xxs");
   text-align: center;
@@ -9,9 +9,9 @@
     background: map-get($color, "red-fire");
   }
 }
-@media screen and (max-width: 480px){
-  .badge{
-    padding: 4px 8px;
-    font-size: 8px;
+@media screen and (max-width: 480px) {
+  .badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.5rem;
   }
 }

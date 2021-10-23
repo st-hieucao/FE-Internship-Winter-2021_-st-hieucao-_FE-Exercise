@@ -1,7 +1,5 @@
 .card-collection {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  @include layer-100;
   &::after {
     content: "";
     position: absolute;
@@ -20,26 +18,25 @@
 
 .card-product {
   .card-image {
-    position: relative;
+    @include layer-w-100;
     img {
       width: 100%;
       height: 100%;
     }
     p {
       position: absolute;
-      top: 24px;
-      left: 18px;
+      top: 1.5rem;
+      left: 1.125rem;
     }
   }
   .card-name {
     font-weight: 300;
-    font-size: map-get($font-size, "ls");
+    font-size: map-get($font-size, "lg");
   }
   .card-prices {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: map-get($font-size, "xl");
+    font-size: map-get($font-size, "xxxl");
     .price {
       color: map-get($color, "black-midnight");
     }
@@ -51,19 +48,18 @@
     }
   }
 }
-@media screen and (max-width: 480px){
-  .card-product{
-    .card-image{
-      .badge{
-        top: 10px;
-        left: 10px;
+@media screen and (max-width: 480px) {
+  .card-product {
+    margin-bottom: 1rem;
+    .card-image {
+      .badge {
+        top: 0.625rem;
+        left: 0.625rem;
       }
     }
-    .card-name{
-      font-size: 12px;
-    }
-    .card-prices{
-      font-size: 12px;
+    .card-name,
+    .card-prices {
+      font-size: map-get($font-size, "xxs");
     }
   }
 }
