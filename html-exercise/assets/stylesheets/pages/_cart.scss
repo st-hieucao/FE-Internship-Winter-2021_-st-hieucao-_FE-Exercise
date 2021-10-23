@@ -1,0 +1,33 @@
+.cart-page{
+    header{
+        @include flex-center;
+        padding: 38px 0;
+        .header-logo{
+            font-size: map-get($font-size, 'xxl' );
+            font-weight: 600;
+            .header-image{
+                margin-right: 1rem;
+            }
+            .header-logo-active{
+                color: map-get($color, 'primary');
+            }
+        }
+        .nav-list{
+            display: flex;
+            .nav-item{
+                padding: 0 3rem;
+                font-size: map-get($font-size, 'normal' );
+                .nav-link{
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+        .list-options{
+            display: flex;
+            .option-item{
+                padding: 1rem;
+            }
+        }
+    }
+}

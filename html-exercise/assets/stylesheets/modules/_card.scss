@@ -17,8 +17,14 @@
 }
 
 .card-product {
+  cursor: pointer;
+  height: 100%;
+  &:hover .card-image .cart-icon{
+    @include flex-center;
+  }
   .card-image {
     @include layer-w-100;
+    @include flex-center;
     img {
       width: 100%;
       height: 100%;
@@ -27,6 +33,29 @@
       position: absolute;
       top: 1.5rem;
       left: 1.125rem;
+    }
+    .cart-icon{
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 1px solid  map-get($color, 'primary' );
+      background: map-get($color, 'primary' );
+      color: map-get($color, 'white-snow' );
+      cursor: pointer;
+      i{
+        font-size: map-get($font-size, 'xxxxl' );
+      }
+      &:hover{
+        transition: .5s;
+        border: 1px solid  map-get($color, 'primary' );
+        background: map-get($color, 'white-snow' );
+        color: map-get($color, 'primary' );
+      }
     }
   }
   .card-name {
@@ -61,5 +90,14 @@
     .card-prices {
       font-size: map-get($font-size, "xxs");
     }
+  }
+}
+
+@-webkit-keyframes leftToRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
   }
 }
