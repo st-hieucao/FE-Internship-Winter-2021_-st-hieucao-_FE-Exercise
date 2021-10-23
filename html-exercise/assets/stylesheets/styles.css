@@ -280,7 +280,7 @@ footer {
 }
 footer .footer-top {
   border-bottom: 1px solid #ffffff;
-  padding: 3rem 0;
+  padding: 1rem 0 3rem 0;
 }
 footer .footer-top .footer-logo {
   display: flex;
@@ -309,6 +309,7 @@ footer .footer-top .list-media .media-item {
 footer .footer-top .list-info {
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 footer .footer-top .list-info .title {
   font-size: 1rem;
@@ -330,6 +331,9 @@ footer .footer-bottom {
 }
 
 @media screen and (max-width: 480px) {
+  footer .footer-top {
+    padding-top: 3rem;
+  }
   footer .footer-top .about-us .about-us-description {
     width: 90%;
     margin-top: 1rem;
@@ -756,6 +760,10 @@ h6 {
   }
   .section-products .list-products {
     margin-top: 0;
+  }
+
+  .section-products-today .section-title {
+    text-align: left;
   }
 
   .section-reason {
