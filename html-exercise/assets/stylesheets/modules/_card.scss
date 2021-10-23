@@ -1,7 +1,5 @@
 .card-collection {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  @include layer-100;
   &::after {
     content: "";
     position: absolute;
@@ -20,7 +18,7 @@
 
 .card-product {
   .card-image {
-    position: relative;
+    @include layer-w-100;
     img {
       width: 100%;
       height: 100%;

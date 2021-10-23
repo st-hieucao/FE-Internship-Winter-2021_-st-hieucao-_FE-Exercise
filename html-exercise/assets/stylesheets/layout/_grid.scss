@@ -3,21 +3,6 @@
   flex-wrap: wrap;
   margin: 0 -0.625rem;
 }
-.col {
-  width: 100%;
-  padding: 0 map-get($space, "desk");
-}
-.col-2 {
-  width: 20%;
-}
-.col-3 {
-  width: 25%;
-  padding: 0 map-get($space, "desk");
-}
-.col-6 {
-  width: 50%;
-  padding: 0 map-get($space, "desk");
-}
 .container {
   padding: 0 0.625rem;
   margin: 0 auto;
@@ -25,16 +10,23 @@
   max-width: 1170px;
   z-index: 1;
 }
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: percentage($i / $grid-columns);
+    padding: 0 map-get($space, "desk");
+  }
+}
 @media screen and (max-width: 480px) {
   .row {
-    margin: 0 -4px;
+    margin: 0 - map-get($space, "mobi");
   }
-  .col-sm-3 {
-    width: 50%;
-    padding: 0 map-get($space, "mobi");
+  .container {
+    padding: 0 1.25rem;
   }
-  .col-sm-6 {
-    width: 100%;
-    padding: 0 map-get($space, "mobi");
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      width: percentage($i * 2 / $grid-columns);
+      padding: 0 map-get($space, "mobi");
+    }
   }
 }

@@ -58,25 +58,6 @@ li {
   margin: 0 -0.625rem;
 }
 
-.col {
-  width: 100%;
-  padding: 0 0.625rem;
-}
-
-.col-2 {
-  width: 20%;
-}
-
-.col-3 {
-  width: 25%;
-  padding: 0 0.625rem;
-}
-
-.col-6 {
-  width: 50%;
-  padding: 0 0.625rem;
-}
-
 .container {
   padding: 0 0.625rem;
   margin: 0 auto;
@@ -85,9 +66,83 @@ li {
   z-index: 1;
 }
 
+.col-1 {
+  width: 8.3333333333%;
+  padding: 0 0.625rem;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  padding: 0 0.625rem;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 0 0.625rem;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  padding: 0 0.625rem;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  padding: 0 0.625rem;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 0.625rem;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  padding: 0 0.625rem;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  padding: 0 0.625rem;
+}
+
+.col-9 {
+  width: 75%;
+  padding: 0 0.625rem;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  padding: 0 0.625rem;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  padding: 0 0.625rem;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 0 0.625rem;
+}
+
 @media screen and (max-width: 480px) {
   .row {
-    margin: 0 -4px;
+    margin: -0.25rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .col-sm-1 {
+    width: 16.6666666667%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-2 {
+    width: 33.3333333333%;
+    padding: 0 0.25rem;
   }
 
   .col-sm-3 {
@@ -95,8 +150,48 @@ li {
     padding: 0 0.25rem;
   }
 
+  .col-sm-4 {
+    width: 66.6666666667%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-5 {
+    width: 83.3333333333%;
+    padding: 0 0.25rem;
+  }
+
   .col-sm-6 {
     width: 100%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-7 {
+    width: 116.6666666667%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-8 {
+    width: 133.3333333333%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-9 {
+    width: 150%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-10 {
+    width: 166.6666666667%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-11 {
+    width: 183.3333333333%;
+    padding: 0 0.25rem;
+  }
+
+  .col-sm-12 {
+    width: 200%;
     padding: 0 0.25rem;
   }
 }
@@ -233,9 +328,6 @@ footer .footer-bottom {
 }
 
 @media screen and (max-width: 480px) {
-  footer .footer-top .about-us {
-    padding: 0 0.625rem;
-  }
   footer .footer-top .about-us .about-us-description {
     width: 90%;
     margin-top: 1rem;
@@ -245,7 +337,6 @@ footer .footer-bottom {
   }
   footer .footer-top .list-info {
     flex-direction: column;
-    padding: 0 0.625rem;
     margin-top: 2rem;
   }
   footer .footer-top .list-info .info-item {
@@ -270,7 +361,7 @@ footer .footer-bottom {
 @media screen and (max-width: 480px) {
   .badge {
     padding: 0.25rem 0.5rem;
-    font-size: 8px;
+    font-size: 0.5rem;
   }
 }
 .btn {
@@ -335,6 +426,7 @@ footer .footer-bottom {
 
 .card-product .card-image {
   position: relative;
+  width: 100%;
 }
 .card-product .card-image img {
   width: 100%;
@@ -374,7 +466,7 @@ footer .footer-bottom {
     left: 0.625rem;
   }
   .card-product .card-name,
-.card-product .card-prices {
+  .card-product .card-prices {
     font-size: 0.75rem;
   }
 }
@@ -409,10 +501,11 @@ h6 {
 }
 
 .section-banner {
+  position: relative;
+  width: 100%;
   background: url("../images/banner.png") no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
 }
 .section-banner::after {
   content: "";
@@ -421,7 +514,11 @@ h6 {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 .section-banner .banner-content {
   position: absolute;
@@ -445,15 +542,15 @@ h6 {
   align-items: center;
 }
 .section-banner .banner-content .banner-button .banner-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
   margin-right: 2rem;
   background: #fbb03b;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .section-banner .section-services {
   position: absolute;
@@ -485,7 +582,11 @@ h6 {
 .section-banner .section-services .list-services .service-item .service-title {
   font-size: 0.875rem;
 }
-.section-banner .section-services .list-services .service-item .service-description {
+.section-banner
+  .section-services
+  .list-services
+  .service-item
+  .service-description {
   font-size: 0.75rem;
   line-height: 1.125rem;
   color: #a8a8a8;
@@ -494,11 +595,8 @@ h6 {
 .section-collections {
   margin: 3rem auto;
 }
-.section-collections .list-collections {
-  padding: 0 10px;
-}
 .section-collections .list-collections > div {
-  margin-bottom: 8px;
+  margin: 0.5rem 0 0.25rem 0;
 }
 .section-collections .badge {
   position: absolute;
@@ -572,11 +670,11 @@ h6 {
 }
 
 .section-contact {
+  position: relative;
+  width: 100%;
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
   height: 15rem;
-  width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -605,7 +703,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0.625rem;
 }
 .section-contact .contact-content .form .input {
   width: 100%;
@@ -653,14 +750,17 @@ h6 {
     height: 40%;
     padding: 0 1rem 1rem;
   }
-  .section-collections .list-collections .collection-item .collection-content .collection-title {
+  .section-collections
+    .list-collections
+    .collection-item
+    .collection-content
+    .collection-title {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 
   .section-products {
     margin: 2rem 0;
-    padding: 0 0.625rem;
   }
   .section-products .list-products {
     margin-top: 0;
@@ -672,7 +772,6 @@ h6 {
   }
   .section-reason .list-reason {
     margin-top: 1rem;
-    padding: 0 0.625rem;
   }
   .section-reason .reason-item {
     display: flex;
@@ -702,7 +801,6 @@ h6 {
     font-size: 0.875rem;
     line-height: 1.313rem;
     padding-right: 40%;
-    padding-left: 0.625rem;
   }
   .section-contact .contact-content .form {
     flex-direction: column;

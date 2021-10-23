@@ -26,8 +26,10 @@ $font-size: (
   xxxxxxl: 2rem,
   xxxxxxxl: 4.5rem,
 );
-$font-body: Poppins, sans-serif;
+$font-primary: Poppins, sans-serif;
+$font-secondary: Helvetica;
 $space: (
   desk: 0.625rem,
   mobi: 0.25rem,
 );
+$grid-columns: 12;

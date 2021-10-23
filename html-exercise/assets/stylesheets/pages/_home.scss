@@ -1,8 +1,8 @@
 .section-banner {
+  @include layer-w-100;
   background: url("../images/banner.png") no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
   &::after {
     content: "";
     position: absolute;
@@ -36,13 +36,13 @@
       display: flex;
       align-items: center;
       .banner-button-icon {
+        @include flex-center;
         width: 2.25rem;
         height: 2.25rem;
         border-radius: 50%;
         margin-right: 2rem;
         background: map-get($color, "primary");
         color: map-get($color, "white-snow");
-        @include flex-center;
       }
     }
   }
@@ -85,9 +85,8 @@
 .section-collections {
   margin: 3rem auto;
   .list-collections {
-    padding: 0 10px;
     & > div {
-      margin-bottom: 8px;
+      margin: 0.5rem 0 0.25rem 0;
     }
   }
   .badge {
@@ -158,11 +157,10 @@
   }
 }
 .section-contact {
+  @include layer-w-100;
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
   height: 15rem;
-  width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   z-index: 1;
@@ -187,7 +185,6 @@
     }
     .form {
       @include flex-center;
-      padding: 0 0.625rem;
       .input {
         width: 100%;
         background: map-get($color, "white-snow");
@@ -229,7 +226,6 @@
   .section-collections {
     margin: 1rem 0;
     .list-collections {
-      // padding: 0 0.625rem;
       .collection-item {
         .badge {
           top: 50%;
@@ -249,7 +245,6 @@
   }
   .section-products {
     margin: 2rem 0;
-    padding: 0 0.625rem;
     .list-products {
       margin-top: 0;
     }
@@ -259,7 +254,6 @@
     margin: 2rem 0;
     .list-reason {
       margin-top: 1rem;
-      padding: 0 0.625rem;
     }
     .reason-item {
       display: flex;
@@ -290,7 +284,6 @@
         font-size: 0.875rem;
         line-height: 1.313rem;
         padding-right: 40%;
-        padding-left: 0.625rem;
       }
       .form {
         flex-direction: column;

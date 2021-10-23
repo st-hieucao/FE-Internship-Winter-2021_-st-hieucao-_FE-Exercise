@@ -7,7 +7,7 @@ footer {
       display: flex;
       align-items: center;
       .footer-title {
-        font-family: Helvetica;
+        font-family: $font-secondary;
         font-size: map-get($font-size, "xxxl");
         color: map-get($color, "white-snow");
         padding-left: 1rem;
@@ -56,7 +56,6 @@ footer {
   footer {
     .footer-top {
       .about-us {
-        padding: 0 0.625rem;
         .about-us-description {
           width: 90%;
           margin-top: 1rem;
@@ -67,7 +66,6 @@ footer {
       }
       .list-info {
         flex-direction: column;
-        padding: 0 0.625rem;
         margin-top: 2rem;
         .info-item {
           margin-bottom: 2rem;
