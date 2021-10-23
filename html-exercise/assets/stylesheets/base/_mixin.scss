@@ -7,12 +7,12 @@
   display: flex;
   align-items: center;
 }
-@mixin layer-100 {
-  position: relative;
+@mixin layer {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
-@mixin layer-w-100 {
-  position: relative;
-  width: 100%;
-}
+
