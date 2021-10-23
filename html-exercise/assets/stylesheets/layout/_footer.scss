@@ -4,8 +4,7 @@ footer {
     border-bottom: 1px solid map-get($color, "white-snow");
     padding: 3rem 0;
     .footer-logo {
-      display: flex;
-      align-items: center;
+      @include align-center;
       .footer-title {
         font-family: $font-secondary;
         font-size: map-get($font-size, "xxxl");
@@ -19,7 +18,7 @@ footer {
       width: 70%;
     }
     .list-media {
-      display: flex;
+      @include align-center;
       margin-left: -2rem;
       margin-top: 4rem;
       .media-item {

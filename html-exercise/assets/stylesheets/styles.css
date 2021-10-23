@@ -272,6 +272,7 @@ header .header-options .list-options .option-item .list-link {
   }
   header .header-options .list-options .option-item .list-link {
     display: flex;
+    align-items: center;
   }
 }
 footer {
@@ -298,6 +299,7 @@ footer .footer-top .about-us-description {
 }
 footer .footer-top .list-media {
   display: flex;
+  align-items: center;
   margin-left: -2rem;
   margin-top: 4rem;
 }
@@ -443,7 +445,6 @@ footer .footer-bottom {
 }
 .card-product .card-prices {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   font-size: 1.25rem;
 }
@@ -466,7 +467,7 @@ footer .footer-bottom {
     left: 0.625rem;
   }
   .card-product .card-name,
-  .card-product .card-prices {
+.card-product .card-prices {
     font-size: 0.75rem;
   }
 }
@@ -514,11 +515,7 @@ h6 {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 .section-banner .banner-content {
   position: absolute;
@@ -533,13 +530,13 @@ h6 {
   line-height: 5rem;
 }
 .section-banner .banner-content .banner-button {
+  display: flex;
+  align-items: center;
   margin-top: 2rem;
   font-weight: bold;
   font-size: 1.5rem;
   color: #ffffff;
   text-decoration: underline;
-  display: flex;
-  align-items: center;
 }
 .section-banner .banner-content .banner-button .banner-button-icon {
   display: flex;
@@ -553,6 +550,8 @@ h6 {
   color: #ffffff;
 }
 .section-banner .section-services {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -560,9 +559,7 @@ h6 {
   height: 7.813rem;
   border-radius: 0 4.375rem 0 0;
   background: #ffffff;
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
   z-index: 1;
 }
 .section-banner .section-services .list-services {
@@ -582,11 +579,7 @@ h6 {
 .section-banner .section-services .list-services .service-item .service-title {
   font-size: 0.875rem;
 }
-.section-banner
-  .section-services
-  .list-services
-  .service-item
-  .service-description {
+.section-banner .section-services .list-services .service-item .service-description {
   font-size: 0.75rem;
   line-height: 1.125rem;
   color: #a8a8a8;
@@ -672,11 +665,11 @@ h6 {
 .section-contact {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
   height: 15rem;
-  display: flex;
-  align-items: center;
   z-index: 1;
 }
 .section-contact::after {
@@ -750,11 +743,7 @@ h6 {
     height: 40%;
     padding: 0 1rem 1rem;
   }
-  .section-collections
-    .list-collections
-    .collection-item
-    .collection-content
-    .collection-title {
+  .section-collections .list-collections .collection-item .collection-content .collection-title {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }

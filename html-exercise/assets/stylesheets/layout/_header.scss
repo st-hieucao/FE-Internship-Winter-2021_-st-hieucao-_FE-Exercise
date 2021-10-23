@@ -4,8 +4,7 @@ header {
   width: 100%;
   z-index: 1000;
   .header-logo {
-    display: flex;
-    align-items: center;
+    @include align-center;
     font-size: map-get($font-size, "xlg");
     color: map-get($color, "white-snow");
     .header-image {
@@ -16,8 +15,7 @@ header {
     }
   }
   .nav-list {
-    display: flex;
-    align-items: center;
+    @include align-center;
     .nav-item {
       padding: 0 4rem;
       .nav-link {
@@ -32,8 +30,7 @@ header {
       display: none;
     }
     .list-options {
-      display: flex;
-      align-items: center;
+      @include align-center;
       .option-item {
         padding: 0 1rem;
         .list-link {
@@ -76,7 +73,7 @@ header {
           padding: 0;
           margin-left: 1.5rem;
           .list-link {
-            display: flex;
+            @include align-center;
           }
         }
       }

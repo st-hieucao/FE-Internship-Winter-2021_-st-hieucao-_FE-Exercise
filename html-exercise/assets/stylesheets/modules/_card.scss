@@ -35,7 +35,6 @@
   }
   .card-prices {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     font-size: map-get($font-size, "xxxl");
     .price {

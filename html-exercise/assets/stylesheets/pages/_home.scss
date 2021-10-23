@@ -28,13 +28,12 @@
       line-height: 5rem;
     }
     .banner-button {
+      @include align-center;
       margin-top: 2rem;
       font-weight: bold;
       font-size: map-get($font-size, "xxxxl");
       color: map-get($color, "white-snow");
       text-decoration: underline;
-      display: flex;
-      align-items: center;
       .banner-button-icon {
         @include flex-center;
         width: 2.25rem;
@@ -47,6 +46,7 @@
     }
   }
   .section-services {
+    @include align-center;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,9 +54,7 @@
     height: 7.813rem;
     border-radius: 0 4.375rem 0 0;
     background: map-get($color, "white-snow");
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
     z-index: 1;
     .list-services {
       width: 77.5%;
@@ -158,11 +156,10 @@
 }
 .section-contact {
   @include layer-w-100;
+  @include align-center;
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
   height: 15rem;
-  display: flex;
-  align-items: center;
   z-index: 1;
   &::after {
     content: "";
