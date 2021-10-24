@@ -16,6 +16,15 @@ h6 {
 .text-primary {
   color: map-get($color, "primary");
 }
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
 @media screen and (max-width: 480px) {
   .section-title {
     font-size: 1.125rem;

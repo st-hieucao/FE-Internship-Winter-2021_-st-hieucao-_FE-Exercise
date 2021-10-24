@@ -397,6 +397,19 @@ footer .footer-bottom {
   transition: 0.3s;
   border: 1px solid #fbb03b;
 }
+.btn.btn-checkout {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 3rem;
+  background: #fbb03b;
+  color: #333333;
+  border: 1px solid #fbb03b;
+}
+.btn.btn-checkout:hover {
+  background: #ffffff;
+  transition: 0.3s;
+  border: 1px solid #fbb03b;
+}
 
 @media screen and (max-width: 480px) {
   .btn {
@@ -515,6 +528,59 @@ footer .footer-bottom {
     left: 50%;
   }
 }
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.product-item .product-image img {
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.product-item .product-info .product-name {
+  color: #333333;
+  font-weight: 700;
+}
+.product-item .product-info .product-id {
+  font-size: 0.813rem;
+  color: #c4c4c4;
+}
+.product-item .product-color,
+.product-item .product-size {
+  color: #333333;
+}
+.product-item .product-options {
+  display: flex;
+  justify-content: center;
+}
+.product-item .product-options .options-content {
+  border-radius: 50px;
+  border: 1px solid #d8d8d8;
+  width: 130px;
+  height: 50px;
+  line-height: 50px;
+}
+.product-item .product-options .options-content .descrease {
+  color: #c4c4c4;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.product-item .product-options .options-content .increase {
+  color: #333333;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.product-item .product-options .options-content .qty {
+  color: #333333;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+.product-item .product-delete {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -534,6 +600,18 @@ h6 {
 
 .text-primary {
   color: #fbb03b;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 @media screen and (max-width: 480px) {
@@ -853,7 +931,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 38px 0;
+  padding: 2.375rem 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 .cart-page header .header-logo {
   font-size: 1.188rem;
@@ -880,7 +959,92 @@ h6 {
   display: flex;
 }
 .cart-page header .list-options .option-item {
-  padding: 1rem;
+  padding-left: 2rem;
+}
+.cart-page .section-cart {
+  margin-top: 3rem;
+}
+.cart-page .section-cart .title-content {
+  font-size: 1.25rem;
+}
+.cart-page .section-cart .cart-icon {
+  min-width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #fbb03b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-page .section-cart .line {
+  min-width: 70px;
+  height: 1px;
+  background: #e5e5e5;
+  margin: 0 1rem;
+}
+.cart-page .section-cart .cart-content {
+  margin-top: 3rem;
+}
+.cart-page .section-cart .cart-content .list-products {
+  margin-top: 2rem;
+}
+.cart-page .section-cart .cart-bottom {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-page .section-cart .cart-bottom .go-back {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  font-weight: 700;
+}
+.cart-page .section-cart .cart-bottom .go-back:hover {
+  color: #fbb03b;
+  transition: 0.3s;
+}
+.cart-page .section-cart .cart-bottom .go-back img {
+  width: 0.813rem;
+  height: 0.688rem;
+  margin-right: 1rem;
+}
+.cart-page .section-cart .cart-bottom .fromo-code {
+  position: relative;
+  width: 19rem;
+}
+.cart-page .section-cart .cart-bottom .fromo-code input {
+  height: 3.125rem;
+  width: 100%;
+  line-height: 3.125rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 1.875rem;
+  outline: none;
+  padding: 0 2rem;
+  font-size: 0.813rem;
+}
+.cart-page .section-cart .cart-bottom .fromo-code img {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.cart-page .section-cart .cart-bottom .checkout {
+  display: flex;
+  align-items: center;
+}
+.cart-page .section-cart .cart-bottom .checkout .checkout-content {
+  color: #333333;
+  font-size: 1rem;
+  margin-right: 5rem;
+}
+.cart-page .section-cart .cart-bottom .checkout .checkout-content .total-cost {
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.cart-page .section-cart .cart-bottom .checkout .btn {
+  height: 3.125rem;
+  line-height: 3.125rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

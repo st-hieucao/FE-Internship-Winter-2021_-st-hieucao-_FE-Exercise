@@ -27,6 +27,19 @@
       border: 1px solid map-get($color, "primary");
     }
   }
+  &.btn-checkout {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 3rem;
+    background: map-get($color, "primary");
+    color: map-get($color, "black-midnight");
+    border: 1px solid map-get($color, "primary");
+    &:hover {
+      background: map-get($color, "white-snow");
+      transition: 0.3s;
+      border: 1px solid map-get($color, "primary");
+    }
+  }
 }
 @media screen and (max-width: 480px) {
   .btn {
