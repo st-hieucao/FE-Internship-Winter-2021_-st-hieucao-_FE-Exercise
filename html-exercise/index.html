@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,9 +10,7 @@
     <meta name="description" content="Fashion, " />
     <meta name="keywords" content="Pant, Shirt, FreeShipping" />
 
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +25,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h1 class="header-logo">
             <a class="d-flex align-items-center">
+              <img class="header-image header-image-mobile" src='./assets/images/mobile/logo.svg'>
               <img class="header-image" src="./assets/images/logo.png" alt="logo e-shop" />
               E-SHOP
             </a>
@@ -52,6 +52,25 @@
               <li class="option-item">
                 <a class="list-link" href="">
                   <img src="./assets/images/icons/option3.svg" alt="login" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-options header-options-mobile">
+            <ul class="list-options">
+              <li class="option-item">
+                <a class="list-link" href="">
+                  <img src="./assets/images/mobile/cart.svg" alt="search" />
+                </a>
+              </li>
+              <li class="option-item">
+                <a class="list-link" href="">
+                  <img src="./assets/images/mobile/user.svg" alt="cart" />
+                </a>
+              </li>
+              <li class="option-item">
+                <a class="list-link" href="">
+                  <img src="./assets/images/mobile/bar.svg" alt="login" />
                 </a>
               </li>
             </ul>
@@ -107,37 +126,43 @@
       <section class="section-collections">
         <div class="container">
           <ul class="list-collections row">
-            <li class="collection-item col-6">
-              <div class="card-collection">
-                <img src="./assets/images/collection1.png" alt="New arrivalsare now in" class="card-image" />
-                <div class="collection-content">
-                  <h4 class="collection-title">New arrivalsare now in!</h4>
-                  <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
+            <div class="col-6 col-sm-12">
+              <li class="collection-item h-100">
+                <div class="card-collection">
+                  <img src="./assets/images/collection1.png" alt="New arrivalsare now in" class="card-image" />
+                  <div class="collection-content">
+                    <h4 class="collection-title">New arrivalsare now in!</h4>
+                    <a href="" class="btn btn-secondary">SHOW COLLECTION</a>
+                  </div>
                 </div>
+              </li>
+            </div>
+            <div class="col-6 col-sm-12">
+              <div class="row h-100">
+                <li class="collection-item h-100 col-6 col-sm-6">
+                  <div class="card-collection">
+                    <img src="./assets/images/collection2.png" alt="Basic t-shirts" class="card-image" />
+                    <div class="collection-content">
+                      <h4 class="collection-title">
+                        Basic t-shirts
+                        <p class="price">$29,99</p>
+                      </h4>
+                      <a href="" class="btn btn-secondary">MORE DETAILS</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="collection-item h-100 col-6 col-sm-6">
+                  <div class="card-collection">
+                    <img src="./assets/images/collection3.png" class="card-image" alt="Sale this summer" />
+                    <span class="badge badge-danger">-50%</span>
+                    <div class="collection-content">
+                      <h4 class="collection-title">Sale this summer</h4>
+                      <a href="" class="btn btn-secondary">VIEW ALL</a>
+                    </div>
+                  </div>
+                </li>
               </div>
-            </li>
-            <li class="collection-item col-3">
-              <div class="card-collection">
-                <img src="./assets/images/collection2.png" alt="Basic t-shirts" class="card-image" />
-                <div class="collection-content">
-                  <h4 class="collection-title">
-                    Basic t-shirts
-                    <p class="price">$29,99</p>
-                  </h4>
-                  <a href="" class="btn btn-secondary">MORE DETAILS</a>
-                </div>
-              </div>
-            </li>
-            <li class="collection-item col-3">
-              <div class="card-collection">
-                <img src="./assets/images/collection3.png" class="card-image" alt="Sale this summer" />
-                <span class="badge badge-danger">-50%</span>
-                <div class="collection-content">
-                  <h4 class="collection-title">Sale this summer</h4>
-                  <a href="" class="btn btn-secondary">VIEW ALL</a>
-                </div>
-              </div>
-            </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -150,7 +175,7 @@
           </div>
 
           <ul class="list-products row">
-            <li class="col-3 card-product">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product1.png" alt="T-Shirt Summer Vibes" class="image" />
                 <p class="badge badge-danger">-50%</p>
@@ -163,7 +188,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-3 card-product">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product2.png" alt="Loose Knit 3/4 Sleeve" class="image" />
               </div>
@@ -174,7 +199,7 @@
                 </div>
               </div>
             </li>
-            <li class="card-product col-3">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product3.png" alt="Basic Slim Fit T-Shirt" class="image" />
               </div>
@@ -185,7 +210,7 @@
                 </div>
               </div>
             </li>
-            <li class="card-product col-3">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
@@ -205,47 +230,54 @@
           <h3 class="section-title">Why should you choose us?</h3>
 
           <ul class="list-reason row">
-            <li class="reason-item col-3">
+            <li class="reason-item col-3 col-sm-12">
               <div class="reason-icon">
                 <img src="./assets/images/icons/icon1.svg" alt="Free Shipping" />
               </div>
-              <h4 class="reason-title">Free Shipping</h4>
-              <p class="reason-description">
-                All purchases over $199 are eligible forfree shipping via USPS
-                First Class Mail.
-              </p>
+              <div class="reason-content">
+                <h4 class="reason-title">Free Shipping</h4>
+                <p class="reason-description">
+                  All purchases over $199 are eligible forfree shipping via USPS
+                  First Class Mail.
+                </p>
+              </div>
             </li>
-            <li class="reason-item col-3">
+            <li class="reason-item col-3 col-sm-12">
               <div class="reason-icon">
                 <img src="./assets/images/icons/icon2.svg" alt="Easy Payments" />
               </div>
-
-              <h4 class="reason-title">Easy Payments</h4>
-              <p class="reason-description">
-                All payments are processed instantlyover a secure payment
-                protocol.
-              </p>
+              <div class="reason-content">
+                <h4 class="reason-title">Easy Payments</h4>
+                <p class="reason-description">
+                  All payments are processed instantlyover a secure payment
+                  protocol.
+                </p>
+              </div>
             </li>
-            <li class="reason-item col-3">
+            <li class="reason-item col-3 col-sm-12">
               <div class="reason-icon">
                 <img src="./assets/images/icons/icon3.svg" alt="Money-Back Guarantee" />
               </div>
 
-              <h4 class="reason-title">Money-Back Guarantee</h4>
-              <p class="reason-description">
-                If an item arrived damaged or you'vechanged your mind, you can
-                send itback for a full refund.
-              </p>
+              <div class="reason-content">
+                <h4 class="reason-title">Money-Back Guarantee</h4>
+                <p class="reason-description">
+                  If an item arrived damaged or you'vechanged your mind, you can
+                  send itback for a full refund.
+                </p>
+              </div>
             </li>
-            <li class="reason-item col-3">
+            <li class="reason-item col-3 col-sm-12">
               <div class="reason-icon">
                 <img src="./assets/images/icons/icon4.svg" alt="Finest Quality" />
               </div>
-              <h4 class="reason-title">Finest Quality</h4>
-              <p class="reason-description">
-                Designed to last, each of our products hasbeen crafted with the
-                finest materials.
-              </p>
+              <div class="reason-content">
+                <h4 class="reason-title">Finest Quality</h4>
+                <p class="reason-description">
+                  Designed to last, each of our products hasbeen crafted with the
+                  finest materials.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -256,7 +288,7 @@
           <h3 class="section-title txt-center">Products in today</h3>
 
           <ul class="list-products row">
-            <li class="card-product col-3">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product1.png" alt="T-Shirt Summer Vibes" class="image" />
                 <p class="badge badge-danger">-50%</p>
@@ -269,7 +301,7 @@
                 </div>
               </div>
             </li>
-            <li class="card-product col-3">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product2.png" alt="Loose Knit 3/4 Sleeve" class="image" />
               </div>
@@ -280,7 +312,7 @@
                 </div>
               </div>
             </li>
-            <li class="card-product col-3">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product3.png" alt="Basic Slim Fit T-Shirt" class="image" />
               </div>
@@ -291,7 +323,7 @@
                 </div>
               </div>
             </li>
-            <li class="card-product col-3">
+            <li class="card-product col-3 col-sm-6">
               <div class="card-image">
                 <img src="./assets/images/product4.png" alt="Loose Textured T-Shirt" class="image" />
               </div>
@@ -309,12 +341,12 @@
       <section class="section-contact">
         <div class="container d-flex align-items-center">
           <div class="contact-content row">
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
               <p class="contact-description">
                 Subscribe to our newsletter andreceive exclusive offers every week
               </p>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
               <form class="form">
                 <input type="email" placeholder="Enter your email" class="input" />
                 <button class="btn btn-primary">SUBSCRIBE</button>
@@ -329,7 +361,7 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
               <div class="about-us">
                 <div class="footer-logo">
                   <img class="footer-image" src="./assets/images/logo.png" alt="logo e-shop" />
@@ -339,28 +371,29 @@
                   House My Brand designs clothing for the young, the old &everyone
                   in between – but most importantly, for the fashionable
                 </p>
-    
-                <ul class="list-social">
-                  <li class="social-item">
-                    <a class="social-item-link" href=""><img src="./assets/images/icons/facebook.svg" alt="facebook" /></a>
+
+                <ul class="list-media">
+                  <li class="media-item">
+                    <a class="media-item-link" href=""><img src="./assets/images/icons/facebook.svg" alt="facebook" /></a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-item-link" href="">
+                  <li class="media-item">
+                    <a class="media-item-link" href="">
                       <img src="./assets/images/icons/twitter.svg" alt="twitter" /></a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-item-link" href=""><img src="./assets/images/icons/instagram.svg" alt="instagram" /></a>
+                  <li class="media-item">
+                    <a class="media-item-link" href=""><img src="./assets/images/icons/instagram.svg"
+                        alt="instagram" /></a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-item-link" href=""><img src="./assets/images/icons/LinkedIn.svg" alt="LinkedIn" /></a>
+                  <li class="media-item">
+                    <a class="media-item-link" href=""><img src="./assets/images/icons/LinkedIn.svg" alt="LinkedIn" /></a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-item-link" href=""><img src="./assets/images/icons/youtube.svg" alt="youtube" /></a>
+                  <li class="media-item">
+                    <a class="media-item-link" href=""><img src="./assets/images/icons/youtube.svg" alt="youtube" /></a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
               <ul class="list-info">
                 <li class="info-item">
                   <h4 class="title">Shopping online</h4>
@@ -382,7 +415,7 @@
                     </li>
                   </ul>
                 </li>
-    
+
                 <li class="info-item">
                   <h4 class="title">Information</h4>
                   <ul class="list-subinfo">
@@ -403,7 +436,7 @@
                     </li>
                   </ul>
                 </li>
-    
+
                 <li class="info-item">
                   <h4 class="title">Contact</h4>
                   <ul class="list-subinfo">
@@ -428,4 +461,5 @@
       </div>
     </footer>
   </body>
+
 </html>

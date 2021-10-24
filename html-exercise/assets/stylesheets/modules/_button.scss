@@ -1,0 +1,39 @@
+.btn {
+  font-weight: bold;
+  font-size: map-get($font-size, "sm");
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.625rem 1.25rem;
+  color: map-get($color, "black-midnight");
+  border: none;
+  border-radius: 33px;
+  outline: none;
+  cursor: pointer;
+  &.btn-primary {
+    background: map-get($color, "primary");
+  }
+  &.btn-secondary {
+    background: map-get($color, "white-snow");
+    &:hover {
+      background: map-get($color, "primary");
+      transition: 0.3s;
+    }
+  }
+  &.btn-outline {
+    border: 1px solid map-get($color, "gray-light");
+    &:hover {
+      background: map-get($color, "primary");
+      transition: 0.3s;
+      border: 1px solid map-get($color, "primary");
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 0.625rem;
+    padding: 0.375rem 1rem;
+    &.btn-outline {
+      border: none;
+    }
+  }
+}

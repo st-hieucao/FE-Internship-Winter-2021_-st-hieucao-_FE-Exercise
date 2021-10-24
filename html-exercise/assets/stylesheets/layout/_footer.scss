@@ -1,0 +1,80 @@
+footer {
+  background: map-get($color, "primary");
+  .footer-top {
+    border-bottom: 1px solid map-get($color, "white-snow");
+    padding: 1rem 0 3rem 0;
+    .footer-logo {
+      @include align-center;
+      .footer-title {
+        font-family: $font-secondary;
+        font-size: map-get($font-size, "xxxl");
+        color: map-get($color, "white-snow");
+        padding-left: 1rem;
+      }
+    }
+    .about-us-description {
+      color: map-get($color, "white-snow");
+      margin-top: 2rem;
+      width: 70%;
+    }
+    .list-media {
+      @include align-center;
+      margin-left: -2rem;
+      margin-top: 4rem;
+      .media-item {
+        padding-left: 2rem;
+      }
+    }
+    .list-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3rem;
+      .title {
+        font-size: map-get($font-size, "lg");
+        color: map-get($color, "white-snow");
+      }
+      .info-item {
+        .list-subinfo {
+          margin-top: 2.5rem;
+          .subinfo-item {
+            margin-top: 1.5rem;
+          }
+        }
+        .subinfo-link {
+          color: map-get($color, "white-snow");
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: map-get($color, "white-snow");
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    .footer-top {
+      padding-top: 3rem;
+      .about-us {
+        .about-us-description {
+          width: 90%;
+          margin-top: 1rem;
+        }
+        .list-media {
+          display: none;
+        }
+      }
+      .list-info {
+        flex-direction: column;
+        margin-top: 2rem;
+        .info-item {
+          margin-bottom: 2rem;
+          .list-subinfo {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

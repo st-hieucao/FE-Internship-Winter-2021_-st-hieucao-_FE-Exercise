@@ -1,0 +1,300 @@
+.section-banner {
+  position: relative;
+  width: 100%;
+  background: url("../images/banner.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  &::after {
+    @include create-layer;
+    height: 100vh;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+  .banner-content {
+    position: absolute;
+    left: 17.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    .banner-title {
+      font-size: map-get($font-size, "xxxxxxxl");
+      color: map-get($color, "white-snow");
+      line-height: 5rem;
+    }
+    .banner-button {
+      @include align-center;
+      margin-top: 2rem;
+      font-weight: bold;
+      font-size: map-get($font-size, "xxxxl");
+      color: map-get($color, "white-snow");
+      text-decoration: underline;
+      .banner-button-icon {
+        @include flex-center;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+        background: map-get($color, "primary");
+        color: map-get($color, "white-snow");
+      }
+    }
+  }
+  .section-services {
+    @include align-center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78%;
+    height: 7.813rem;
+    border-radius: 0 4.375rem 0 0;
+    background: map-get($color, "white-snow");
+    justify-content: flex-end;
+    z-index: 1;
+    .list-services {
+      width: 77.5%;
+      display: flex;
+      .service-item {
+        padding-right: 3rem;
+        display: flex;
+        flex: 1;
+        .service-icon {
+          height: 2.25rem;
+          border-radius: 0.5rem;
+          padding-right: 2rem;
+        }
+        .service-title {
+          font-size: map-get($font-size, "normal");
+        }
+        .service-description {
+          font-size: map-get($font-size, "xxs");
+          line-height: 1.125rem;
+          color: map-get($color, "gray-metal");
+        }
+      }
+    }
+  }
+}
+.section-collections {
+  display: flex;
+  align-items: center;
+  margin: 3rem auto;
+  .list-collections {
+    & > div {
+      margin: 0.5rem 0 0.25rem 0;
+    }
+  }
+  .badge {
+    position: absolute;
+    top: 35%;
+    left: 2.5rem;
+    z-index: 1;
+  }
+  .collection-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    padding: 0 2.5rem 3.313rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+    .collection-title {
+      color: map-get($color, "white-snow");
+      font-size: map-get($font-size, "xxxxl");
+      font-weight: 400;
+      line-height: 2.188rem;
+    }
+  }
+}
+.section-products {
+  margin: 5rem auto;
+  .list-products {
+    margin-top: 2.5rem;
+  }
+}
+.section-reason {
+  padding: 4rem 0;
+  margin: 5rem auto;
+  background: map-get($color, "gray-fog");
+  .list-reason {
+    margin-top: 4rem;
+    .reason-item {
+      cursor: pointer;
+      &:hover .reason-title {
+        color: map-get($color, "primary");
+        transition: 0.3s;
+      }
+      .reason-title {
+        margin-top: 4rem;
+        font-size: map-get($font-size, "lg");
+        color: map-get($color, "black-midnight");
+      }
+      .reason-icon {
+        @include flex-center;
+        height: 4.375rem;
+        width: 4.375rem;
+        line-height: 4.375rem;
+        border-radius: 0.625rem;
+        background: map-get($color, "white-snow");
+        text-align: center;
+      }
+      .reason-description {
+        margin-top: 1.5rem;
+        font-weight: 500;
+        font-size: map-get($font-size, "normal");
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+.section-contact {
+  @include align-center;
+  position: relative;
+  width: 100%;
+  background: url("../images/contact.png") no-repeat;
+  background-size: cover;
+  height: 15rem;
+  z-index: 1;
+  &::after {
+    @include create-layer;
+    background: linear-gradient(90deg, #000000 33.28%, rgba(0, 0, 0, 0) 94.05%);
+    opacity: 0.7;
+  }
+  .contact-content {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    .contact-description {
+      font-size: map-get($font-size, "xxxxl");
+      line-height: 2.25rem;
+      color: map-get($color, "white-snow");
+    }
+    .form {
+      @include flex-center;
+      .input {
+        width: 100%;
+        background: map-get($color, "white-snow");
+        padding: 1rem 2rem;
+        border-radius: 3.813rem;
+        border: none;
+        outline: none;
+      }
+      button {
+        padding: 1rem 2rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-banner {
+    .banner-content {
+      left: 1.5rem;
+      .banner-title {
+        font-size: 3rem;
+        line-height: 3.125rem;
+      }
+      .banner-button {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        .banner-button-icon {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+    .section-services {
+      display: none;
+    }
+  }
+  .section-collections {
+    margin: 1rem 0;
+    .list-collections {
+      .collection-item {
+        .badge {
+          top: 50%;
+          left: 1rem;
+        }
+        .collection-content {
+          align-items: start;
+          height: 40%;
+          padding: 0 1rem 1rem;
+          .collection-title {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+  .section-products {
+    margin: 2rem 0;
+    .list-products {
+      margin-top: 0;
+    }
+  }
+  .section-products-today {
+    .section-title{
+      text-align: left;
+    }
+  }
+  .section-reason {
+    padding: 1.5rem 0;
+    margin: 2rem 0;
+    .list-reason {
+      margin-top: 1rem;
+    }
+    .reason-item {
+      display: flex;
+      margin-bottom: 0.5rem;
+      .reason-icon {
+        min-width: 4.25rem;
+      }
+      .reason-content {
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        .reason-title {
+          margin: 0;
+          font-size: map-get($font-size, "xxs");
+        }
+        .reason-description {
+          margin-top: 0.5rem;
+          font-size: map-get($font-size, "xss");
+        }
+      }
+    }
+  }
+  .section-products-today {
+    margin-top: 0;
+  }
+  .section-contact {
+    .contact-content {
+      .contact-description {
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+        padding-right: 40%;
+      }
+      .form {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        .input {
+          padding: 0.5rem 1rem;
+        }
+        button {
+          margin: 1rem 0;
+          padding: 0.625rem 1.25rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
