@@ -1,7 +1,12 @@
-const addToCart = (product) => {
-    console.log('product')
+import { addToCart } from './cart.js';
+
+export const handleAddToCart = (product) => {
+    console.log(JSON.parse(decodeURIComponent(product)))
+    let productInfo = JSON.parse(decodeURIComponent(product))
+    console.log(productInfo)
+    // addToCart(productInfo)
 }
-// onclick="(${handleClickAddToCart})('${product}')"
+// onclick = "(${addToCart})('${encodeURIComponent(JSON.stringify(product))}')"
 export const renderListProduct = (arr) => {
     let listProducts = document.querySelector('.list-products')
 
@@ -10,8 +15,8 @@ export const renderListProduct = (arr) => {
         <div class="card-image">
             <img src=${product.image_url} alt=${product.title} class="image" />
             ${product.discount > 0 ? (`<p class="badge badge-danger">-${product.discount}%</p>`) : ''}
-            <span class="cart-icon" onclick='addToCart()'>
-                <i class="fal fa-cart-plus"></i>
+            <span class="cart-icon" onclick="(${handleAddToCart})('${encodeURIComponent(JSON.stringify(product))}')">
+            <i class="fal fa-cart-plus"></i
             </span>
         </div>
         <div class="card-body">
