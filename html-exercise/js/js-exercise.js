@@ -20,16 +20,17 @@ console.log(calculateDifferenceWith19ByEachCase(10));
 // bai3 & 4
 function findNumberDivisibleByRandomNumber(number, randomNumber) {
   var results = [];
-  var characterNumber = number.split("");
-  var indexSecretNumber = characterNumber.indexOf("*");
+  var characterNumber = number.split('');
+  var indexSecretNumber = characterNumber.indexOf('*');
 
   for (i = 0; i <= 9; i++) {
     characterNumber[indexSecretNumber] = i;
-    var newNumber = parseInt(characterNumber.join(""));
+    var newNumber = parseInt(characterNumber.join(''));
     if (newNumber % randomNumber === 0) {
-      results.push(characterNumber.join(""));
+      results.push(characterNumber.join(''));
     }
   }
   return results;
 };
-console.log(findNumberDivisibleByRandomNumber("1234567890*", 6));
+console.log(findNumberDivisibleByRandomNumber('1234567890*', 6));
+
