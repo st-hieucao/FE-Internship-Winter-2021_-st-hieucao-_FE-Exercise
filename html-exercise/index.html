@@ -23,7 +23,7 @@
 <!-- style="display: none" -->
 
 <body>
-  <div class="home-page">
+  <div class="home-page" style="display: none">
     <header>
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
@@ -483,7 +483,7 @@
     </footer>
   </div>
 
-  <div class="cart-page" style="display: none">
+  <div class="cart-page">
     <header>
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
@@ -536,21 +536,22 @@
             </span>
           </div>
         </div>
-        <div class="cart-content">
+
+        <table class="cart-content">
           <div class="cart-title">
             <div class="row">
-              <div class="col-1">Product</div>
-              <div class="col-2"></div>
-              <div class="col-2 text-center">Color</div>
-              <div class="col-2 text-center">Size</div>
-              <div class="col-2 text-center">Amount</div>
-              <div class="col-2 text-center">Price</div>
-              <div class="col-1"></div>
+              <tr class="col-1">Product</tr>
+              <tr class="col-2"></tr>
+              <tr class="col-2 text-center">Color</tr>
+              <tr class="col-2 text-center">Size</tr>
+              <tr class="col-2 text-center">Amount</tr>
+              <tr class="col-2 text-center">Price</tr>
+              <tr class="col-1"></tr>
             </div>
           </div>
 
           <div class="list-products">
-            <div class="product-item row">
+            <tr class="product-item row">
               <span class="product-image col-1"><img src='./assets/images/cart/product.png'></span>
               <span class="product-info col-2">
                 <span class="product-name">T-Shirt Summer Vibes</span>
@@ -567,27 +568,10 @@
               </div>
               <span class="product-price col-2 text-center">$99.88</span>
               <span class="product-delete col-1 text-right"><img src='./assets/images/cart/cancel.svg'></span>
-            </div>
-            <div class="product-item row">
-              <span class="product-image col-1"><img src='./assets/images/cart/product.png'></span>
-              <span class="product-info col-2">
-                <span class="product-name">T-Shirt Summer Vibes</span>
-                <span class="product-id">#261311</span>
-              </span>
-              <span class="product-color col-2 text-center">White</span>
-              <span class="product-size col-2 text-center">XL</span>
-              <div class="product-options col-2 text-center">
-                <div class="options-content">
-                  <span class="descrease">-</span>
-                  <span class="qty">5</span>
-                  <span class="increase">+</span>
-                </div>
-              </div>
-              <span class="product-price col-2 text-center">$99.88</span>
-              <span class="product-delete col-1 text-right"><img src='./assets/images/cart/cancel.svg'></span>
-            </div>
+            </tr>
           </div>
-        </div>
+        </table>
+
         <div class="cart-bottom">
           <a href="" class="go-back"><img src='./assets/images/cart/arrow-left.svg'>Continue Shopping</a>
           <form class="fromo-code">
@@ -607,11 +591,6 @@
   </div>
 
   <script type="module" src="./assets/js/index.js"></script>
-  <!-- <script>
-    const addToCart = (product) => {
-    console.log('product')
-}
-  </script> -->
 </body>
 
 </html>

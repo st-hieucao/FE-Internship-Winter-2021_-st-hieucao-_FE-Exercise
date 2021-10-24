@@ -21,6 +21,8 @@
   height: 100%;
   &:hover .card-image .cart-icon{
     @include flex-center;
+    opacity: 1;
+    transition: .3s;
   }
   .card-image {
     @include layer-w-100;
@@ -35,7 +37,6 @@
       left: 1.125rem;
     }
     .cart-icon{
-      display: none;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -46,6 +47,7 @@
       border: 1px solid  map-get($color, 'primary' );
       background: map-get($color, 'primary' );
       color: map-get($color, 'white-snow' );
+      opacity: 0;
       cursor: pointer;
       i{
         font-size: map-get($font-size, 'xxxxl' );

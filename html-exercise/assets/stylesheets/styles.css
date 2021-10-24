@@ -448,6 +448,8 @@ footer .footer-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+  transition: 0.3s;
 }
 .card-product .card-image {
   position: relative;
@@ -466,7 +468,6 @@ footer .footer-bottom {
   left: 1.125rem;
 }
 .card-product .card-image .cart-icon {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -477,6 +478,7 @@ footer .footer-bottom {
   border: 1px solid #fbb03b;
   background: #fbb03b;
   color: #ffffff;
+  opacity: 0;
   cursor: pointer;
 }
 .card-product .card-image .cart-icon i {
