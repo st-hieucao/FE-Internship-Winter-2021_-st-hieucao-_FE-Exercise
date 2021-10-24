@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
 }
-@mixin layer {
+@mixin create-layer {
   content: "";
   position: absolute;
   top: 0;

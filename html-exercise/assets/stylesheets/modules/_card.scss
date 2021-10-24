@@ -4,7 +4,7 @@
   height: 100%;
   display: flex;
   &::after {
-    @include layer;
+    @include create-layer;
     background: map-get($color, "black-midnight");
     opacity: 0.5;
   }
