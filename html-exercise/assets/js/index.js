@@ -19,5 +19,5 @@ goBackHomePage.addEventListener('click', (e) => {
 })
 
 renderListProduct(data)
-// renderListProductInCart()
+renderListProductInCart()
 

@@ -530,56 +530,63 @@ footer .footer-bottom {
     left: 50%;
   }
 }
-.product-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
+.cart-content {
+  margin-top: 2rem;
+  width: 100%;
 }
-.product-item .product-image img {
+.cart-content tr th {
+  color: #c4c4c4;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.cart-content tr td {
+  padding: 1rem 0;
+}
+.cart-content tr .product-image img {
   width: 4.375rem;
   height: 4.375rem;
   border-radius: 50%;
   object-fit: cover;
 }
-.product-item .product-info .product-name {
+.cart-content tr .product-info .product-name {
   color: #333333;
   font-weight: 700;
 }
-.product-item .product-info .product-id {
+.cart-content tr .product-info .product-id {
   font-size: 0.813rem;
   color: #c4c4c4;
 }
-.product-item .product-color,
-.product-item .product-size {
+.cart-content tr .product-color,
+.cart-content tr .product-size {
   color: #333333;
 }
-.product-item .product-options {
-  display: flex;
-  justify-content: center;
-}
-.product-item .product-options .options-content {
+.cart-content tr .product-options .options-content {
   border-radius: 50px;
   border: 1px solid #d8d8d8;
   width: 130px;
   height: 50px;
   line-height: 50px;
+  margin: 0 auto;
 }
-.product-item .product-options .options-content .descrease {
+.cart-content tr .product-options .options-content .descrease {
   color: #c4c4c4;
   font-size: 1rem;
   cursor: pointer;
 }
-.product-item .product-options .options-content .increase {
+.cart-content tr .product-options .options-content .descrease.disable {
+  pointer-events: none;
+}
+.cart-content tr .product-options .options-content .increase {
   color: #333333;
   font-size: 1rem;
   cursor: pointer;
 }
-.product-item .product-options .options-content .qty {
+.cart-content tr .product-options .options-content .qty {
   color: #333333;
   font-weight: 700;
   padding: 0 1rem;
 }
-.product-item .product-delete {
+.cart-content tr .product-delete {
   cursor: pointer;
 }
 
@@ -983,12 +990,6 @@ h6 {
   height: 1px;
   background: #e5e5e5;
   margin: 0 1rem;
-}
-.cart-page .section-cart .cart-content {
-  margin-top: 3rem;
-}
-.cart-page .section-cart .cart-content .list-products {
-  margin-top: 2rem;
 }
 .cart-page .section-cart .cart-bottom {
   margin-top: 3rem;
