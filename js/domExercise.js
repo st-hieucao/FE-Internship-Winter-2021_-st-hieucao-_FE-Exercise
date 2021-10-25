@@ -1,10 +1,26 @@
 // ---------------- BAI1
-var buttonElement;
-var alertElement;
 var age;
+
 window.addEventListener('DOMContentLoaded', (event) => {
-  buttonElement = document.querySelector('.button');
-  alertElement = document.querySelector('.alert');
+  var formElement = document.createElement('form')
+  var inputElement = document.createElement('input')
+  var buttonElement = document.createElement('button')
+  var alertElement = document.createElement('div')
+
+  formElement.setAttribute('class', 'form')
+  inputElement.setAttribute('class', 'input')
+  inputElement.setAttribute('placeholder', 'Nhập năm sinh của bạn')
+  buttonElement.setAttribute('class', 'button')
+  alertElement.setAttribute('class', 'alert')
+
+  buttonElement.innerHTML = 'Tính tuổi'
+
+  formElement.append(
+    inputElement,
+    buttonElement,
+    alertElement,
+  )
+  document.body.append(formElement)
 
   buttonElement.onclick = function (e) {
     e.preventDefault();
@@ -47,42 +63,51 @@ var pricingPlans = [
     action: 'Buy Now',
   },
 ];
-var pricingPlansElement = document.querySelector('.list-pricing-plans');
+window.addEventListener('DOMContentLoaded', (event) => {
+  var sectionPricingPlans = document.createElement('section')
+  var pricingPlansElement = document.createElement('ul');
 
-pricingPlans.forEach(function (item) {
-  var planItem = document.createElement('li');
-  var planTitleElement = document.createElement('h3');
-  var priceElement = document.createElement('h4');
-  var benefitsElement = document.createElement('ul');
-  var buttonElement = document.createElement('button');
+  sectionPricingPlans.setAttribute('class', 'section-pricing-plans')
+  pricingPlansElement.setAttribute('class', 'list-pricing-plans')
 
-  planItem.setAttribute('class', 'plan-item');
-  planTitleElement.setAttribute('class', 'plan-title');
-  priceElement.setAttribute('class', 'price');
-  benefitsElement.setAttribute('class', 'benefits');
-  if (item.type === 'basic') {
-    buttonElement.setAttribute('class', 'btn btn-secondary');
-  } else {
-    buttonElement.setAttribute('class', 'btn btn-primary');
-  }
+  sectionPricingPlans.appendChild(pricingPlansElement)
 
-  planTitleElement.innerHTML = item.title;
-  priceElement.innerHTML = item.price + '$/month';
-  buttonElement.innerHTML = item.action;
+  pricingPlans.forEach(function (item) {
+    var planItem = document.createElement('li');
+    var planTitleElement = document.createElement('h3');
+    var priceElement = document.createElement('h4');
+    var benefitsElement = document.createElement('ul');
+    var buttonElement = document.createElement('button');
 
-  item.benefits.forEach(function (infoItem) {
-    var benefitElement = document.createElement('li');
-    benefitElement.setAttribute('class', 'benefit-item');
+    planItem.setAttribute('class', 'plan-item');
+    planTitleElement.setAttribute('class', 'plan-title');
+    priceElement.setAttribute('class', 'price');
+    benefitsElement.setAttribute('class', 'benefits');
+    if (item.type === 'basic') {
+      buttonElement.setAttribute('class', 'btn btn-secondary');
+    } else {
+      buttonElement.setAttribute('class', 'btn btn-primary');
+    }
 
-    benefitElement.innerHTML = infoItem;
-    benefitsElement.appendChild(benefitElement);
+    planTitleElement.innerHTML = item.title;
+    priceElement.innerHTML = item.price + '$/month';
+    buttonElement.innerHTML = item.action;
+
+    item.benefits.forEach(function (infoItem) {
+      var benefitElement = document.createElement('li');
+      benefitElement.setAttribute('class', 'benefit-item');
+
+      benefitElement.innerHTML = infoItem;
+      benefitsElement.appendChild(benefitElement);
+    });
+
+    planItem.append(
+      planTitleElement,
+      priceElement,
+      benefitsElement,
+      buttonElement
+    );
+    pricingPlansElement.appendChild(planItem);
   });
-
-  planItem.append(
-    planTitleElement,
-    priceElement,
-    benefitsElement,
-    buttonElement
-  );
-  pricingPlansElement.appendChild(planItem);
-});
+  document.body.append(sectionPricingPlans)
+})
