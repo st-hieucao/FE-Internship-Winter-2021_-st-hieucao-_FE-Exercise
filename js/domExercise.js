@@ -19,67 +19,70 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 // ---------------- BAI2
-var options = [
+var pricingPlans = [
   {
     title: 'Basic',
-    price: '$10 / month',
-    listInfo: [
+    price: 10,
+    benefits: [
       '10 users included',
       '2 GB of storage',
       'Email support',
       'Help center access',
     ],
+    interval: 'month',
+    type: 'basic',
     action: 'Get Started',
   },
   {
     title: 'Pro',
-    price: '$30 / month',
-    listInfo: [
+    price: 30,
+    benefits: [
       '100 users included',
       '20 GB of storage',
       'Priority email support',
       'Help center access',
     ],
+    interval: 'month',
+    type: 'pro',
     action: 'Buy Now',
   },
 ];
-var listOptionsElement = document.querySelector('.list-options');
+var pricingPlansElement = document.querySelector('.list-pricing-plans');
 
-options.forEach(function (item) {
-  var liElement = document.createElement('li');
-  var optionTitleElement = document.createElement('h3');
+pricingPlans.forEach(function (item) {
+  var planItem = document.createElement('li');
+  var planTitleElement = document.createElement('h3');
   var priceElement = document.createElement('h4');
-  var listInfoElement = document.createElement('ul');
+  var benefitsElement = document.createElement('ul');
   var buttonElement = document.createElement('button');
 
-  liElement.setAttribute('class', 'option');
-  optionTitleElement.setAttribute('class', 'option-title');
+  planItem.setAttribute('class', 'plan-item');
+  planTitleElement.setAttribute('class', 'plan-title');
   priceElement.setAttribute('class', 'price');
-  listInfoElement.setAttribute('class', 'list-info');
-  if (item.title === 'Basic') {
+  benefitsElement.setAttribute('class', 'benefits');
+  if (item.type === 'basic') {
     buttonElement.setAttribute('class', 'btn btn-secondary');
   } else {
     buttonElement.setAttribute('class', 'btn btn-primary');
   }
 
-  optionTitleElement.innerHTML = item.title;
-  priceElement.innerHTML = item.price;
+  planTitleElement.innerHTML = item.title;
+  priceElement.innerHTML = item.price + '$/month';
   buttonElement.innerHTML = item.action;
 
-  item.listInfo.forEach(function (infoItem) {
-    var infoItemElement = document.createElement('li');
-    infoItemElement.setAttribute('class', 'info-item');
+  item.benefits.forEach(function (infoItem) {
+    var benefitElement = document.createElement('li');
+    benefitElement.setAttribute('class', 'benefit-item');
 
-    infoItemElement.innerHTML = infoItem;
-
-    listInfoElement.appendChild(infoItemElement);
-    liElement.append(
-      optionTitleElement,
-      priceElement,
-      listInfoElement,
-      buttonElement
-    );
+    benefitElement.innerHTML = infoItem;
+    benefitsElement.appendChild(benefitElement);
   });
 
-  listOptionsElement.appendChild(liElement);
+  planItem.append(
+    planTitleElement,
+    priceElement,
+    benefitsElement,
+    buttonElement
+  );
+  pricingPlansElement.appendChild(planItem);
 });
