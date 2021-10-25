@@ -24,13 +24,14 @@ export const addEventClickForDescreaseElements = () => {
             let qtyElement = item.parentElement.querySelector('.qty')
             let descreaseElement = item.parentElement.querySelector('.descrease')
             let existsProduct = data.find(item => item.id == parseInt(idProduct))
+
             if (existsProduct) {
                 descreaseToCart(existsProduct)
+                qtyElement.innerHTML = parseInt(qtyElement.innerHTML) - 1
                 if (parseInt(qtyElement.innerHTML) === 1) {
-                    descreaseElement.classList.add("disable");
+                    descreaseElement.classList.add('disable')
                 } else {
-                    qtyElement.innerHTML = parseInt(qtyElement.innerHTML) - 1
-                    descreaseElement.classList.remove("disable");
+                    descreaseElement.classList.remove('disable')
                 }
             } else {
                 return
@@ -45,10 +46,13 @@ export const addEventClickForIncreaseElements = () => {
         item.addEventListener('click', (e) => {
             let idProduct = item.getAttribute('data-id')
             let qtyElement = item.parentElement.querySelector('.qty')
+            let increaseElement = item.parentElement.querySelector('.descrease')
             let existsProduct = data.find(item => item.id == parseInt(idProduct))
+
             if (existsProduct) {
                 addToCart(existsProduct)
                 qtyElement.innerHTML = parseInt(qtyElement.innerHTML) + 1
+                increaseElement.classList.remove('disable')
             } else {
                 return
             }
@@ -113,7 +117,7 @@ export const renderListProductInCart = () => {
         <td class="product-size col-2 text-center">XL</td>
         <td class="product-options col-2 text-center">
         <span class="options-content d-flex justify-content-center">
-            <p class=${item.qty <= 1 ? "descrease disable" : "descrease"} data-id="${item.id}">-</p>
+            <p class="${item.qty <= 1 ? "descrease disable" : "descrease"}" data-id="${item.id}">-</p>
             <p class="qty" data-id="${item.id}">${item.qty}</p>
             <p class="increase" data-id="${item.id}">+</p>
         </span>
