@@ -101,12 +101,10 @@ export const renderListProduct = (arr) => {
 };
 
 export const renderListProductInCart = () => {
-    console.log('render cart')
     let listProducts = document.querySelector('.cart-content')
     let listCartItems = JSON.parse(localStorage.getItem('cart'))
 
-    listCartItems.innerHTML += ''
-    listCartItems.forEach(item => listProducts.innerHTML += `
+    listCartItems.map(item => listProducts.innerHTML += `
     <tr>
         <td class="product-image col-1"><img src=${item.image_url}></td>
         <td class="product-info col-2">
@@ -122,7 +120,7 @@ export const renderListProductInCart = () => {
             <p class="increase" data-id="${item.id}">+</p>
         </span>
         </td>
-        <td class="product-price col-2 text-center">${item.salePrice * item.qty}</td>
+        <td class="product-price col-2 text-center">${(item.salePrice * item.qty).toFixed(2)}</td>
         <td class="product-delete col-1 text-right" data-id="${item.id}"><img src='./assets/images/cart/cancel.svg'></td>
     </tr>`)
 
