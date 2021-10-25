@@ -100,31 +100,33 @@ export const renderListProduct = (arr) => {
     addEventClickForProduct()
 };
 
-export const renderListProductInCart = () => {
-    let listProducts = document.querySelector('.cart-content')
-    let listCartItems = JSON.parse(localStorage.getItem('cart'))
 
-    listCartItems.map(item => listProducts.innerHTML += `
-    <tr>
-        <td class="product-image col-1"><img src=${item.image_url}></td>
-        <td class="product-info col-2">
-        <span class="product-name">${item.title}</span>
-        <span class="product-id">#261311</span>
-        </td>
-        <td class="product-color col-2 text-center">White</td>
-        <td class="product-size col-2 text-center">XL</td>
-        <td class="product-options col-2 text-center">
-        <span class="options-content d-flex justify-content-center">
-            <p class="${item.qty <= 1 ? "descrease disable" : "descrease"}" data-id="${item.id}">-</p>
-            <p class="qty" data-id="${item.id}">${item.qty}</p>
-            <p class="increase" data-id="${item.id}">+</p>
-        </span>
-        </td>
-        <td class="product-price col-2 text-center">${(item.salePrice * item.qty).toFixed(2)}</td>
-        <td class="product-delete col-1 text-right" data-id="${item.id}"><img src='./assets/images/cart/cancel.svg'></td>
-    </tr>`)
+// export const renderListProductInCart = () => {
+//     console.log('render cart')
+//     let listProducts = document.querySelector('.cart-content')
+//     let listCartItems = JSON.parse(localStorage.getItem('cart'))
+//     let listItems = ''
 
-    addEventClickForDescreaseElements()
-    addEventClickForIncreaseElements()
-    addEventClickForDeleteElements()
-}
+//     listCartItems.forEach((item) => {
+//         listItems += `
+//         <tr>
+//             <td class="product-image col-1"><img src=${item.image_url}></td>
+//             <td class="product-info col-2">
+//             <span class="product-name">${item.title}</span>
+//             <span class="product-id">#261311</span>
+//             </td>
+//             <td class="product-color col-2 text-center">White</td>
+//             <td class="product-size col-2 text-center">XL</td>
+//             <td class="product-options col-2 text-center">
+//             <span class="options-content d-flex justify-content-center">
+//                 <p class="${item.qty <= 1 ? "descrease disable" : "descrease"}" data-id="${item.id}">-</p>
+//                 <p class="qty" data-id="${item.id}">${item.qty}</p>
+//                 <p class="increase" data-id="${item.id}" onclick="increaseProduct('${item.id}')">+</p>
+//             </span>
+//             </td>
+//             <td class="product-price col-2 text-center">${(item.salePrice * item.qty).toFixed(2)}</td>
+//             <td class="product-delete col-1 text-right" data-id="${item.id}"><img src='./assets/images/cart/cancel.svg'></td>
+//         </tr>`
+//     })
+//     listProducts.innerHTML = listItems
+// }
