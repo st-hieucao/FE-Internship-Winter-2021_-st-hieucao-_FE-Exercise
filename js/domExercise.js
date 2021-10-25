@@ -2,25 +2,21 @@
 var age;
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  var formElement = document.createElement('form')
-  var inputElement = document.createElement('input')
-  var buttonElement = document.createElement('button')
-  var alertElement = document.createElement('div')
+  var formElement = document.createElement('form');
+  var inputElement = document.createElement('input');
+  var buttonElement = document.createElement('button');
+  var alertElement = document.createElement('div');
 
-  formElement.setAttribute('class', 'form')
-  inputElement.setAttribute('class', 'input')
-  inputElement.setAttribute('placeholder', 'Nhập năm sinh của bạn')
-  buttonElement.setAttribute('class', 'button')
-  alertElement.setAttribute('class', 'alert')
+  formElement.setAttribute('class', 'form');
+  inputElement.setAttribute('class', 'input');
+  inputElement.setAttribute('placeholder', 'Nhập năm sinh của bạn');
+  buttonElement.setAttribute('class', 'button');
+  alertElement.setAttribute('class', 'alert');
 
-  buttonElement.innerHTML = 'Tính tuổi'
+  buttonElement.innerHTML = 'Tính tuổi';
 
-  formElement.append(
-    inputElement,
-    buttonElement,
-    alertElement,
-  )
-  document.body.append(formElement)
+  formElement.append(inputElement, buttonElement, alertElement);
+  document.body.append(formElement);
 
   buttonElement.onclick = function (e) {
     e.preventDefault();
@@ -32,7 +28,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     alertElement.innerHTML = 'Tuổi của bạn là: ' + age;
   };
 });
-
 
 // ---------------- BAI2
 var pricingPlans = [
@@ -64,13 +59,13 @@ var pricingPlans = [
   },
 ];
 window.addEventListener('DOMContentLoaded', (event) => {
-  var sectionPricingPlans = document.createElement('section')
+  var sectionPricingPlans = document.createElement('section');
   var pricingPlansElement = document.createElement('ul');
 
-  sectionPricingPlans.setAttribute('class', 'section-pricing-plans')
-  pricingPlansElement.setAttribute('class', 'list-pricing-plans')
+  sectionPricingPlans.setAttribute('class', 'section-pricing-plans');
+  pricingPlansElement.setAttribute('class', 'list-pricing-plans');
 
-  sectionPricingPlans.appendChild(pricingPlansElement)
+  sectionPricingPlans.appendChild(pricingPlansElement);
 
   pricingPlans.forEach(function (item) {
     var planItem = document.createElement('li');
@@ -90,7 +85,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     planTitleElement.innerHTML = item.title;
-    priceElement.innerHTML = item.price + '$/month';
+    priceElement.innerHTML = item.price + '$' + item.interval;
     buttonElement.innerHTML = item.action;
 
     item.benefits.forEach(function (infoItem) {
@@ -109,5 +104,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     );
     pricingPlansElement.appendChild(planItem);
   });
-  document.body.append(sectionPricingPlans)
-})
+  document.body.append(sectionPricingPlans);
+});
