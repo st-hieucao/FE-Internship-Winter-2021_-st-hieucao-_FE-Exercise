@@ -27,38 +27,36 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     alertElement.innerHTML = 'Tuổi của bạn là: ' + age;
   };
-});
+  // ---------------- BAI2
+  var pricingPlans = [
+    {
+      title: 'Basic',
+      price: 10,
+      benefits: [
+        '10 users included',
+        '2 GB of storage',
+        'Email support',
+        'Help center access',
+      ],
+      interval: 'month',
+      type: 'basic',
+      action: 'Get Started',
+    },
+    {
+      title: 'Pro',
+      price: 30,
+      benefits: [
+        '100 users included',
+        '20 GB of storage',
+        'Priority email support',
+        'Help center access',
+      ],
+      interval: 'month',
+      type: 'pro',
+      action: 'Buy Now',
+    },
+  ];
 
-// ---------------- BAI2
-var pricingPlans = [
-  {
-    title: 'Basic',
-    price: 10,
-    benefits: [
-      '10 users included',
-      '2 GB of storage',
-      'Email support',
-      'Help center access',
-    ],
-    interval: 'month',
-    type: 'basic',
-    action: 'Get Started',
-  },
-  {
-    title: 'Pro',
-    price: 30,
-    benefits: [
-      '100 users included',
-      '20 GB of storage',
-      'Priority email support',
-      'Help center access',
-    ],
-    interval: 'month',
-    type: 'pro',
-    action: 'Buy Now',
-  },
-];
-window.addEventListener('DOMContentLoaded', (event) => {
   var sectionPricingPlans = document.createElement('section');
   var pricingPlansElement = document.createElement('ul');
 
