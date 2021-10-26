@@ -197,9 +197,9 @@ const createProductItemInCartPage = (product) => {
     let productSize = document.createElement('td');
     let productOptions = document.createElement('td');
     let optionContent = document.createElement('span');
-    let descreaseElement = document.createElement('p');
+    let descreaseElement = document.createElement('button');
     let quantityElement = document.createElement('p');
-    let increaseElement = document.createElement('p');
+    let increaseElement = document.createElement('button');
     let productPrice = document.createElement('td');
     let productDelete = document.createElement('td');
     let imgDelete = document.createElement('img');

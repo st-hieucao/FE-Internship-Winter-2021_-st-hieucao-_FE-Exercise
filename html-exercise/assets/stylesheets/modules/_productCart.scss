@@ -43,6 +43,9 @@
         .descrease {
           color: map-get($color, "gray-light");
           font-size: map-get($font-size, "lg");
+          outline: none;
+          border: none;
+          background: none;
           cursor: pointer;
           &.disable{
             pointer-events: none;
@@ -51,6 +54,9 @@
         .increase {
           color: map-get($color, "black-midnight");
           font-size: map-get($font-size, "lg");
+          outline: none;
+          border: none;
+          background: none;
           cursor: pointer;
         }
         .quantity {

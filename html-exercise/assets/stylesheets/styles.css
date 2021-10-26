@@ -571,6 +571,9 @@ footer .footer-bottom {
 .cart-content tr .product-options .options-content .descrease {
   color: #c4c4c4;
   font-size: 1rem;
+  outline: none;
+  border: none;
+  background: none;
   cursor: pointer;
 }
 .cart-content tr .product-options .options-content .descrease.disable {
@@ -579,6 +582,9 @@ footer .footer-bottom {
 .cart-content tr .product-options .options-content .increase {
   color: #333333;
   font-size: 1rem;
+  outline: none;
+  border: none;
+  background: none;
   cursor: pointer;
 }
 .cart-content tr .product-options .options-content .quantity {
