@@ -581,7 +581,7 @@ footer .footer-bottom {
   font-size: 1rem;
   cursor: pointer;
 }
-.cart-content tr .product-options .options-content .qty {
+.cart-content tr .product-options .options-content .quantity {
   color: #333333;
   font-weight: 700;
   padding: 0 1rem;
