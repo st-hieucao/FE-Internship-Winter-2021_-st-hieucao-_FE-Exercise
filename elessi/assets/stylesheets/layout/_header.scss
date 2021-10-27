@@ -1,24 +1,24 @@
-header{
-  .header-top{
+header {
+  .header-top {
     min-height: 42px;
     border-bottom: 1px solid #e5e5e5;
-    .header-top-content{
+    .header-top-content {
       padding: 10px 0;
     }
-    .option-item{
+    .option-item {
       position: relative;
       cursor: pointer;
-      &:hover .option-dropdown{
+      &:hover .option-dropdown {
         visibility: visible;
-        transition: .3s;
+        transition: 0.3s;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         padding-left: 1rem;
       }
-      i{
+      i {
         font-size: 10px;
       }
-      .option-dropdown{
+      .option-dropdown {
         position: absolute;
         top: 34px;
         right: 0;
@@ -28,74 +28,73 @@ header{
         visibility: hidden;
         pointer-events: auto;
         z-index: 1;
-        .dropdow-item{
+        .dropdow-item {
           touch-action: manipulation;
         }
       }
     }
   }
-  .nav-main{
+  .nav-main {
     min-height: 95px;
     background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .nav-logo img{
+    .nav-logo img {
       width: 100px;
     }
-    .nav-list{
+    .nav-list {
       display: flex;
-      .nav-item{
+      .nav-item {
         display: flex;
         align-items: center;
         height: 95px;
         position: relative;
         cursor: pointer;
-        &:hover{
-
+        &:hover {
         }
-        &:hover .nav-link{
+        &:hover .nav-link {
           color: #f76b6a;
-          transition: .3s;
+          transition: 0.3s;
         }
-        .nav-link{
+        .nav-link {
           padding: 0 18px;
           color: #333;
           font-weight: 700;
           text-transform: uppercase;
-          i{
+          i {
             font-size: 10px;
-            padding-left: .5rem;
+            padding-left: 0.5rem;
           }
-          &.nav-link-active{
+          &.nav-link-active {
             color: #f76b6a;
-            i{
+            i {
               font-size: 20px;
               color: #f76b6a;
-              padding-right: .5rem;
+              padding-right: 0.5rem;
             }
           }
         }
-        .menu-dropdown{
+        .menu-dropdown {
           position: absolute;
           right: 0;
           max-height: 75vh;
         }
       }
     }
-    .list-icons{
+    .list-icons {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      margin: 0 -.7rem;
-      .icon-item{
-        padding: 0 .7rem;
-        i{
+      margin: 0 -0.7rem;
+      .icon-item {
+        padding: 0 0.7rem;
+        i {
           font-size: 22px;
           cursor: pointer;
-          &:hover{
+          &:hover {
             color: #f76b6a;
-            transition: .3s;
+            transition: 0.3s;
           }
         }
       }
