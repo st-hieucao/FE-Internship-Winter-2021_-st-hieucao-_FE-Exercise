@@ -1,0 +1,35 @@
+$color: (
+  primary: #fbb03b,
+  secondary: #fff3df,
+  white-snow: #ffffff,
+  red-fire: #ff0000,
+  black-midnight: #333333,
+  gray-fog: #f6f6f6,
+  gray-light: #c4c4c4,
+  gray-cloudy: #cecece,
+  gray-mouse: #ababab,
+  gray-metal: #a8a8a8,
+  gray-bold: #808080,
+);
+$font-size: (
+  xss: 0.625rem,
+  xs: 0.688rem,
+  xxs: 0.75rem,
+  sm: 0.813rem,
+  normal: 0.875rem,
+  lg: 1rem,
+  xl: 1.125rem,
+  xxl: 1.188rem,
+  xxxl: 1.25rem,
+  xxxxl: 1.5rem,
+  xxxxxl: 1.875rem,
+  xxxxxxl: 2rem,
+  xxxxxxxl: 4.5rem,
+);
+$font-primary: Poppins, sans-serif;
+$font-secondary: Helvetica;
+$space: (
+  desk: 0.625rem,
+  mobi: 0.25rem,
+);
+$grid-columns: 12;

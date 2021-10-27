@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.625rem;
+}
+.container {
+  padding: 0 0.625rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  z-index: 1;
+  position: relative;
+}
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: percentage($i / $grid-columns);
+    padding: 0 map-get($space, "desk");
+  }
+}
+@media screen and (max-width: 480px) {
+  .row {
+    margin: 0 - map-get($space, "mobi");
+  }
+  .container {
+    padding: 0 1.25rem;
+  }
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      width: percentage($i * 2 / $grid-columns);
+      padding: 0 map-get($space, "mobi");
+    }
+  }
+}

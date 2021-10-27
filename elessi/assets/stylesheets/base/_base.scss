@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-primary;
+  font-style: normal;
+  font-size: map-get($font-size, "normal");
+  font-weight: 400;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}

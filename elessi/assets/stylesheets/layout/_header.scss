@@ -1,0 +1,32 @@
+header{
+  .header-top{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    .header-options{
+      display: flex;
+      .option-item{
+        padding: 0 .5rem;
+      }
+    }
+    .header-user{
+      display: flex;
+      margin-left: 1rem;
+      .login,
+      .register{
+        padding: .5rem;
+        border: 1px solid #e5e5e5;
+      }
+    }
+  }
+  .nav-main{
+    .nav-list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header-logo{
+        font-size: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: map-get($color, "black-midnight");
+}
+.section-title {
+  font-weight: 300;
+  font-size: map-get($font-size, "xxxxxxl");
+  line-height: 3rem;
+  text-align: center;
+}
+.text-primary {
+  color: map-get($color, "primary");
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.125rem;
+  }
+}
