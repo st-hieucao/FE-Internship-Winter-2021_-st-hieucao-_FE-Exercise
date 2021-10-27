@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   formElement.setAttribute('class', 'form');
   inputElement.setAttribute('class', 'input');
+  inputElement.setAttribute('type', 'number');
   inputElement.setAttribute('placeholder', 'Nhập năm sinh của bạn');
   buttonElement.setAttribute('class', 'button');
   alertElement.setAttribute('class', 'alert');
@@ -83,7 +84,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     planTitleElement.innerHTML = item.title;
-    priceElement.innerHTML = item.price + '$' + item.interval;
+    priceElement.innerHTML = item.price + '$/' + item.interval;
     buttonElement.innerHTML = item.action;
 
     item.benefits.forEach(function (infoItem) {
