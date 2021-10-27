@@ -1,31 +1,103 @@
 header{
   .header-top{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 0;
-    .header-options{
-      display: flex;
-      .option-item{
-        padding: 0 .5rem;
-      }
+    min-height: 42px;
+    border-bottom: 1px solid #e5e5e5;
+    .header-top-content{
+      padding: 10px 0;
     }
-    .header-user{
-      display: flex;
-      margin-left: 1rem;
-      .login,
-      .register{
-        padding: .5rem;
-        border: 1px solid #e5e5e5;
+    .option-item{
+      position: relative;
+      cursor: pointer;
+      &:hover .option-dropdown{
+        visibility: visible;
+        transition: .3s;
+      }
+      &:nth-child(2){
+        padding-left: 1rem;
+      }
+      i{
+        font-size: 10px;
+      }
+      .option-dropdown{
+        position: absolute;
+        top: 34px;
+        right: 0;
+        padding: 1rem;
+        background: #eee;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        visibility: hidden;
+        pointer-events: auto;
+        z-index: 1;
+        .dropdow-item{
+          touch-action: manipulation;
+        }
       }
     }
   }
   .nav-main{
+    min-height: 95px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-logo img{
+      width: 100px;
+    }
     .nav-list{
       display: flex;
-      justify-content: space-between;
+      .nav-item{
+        display: flex;
+        align-items: center;
+        height: 95px;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+
+        }
+        &:hover .nav-link{
+          color: #f76b6a;
+          transition: .3s;
+        }
+        .nav-link{
+          padding: 0 18px;
+          color: #333;
+          font-weight: 700;
+          text-transform: uppercase;
+          i{
+            font-size: 10px;
+            padding-left: .5rem;
+          }
+          &.nav-link-active{
+            color: #f76b6a;
+            i{
+              font-size: 20px;
+              color: #f76b6a;
+              padding-right: .5rem;
+            }
+          }
+        }
+        .menu-dropdown{
+          position: absolute;
+          right: 0;
+          max-height: 75vh;
+        }
+      }
+    }
+    .list-icons{
+      display: flex;
       align-items: center;
-      .header-logo{
-        font-size: 35px;
+      justify-content: flex-end;
+      margin: 0 -.7rem;
+      .icon-item{
+        padding: 0 .7rem;
+        i{
+          font-size: 22px;
+          cursor: pointer;
+          &:hover{
+            color: #f76b6a;
+            transition: .3s;
+          }
+        }
       }
     }
   }
