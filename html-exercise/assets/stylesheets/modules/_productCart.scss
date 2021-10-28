@@ -2,12 +2,12 @@
   margin-top: 2rem;
   width: 100%;
   tr {
-    th{
+    th {
       color: map-get($color, "gray-light");
       font-weight: 500;
       padding: 1rem 0;
     }
-    td{
+    td {
       padding: 1rem 0;
     }
     .product-image {
@@ -51,7 +51,7 @@
           border: none;
           background: none;
           cursor: pointer;
-          &.disable{
+          &.disable {
             pointer-events: none;
           }
         }

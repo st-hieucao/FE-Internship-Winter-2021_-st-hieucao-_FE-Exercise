@@ -22,10 +22,10 @@
 .card-product {
   cursor: pointer;
   height: 100%;
-  &:hover .card-image .cart-icon{
+  &:hover .card-image .cart-icon {
     @include flex-center;
     opacity: 1;
-    transition: .3s;
+    transition: 0.3s;
   }
   .card-image {
     position: relative;
@@ -39,7 +39,7 @@
       top: 1.5rem;
       left: 1.125rem;
     }
-    .cart-icon{
+    .cart-icon {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -47,19 +47,19 @@
       width: 54px;
       height: 54px;
       border-radius: 50%;
-      border: 1px solid  map-get($color, 'primary' );
-      background: map-get($color, 'primary' );
-      color: map-get($color, 'white-snow' );
+      border: 1px solid map-get($color, "primary");
+      background: map-get($color, "primary");
+      color: map-get($color, "white-snow");
       opacity: 0;
       cursor: pointer;
-      i{
-        font-size: map-get($font-size, 'xxxxl' );
+      i {
+        font-size: map-get($font-size, "xxxxl");
       }
-      &:hover{
-        transition: .5s;
-        border: 1px solid  map-get($color, 'primary' );
-        background: map-get($color, 'white-snow' );
-        color: map-get($color, 'primary' );
+      &:hover {
+        transition: 0.5s;
+        border: 1px solid map-get($color, "primary");
+        background: map-get($color, "white-snow");
+        color: map-get($color, "primary");
       }
     }
   }

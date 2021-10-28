@@ -199,13 +199,13 @@
     }
   }
 }
-.notification{
+.notification {
   visibility: hidden;
   height: 50px;
   padding: 0 1rem;
   width: fit-content;
   margin: auto;
-  background-color: map-get($color, 'primary');
+  background-color: map-get($color, "primary");
   color: #fff;
   text-align: center;
   border-radius: 10px;
@@ -330,7 +330,7 @@
   }
   to {
     top: 30px;
-    opacity: 1
+    opacity: 1;
   }
 }
 
