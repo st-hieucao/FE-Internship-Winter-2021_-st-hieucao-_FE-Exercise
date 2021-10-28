@@ -3,7 +3,7 @@
     position: absolute;
     top: 3.438rem;
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     .header-logo {
       @include align-center;
       font-size: map-get($font-size, "xlg");

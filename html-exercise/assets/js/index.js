@@ -38,6 +38,7 @@ const $goBackHomePage = document.querySelector('.go-back');
 let $listProducts = document.querySelector('.cart-content');
 let $listProductsInHomePage = document.querySelector('.list-products');
 let $totalPrice = document.querySelector('.total-cost');
+let $notification = document.querySelector(".notification")
 
 const toggleDisplayElement = (showHomePage = true) => {
     if (showHomePage) {
@@ -46,13 +47,11 @@ const toggleDisplayElement = (showHomePage = true) => {
     } else {
         $bodyHomePage.style.display = 'none';
         $bodyCartPage.style.display = 'block';
-        renderListProductInCart();
     }
 }
 $cartIcon.addEventListener('click', (e) => {
     e.preventDefault();
     toggleDisplayElement(false)
-    renderListProductInCart();
 });
 $goBackHomePage.addEventListener('click', (e) => {
     e.preventDefault();
@@ -72,7 +71,7 @@ const handleAddEventForDescreaseAndIncreaseButon = (_this, product, isIncreasing
         '.quantity'
     );
     if (isIncreasing === false) {
-        handleDecrement(idProduct);
+        handleDecrementOrIncreaseQuantity(idProduct, false);
         quantityElement.innerHTML = +quantityElement.innerHTML - 1;
         if (+quantityElement.innerHTML === 1) {
             descreaseElement.classList.add('disable');
@@ -82,7 +81,7 @@ const handleAddEventForDescreaseAndIncreaseButon = (_this, product, isIncreasing
     } else {
         descreaseElement.classList.remove('disable');
         quantityElement.innerHTML = +quantityElement.innerHTML + 1;
-        addToCart(idProduct);
+        handleDecrementOrIncreaseQuantity(idProduct);
     }
     productPriceElement.innerHTML = (
         product.salePrice * + quantityElement.innerHTML
@@ -91,30 +90,25 @@ const handleAddEventForDescreaseAndIncreaseButon = (_this, product, isIncreasing
 }
 
 // ---------------------- HANDLE CART
-const addToCart = (productId) => {
-    let selectedProducts = JSON.parse(localStorage.getItem('cart')) || [];
-
-    const existsProduct = selectedProducts.findIndex(
-        (item) => item.id === +productId
-    );
-    if (existsProduct !== -1) {
-        selectedProducts[existsProduct] = { ...selectedProducts[existsProduct], quantity: selectedProducts[existsProduct].quantity + 1 }
-    } else {
-        let productInData = data.find((item) => item.id === +productId);
-        let newItem = {
-            ...productInData,
-            quantity: 1,
-        };
-        selectedProducts.push(newItem);
-    }
-    localStorage.setItem('cart', JSON.stringify(selectedProducts));
-};
-const handleDecrement = (productId) => {
+const handleDecrementOrIncreaseQuantity = (productId, increase = true) => {
     let selectedProducts = JSON.parse(localStorage.getItem('cart')) || [];
     let indexProduct = selectedProducts.findIndex(
         (item) => item.id === +productId
     );
-    selectedProducts[indexProduct] = { ...selectedProducts[indexProduct], quantity: selectedProducts[indexProduct].quantity - 1 }
+    if (increase) {
+        if (indexProduct !== -1) {
+            selectedProducts[indexProduct] = { ...selectedProducts[indexProduct], quantity: selectedProducts[indexProduct].quantity + 1 }
+        } else {
+            let productInData = data.find((item) => item.id === +productId);
+            let newItem = {
+                ...productInData,
+                quantity: 1,
+            };
+            selectedProducts.push(newItem);
+        }
+    } else {
+        selectedProducts[indexProduct] = { ...selectedProducts[indexProduct], quantity: selectedProducts[indexProduct].quantity - 1 }
+    }
     localStorage.setItem('cart', JSON.stringify(selectedProducts));
 };
 const deleteElementFromCart = (productId) => {
@@ -149,7 +143,7 @@ const createProductItem = (product) => {
     cardProduct.className = 'card-product col-3 col-sm-3';
     cardImage.className = 'card-image';
     imgElement.className = 'image';
-    badgeElement.className = 'badge badge-danger';
+    if (product.discount > 0) badgeElement.className = 'badge badge-danger';
     $cartIcon.className = 'cart-icon';
     cardBody.className = 'card-body';
     cardName.className = 'card-name';
@@ -161,7 +155,7 @@ const createProductItem = (product) => {
     $cartIcon.setAttribute('data-id', product.id);
     imgElement.src = product.image_url;
     imgElement.alt = product.name;
-    badgeElement.innerHTML = product.discount;
+    if (product.discount > 0) badgeElement.innerHTML = '-' + product.discount + '%';
     cardName.innerHTML = product.name;
     newPrice.innerHTML = product.salePrice;
     if (product.price) {
@@ -170,7 +164,11 @@ const createProductItem = (product) => {
 
     $cartIcon.addEventListener('click', function () {
         let idProduct = this.getAttribute('data-id');
-        addToCart(idProduct);
+
+        handleDecrementOrIncreaseQuantity(idProduct);
+
+        $notification.classList.add('show')
+        setTimeout(() => { $notification.className = $notification.className.replace(" show", ""); }, 4000);
     });
 
     $cartIcon.append(icon);

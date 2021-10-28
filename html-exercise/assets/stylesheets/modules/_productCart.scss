@@ -19,6 +19,10 @@
       }
     }
     .product-info {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
       .product-name {
         color: map-get($color, "black-midnight");
         font-weight: 700;

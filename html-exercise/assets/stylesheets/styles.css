@@ -199,7 +199,7 @@ li {
   position: absolute;
   top: 3.438rem;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
 }
 .home-page header .header-logo {
   display: flex;
@@ -548,6 +548,12 @@ footer .footer-bottom {
   border-radius: 50%;
   object-fit: cover;
 }
+.cart-content tr .product-info {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
 .cart-content tr .product-info .product-name {
   color: #333333;
   font-weight: 700;
@@ -847,6 +853,30 @@ h6 {
   margin-left: 3rem;
 }
 
+.notification {
+  visibility: hidden;
+  height: 50px;
+  padding: 0 1rem;
+  width: fit-content;
+  margin: auto;
+  background-color: #fbb03b;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 30px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+.notification.show {
+  visibility: visible;
+  animation: fadein 1s, fadeout 1s 3s;
+}
+
 @media screen and (max-width: 480px) {
   .section-banner .banner-content {
     left: 1.5rem;
@@ -940,6 +970,26 @@ h6 {
     margin: 1rem 0;
     padding: 0.625rem 1.25rem;
     font-weight: bold;
+  }
+}
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
   }
 }
 .cart-page header {
