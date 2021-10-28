@@ -1,5 +1,8 @@
 .card-collection {
-  @include layer-100;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
   &::after {
     content: "";
     position: absolute;
@@ -25,8 +28,8 @@
     transition: .3s;
   }
   .card-image {
-    @include layer-w-100;
-    @include flex-center;
+    position: relative;
+    width: 100%;
     img {
       width: 100%;
       height: 100%;

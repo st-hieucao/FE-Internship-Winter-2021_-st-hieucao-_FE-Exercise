@@ -140,7 +140,7 @@ const createProductItem = (product) => {
     let oldPrice = document.createElement('span');
     let icon = document.createElement('i');
 
-    cardProduct.className = 'card-product col-3 col-sm-3';
+    cardProduct.className = 'card-product col-3 col-sm-6';
     cardImage.className = 'card-image';
     imgElement.className = 'image';
     if (product.discount > 0) badgeElement.className = 'badge badge-danger';

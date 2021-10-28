@@ -2,7 +2,7 @@ footer {
   background: map-get($color, "primary");
   .footer-top {
     border-bottom: 1px solid map-get($color, "white-snow");
-    padding: 3rem 0;
+    padding: 1rem 0 3rem 0;
     .footer-logo {
       @include align-center;
       .footer-title {
@@ -28,6 +28,7 @@ footer {
     .list-info {
       display: flex;
       justify-content: space-between;
+      margin-top: 3rem;
       .title {
         font-size: map-get($font-size, "lg");
         color: map-get($color, "white-snow");
@@ -54,6 +55,7 @@ footer {
 @media screen and (max-width: 480px) {
   footer {
     .footer-top {
+      padding-top: 3rem;
       .about-us {
         .about-us-description {
           width: 90%;

@@ -1,5 +1,6 @@
 .section-banner {
-  @include layer-w-100;
+  position: relative;
+  width: 100%;
   background: url("../images/banner.png") no-repeat;
   background-size: cover;
   height: 100vh;
@@ -155,8 +156,9 @@
   }
 }
 .section-contact {
-  @include layer-w-100;
   @include align-center;
+  position: relative;
+  width: 100%;
   background: url("../images/contact.png") no-repeat;
   background-size: cover;
   height: 15rem;
