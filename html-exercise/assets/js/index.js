@@ -60,31 +60,31 @@ $goBackHomePage.addEventListener('click', (e) => {
 
 const handleAddEventForDescreaseAndIncreaseButon = (_this, product, isIncreasing = true) => {
     let idProduct = _this.getAttribute('data-id');
-    let productPriceElement =
+    let $productPriceElement =
         _this.parentElement.parentElement.parentElement.querySelector(
             '.product-price'
         );
-    let descreaseElement = _this.parentElement.querySelector(
+    let $descreaseElement = _this.parentElement.querySelector(
         '.descrease'
     );
-    let quantityElement = _this.parentElement.querySelector(
+    let $quantityElement = _this.parentElement.querySelector(
         '.quantity'
     );
     if (isIncreasing === false) {
         handleDecrementOrIncreaseQuantity(idProduct, false);
-        quantityElement.innerHTML = +quantityElement.innerHTML - 1;
-        if (+quantityElement.innerHTML === 1) {
-            descreaseElement.classList.add('disable');
+        $quantityElement.innerHTML = +$quantityElement.innerHTML - 1;
+        if (+$quantityElement.innerHTML === 1) {
+            $descreaseElement.classList.add('disable');
         } else {
-            descreaseElement.classList.remove('disable');
+            $descreaseElement.classList.remove('disable');
         }
     } else {
-        descreaseElement.classList.remove('disable');
-        quantityElement.innerHTML = +quantityElement.innerHTML + 1;
+        $descreaseElement.classList.remove('disable');
+        $quantityElement.innerHTML = +$quantityElement.innerHTML + 1;
         handleDecrementOrIncreaseQuantity(idProduct);
     }
-    productPriceElement.innerHTML = (
-        product.salePrice * + quantityElement.innerHTML
+    $productPriceElement.innerHTML = (
+        product.salePrice * + $quantityElement.innerHTML
     ).toFixed(2);
     updateTotalPrice();
 }
