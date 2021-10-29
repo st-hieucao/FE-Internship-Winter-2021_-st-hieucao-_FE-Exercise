@@ -5,16 +5,12 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  color: map-get($color, "black-midnight");
 }
 .section-title {
-  font-weight: 300;
-  font-size: map-get($font-size, "xxxxxxl");
-  line-height: 3rem;
-  text-align: center;
+  font-size: 26.5px;
+  font-weight: 800;
 }
 .text-primary {
-  color: map-get($color, "primary");
 }
 .text-center{
   text-align: center;

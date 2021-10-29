@@ -5,31 +5,35 @@ header {
     .header-top-content {
       padding: 10px 0;
     }
-    .option-item {
-      position: relative;
-      cursor: pointer;
-      &:hover .option-dropdown {
-        visibility: visible;
-        transition: 0.3s;
-      }
-      &:nth-child(2) {
-        padding-left: 1rem;
-      }
-      i {
-        font-size: 10px;
-      }
-      .option-dropdown {
-        position: absolute;
-        top: 34px;
-        right: 0;
-        padding: 1rem;
-        background: #eee;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        visibility: hidden;
-        pointer-events: auto;
-        z-index: 1;
-        .dropdow-item {
-          touch-action: manipulation;
+    .options{
+      display: flex;
+      justify-content: flex-end;
+      .option-item {
+        position: relative;
+        cursor: pointer;
+        &:hover .option-dropdown {
+          visibility: visible;
+          transition: 0.3s;
+        }
+        &:nth-child(2) {
+          padding-left: 1rem;
+        }
+        i {
+          font-size: 10px;
+        }
+        .option-dropdown {
+          position: absolute;
+          top: 34px;
+          right: 0;
+          padding: 1rem;
+          background: #eee;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          visibility: hidden;
+          pointer-events: auto;
+          z-index: 1;
+          .dropdow-item {
+            touch-action: manipulation;
+          }
         }
       }
     }
@@ -76,18 +80,19 @@ header {
           }
         }
         .menu-dropdown {
+          display: none;
           position: absolute;
           right: 0;
           max-height: 75vh;
         }
       }
     }
-    .list-icons {
+    .list-actions {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       margin: 0 -0.7rem;
-      .icon-item {
+      .action-item {
         padding: 0 0.7rem;
         i {
           font-size: 22px;

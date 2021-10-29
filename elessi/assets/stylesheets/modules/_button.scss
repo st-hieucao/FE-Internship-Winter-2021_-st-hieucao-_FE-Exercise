@@ -1,0 +1,25 @@
+.btn {
+  padding: .8rem 38px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  min-height: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  cursor: pointer;
+  &.btn-primary{
+    color: #ffffff;
+    background-color: #f76b6a;
+    border-color: #f76b6a;
+    &:hover{
+      opacity: .5;
+      transition: .3s;
+    }
+  }
+  &.btn-secondary{
+    
+    &:hover{
+
+    }
+  }
+}
