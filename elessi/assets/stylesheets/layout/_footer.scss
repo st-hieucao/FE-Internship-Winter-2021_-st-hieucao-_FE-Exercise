@@ -1,7 +1,10 @@
 footer{
+  margin-top: 2rem;
   .footer-top{
     background: #f7f7f7;
-    padding: 3rem 0;
+    padding: 4rem 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     .footer-contact-us{
       .footer-logo{
         width: 95px;
@@ -11,7 +14,90 @@ footer{
         margin-bottom: 1.3em;
       }
       .list-media{
-        
+        display: flex;
+        .media-item{
+          cursor: pointer;
+          margin-right: 1.5rem;
+          .text{
+            display: none;
+          }
+        }
+      }
+    }
+    .menu-footer{
+      .menu-footer-title{
+        margin-bottom: .8rem;
+        color: #333;
+      }
+      .menu-list{
+        .menu-item{
+          padding: .5rem 0;
+          a:hover{
+            color: #f76b6a;
+            transition: .3s;
+          }
+        }
+      }
+    }
+    .about-us{
+      .about-us-title{
+        margin-bottom: .8rem;
+      }
+      .list-info{
+        padding-right: 2.5rem;
+        .info-item{
+          padding: .5rem 0;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+    .news-letter{
+      .news-letter-title{
+        margin-bottom: 1.1rem;
+      }
+      .news-letter-description{
+        margin-bottom: 1rem;
+      }
+      .form{
+        position: relative;
+        border: 1px solid #e5e5e5;
+        display: flex;
+        .input{
+          width: 100%;
+          border: none;
+          outline: none;
+          background: transparent;
+          padding: .8rem 1rem;
+        }
+      }
+      .payment{
+        height: 35px;
+        width: auto;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .copyright{
+    padding: 1.5rem 0;
+    .text{
+      .nameshop{
+        font-weight: bold;
+        &:hover{
+          color: #f76b6a;
+          transition: .3s;
+        }
+      }
+    }
+    .menu-list{
+      display: flex;
+      .menu-item{
+        padding-left: 1rem;
+        &:hover a{
+          color: #f76b6a;
+          transition: .3s;
+        }
       }
     }
   }

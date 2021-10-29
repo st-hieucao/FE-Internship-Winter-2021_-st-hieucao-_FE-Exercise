@@ -16,10 +16,11 @@
       transition: .3s;
     }
   }
-  &.btn-secondary{
+  &.btn-form{
+    padding: 0 1.5rem;
+    color: #ffffff;
+    background-color: #f76b6a;
+    border: none;
     
-    &:hover{
-
-    }
   }
 }
