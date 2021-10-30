@@ -1,3 +1,19 @@
+@mixin create-grid-system($sizeScreen) {
+  @for $i from 1 through 12 {
+    @if (str-length($sizeScreen) > 0) {
+      .col-#{$sizeScreen}-#{$i} {
+        width: percentage($i / 12);
+        padding: 0 $space;
+      }
+    } @else {
+      .col-#{$i} {
+        width: percentage($i / 12);
+        padding: 0 $space;
+      }
+    }
+  }
+}
+@include create-grid-system("");
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -10,19 +26,13 @@
   max-width: 1200px;
   position: relative;
 }
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    width: percentage($i / $grid-columns);
-    padding: 0 0.625rem;
+@media screen and (max-width: 768px) {
+  $space: 0.25rem !global;
+  @include create-grid-system("md");
+  .row {
+    margin: 0 -$space;
   }
-}
-@media screen and (max-width: 480px) {
   .container {
     padding: 0 1.25rem;
-  }
-  @for $i from 1 through $grid-columns {
-    .col-sm-#{$i} {
-      width: percentage($i * 2 / $grid-columns);
-    }
   }
 }

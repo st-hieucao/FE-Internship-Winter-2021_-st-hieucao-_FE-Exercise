@@ -64,6 +64,7 @@ footer{
         position: relative;
         border: 1px solid #e5e5e5;
         display: flex;
+        align-items: center;
         .input{
           width: 100%;
           border: none;
@@ -98,6 +99,25 @@ footer{
           color: #f76b6a;
           transition: .3s;
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  footer{
+    .footer-top{
+      .footer-contact-us, .menu-footer , .about-us, .news-letter{
+        margin-bottom: 1rem;
+      }
+      .about-us{
+        .list-info{
+          padding-right: 0;
+        }
+      }
+    }
+    .copyright{
+      .menu-list{
+        margin-top: 1rem;
       }
     }
   }
