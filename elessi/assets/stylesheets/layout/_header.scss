@@ -170,7 +170,7 @@ header {
     width: 100%;
     background: #ffffff;
     box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
-    .header-top{
+    .header-top {
       display: none;
     }
     .nav-main {
@@ -178,13 +178,14 @@ header {
       .menu-bar {
         display: block;
       }
-      .nav-logo{
-       margin-left: -2rem;
+      .nav-logo {
+        margin-left: -2rem;
       }
-      .nav-list{
+      .nav-list {
         display: none;
       }
-      .action-user, .action-heart{
+      .action-user,
+      .action-heart {
         display: none;
       }
     }

@@ -390,7 +390,8 @@ header .nav-main .list-actions .action-item .count {
   header .nav-main .nav-list {
     display: none;
   }
-  header .nav-main .action-user, header .nav-main .action-heart {
+  header .nav-main .action-user,
+header .nav-main .action-heart {
     display: none;
   }
 }
@@ -407,7 +408,9 @@ footer .footer-top .footer-contact-us .footer-logo {
   width: 95px;
   margin-bottom: 1.3em;
 }
-footer .footer-top .footer-contact-us .address, footer .footer-top .footer-contact-us .phone-number, footer .footer-top .footer-contact-us .mail {
+footer .footer-top .footer-contact-us .address,
+footer .footer-top .footer-contact-us .phone-number,
+footer .footer-top .footer-contact-us .mail {
   margin-bottom: 1.3em;
 }
 footer .footer-top .footer-contact-us .list-media {
@@ -489,7 +492,10 @@ footer .copyright .menu-list .menu-item:hover a {
 }
 
 @media screen and (max-width: 540px) {
-  footer .footer-top .footer-contact-us, footer .footer-top .menu-footer, footer .footer-top .about-us, footer .footer-top .news-letter {
+  footer .footer-top .footer-contact-us,
+footer .footer-top .menu-footer,
+footer .footer-top .about-us,
+footer .footer-top .news-letter {
     margin-bottom: 1rem;
   }
   footer .footer-top .about-us .list-info {

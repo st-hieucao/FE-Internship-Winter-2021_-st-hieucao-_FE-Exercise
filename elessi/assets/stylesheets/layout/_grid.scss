@@ -13,7 +13,7 @@
     }
   }
 }
-@include create-grid-system("");
+@include create-grid-system('');
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 768px) {
   $space: 0.25rem !global;
-  @include create-grid-system("md");
+  @include create-grid-system('md');
   .row {
     margin: 0 -$space;
   }
