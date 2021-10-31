@@ -1,0 +1,113 @@
+.cart-page {
+  header {
+    @include flex-center;
+    padding: 2.375rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    .header-logo {
+      font-size: map-get($font-size, "xxl");
+      font-weight: 600;
+      .header-image {
+        margin-right: 1rem;
+      }
+      .header-logo-active {
+        color: map-get($color, "primary");
+      }
+    }
+    .nav-list {
+      display: flex;
+      .nav-item {
+        padding: 0 3rem;
+        font-size: map-get($font-size, "normal");
+        .nav-link {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+    .list-options {
+      display: flex;
+      .option-item {
+        padding-left: 2rem;
+      }
+    }
+  }
+  .section-cart {
+    margin-top: 3rem;
+    .title-content {
+      font-size: map-get($font-size, "xxxl");
+    }
+    .cart-icon {
+      min-width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background: map-get($color, "primary");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .line {
+      min-width: 70px;
+      height: 1px;
+      background: #e5e5e5;
+      margin: 0 1rem;
+    }
+    .cart-bottom {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      .go-back {
+        display: flex;
+        align-items: center;
+        color: map-get($color, "black-midnight");
+        font-weight: 700;
+        &:hover {
+          color: map-get($color, "primary");
+          transition: 0.3s;
+        }
+        img {
+          width: 0.813rem;
+          height: 0.688rem;
+          margin-right: 1rem;
+        }
+      }
+      .fromo-code {
+        position: relative;
+        width: 19rem;
+        input {
+          height: 3.125rem;
+          width: 100%;
+          line-height: 3.125rem;
+          border: 1px solid #d8d8d8;
+          border-radius: 1.875rem;
+          outline: none;
+          padding: 0 2rem;
+          font-size: map-get($font-size, "sm");
+        }
+        img {
+          position: absolute;
+          right: 2rem;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .checkout {
+        display: flex;
+        align-items: center;
+        .checkout-content {
+          color: map-get($color, "black-midnight");
+          font-size: map-get($font-size, "lg");
+          margin-right: 5rem;
+          .total-cost {
+            font-weight: bold;
+            margin-left: 2rem;
+          }
+        }
+        .btn {
+          height: 3.125rem;
+          line-height: 3.125rem;
+        }
+      }
+    }
+  }
+}

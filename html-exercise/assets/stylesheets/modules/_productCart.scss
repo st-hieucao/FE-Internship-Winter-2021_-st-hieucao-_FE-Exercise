@@ -1,0 +1,77 @@
+.cart-content {
+  margin-top: 2rem;
+  width: 100%;
+  tr {
+    th {
+      color: map-get($color, "gray-light");
+      font-weight: 500;
+      padding: 1rem 0;
+    }
+    td {
+      padding: 1rem 0;
+    }
+    .product-image {
+      img {
+        width: 4.375rem;
+        height: 4.375rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .product-info {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      .product-name {
+        color: map-get($color, "black-midnight");
+        font-weight: 700;
+      }
+      .product-id {
+        font-size: map-get($font-size, "sm");
+        color: map-get($color, "gray-light");
+      }
+    }
+    .product-color,
+    .product-size {
+      color: map-get($color, "black-midnight");
+    }
+    .product-options {
+      .options-content {
+        border-radius: 50px;
+        border: 1px solid #d8d8d8;
+        width: 130px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto;
+        .descrease {
+          color: map-get($color, "gray-light");
+          font-size: map-get($font-size, "lg");
+          outline: none;
+          border: none;
+          background: none;
+          cursor: pointer;
+          &.disable {
+            pointer-events: none;
+          }
+        }
+        .increase {
+          color: map-get($color, "black-midnight");
+          font-size: map-get($font-size, "lg");
+          outline: none;
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+        .quantity {
+          color: map-get($color, "black-midnight");
+          font-weight: 700;
+          padding: 0 1rem;
+        }
+      }
+    }
+    .product-delete {
+      cursor: pointer;
+    }
+  }
+}
