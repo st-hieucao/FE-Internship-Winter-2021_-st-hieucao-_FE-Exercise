@@ -1,0 +1,16 @@
+.badge {
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+  &.badge-primary {
+    background: #e85756;
+  }
+  &.badge-secondary {
+    background: #9ac45e;
+  }
+  &.badge-limited {
+    background: #e2ac5a;
+  }
+}

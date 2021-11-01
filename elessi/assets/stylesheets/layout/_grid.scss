@@ -1,0 +1,38 @@
+@mixin create-grid-system($sizeScreen) {
+  @for $i from 1 through 12 {
+    @if (str-length($sizeScreen) > 0) {
+      .col-#{$sizeScreen}-#{$i} {
+        width: percentage($i / 12);
+        padding: 0 $space;
+      }
+    } @else {
+      .col-#{$i} {
+        width: percentage($i / 12);
+        padding: 0 $space;
+      }
+    }
+  }
+}
+@include create-grid-system('');
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.625rem;
+}
+.container {
+  padding: 0 0.938rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  $space: 0.25rem !global;
+  @include create-grid-system('md');
+  .row {
+    margin: 0 -$space;
+  }
+  .container {
+    padding: 0 1.25rem;
+  }
+}

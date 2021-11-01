@@ -1,0 +1,193 @@
+header {
+  .header-top {
+    min-height: 42px;
+    border-bottom: 1px solid #e5e5e5;
+    .header-top-content {
+      padding: 10px 0;
+    }
+    .options {
+      display: flex;
+      justify-content: flex-end;
+      .option-item {
+        position: relative;
+        cursor: pointer;
+        &:hover .option-dropdown {
+          visibility: visible;
+          transition: 0.3s;
+        }
+        &:nth-child(2) {
+          padding-left: 1rem;
+        }
+        i {
+          font-size: 10px;
+        }
+        .option-dropdown {
+          pointer-events: auto;
+          position: absolute;
+          top: 34px;
+          right: 0;
+          padding: 1rem;
+          background: #eee;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          visibility: hidden;
+          pointer-events: auto;
+          z-index: 1;
+          .dropdow-item {
+            touch-action: manipulation;
+          }
+        }
+      }
+    }
+  }
+  .nav-main {
+    min-height: 95px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu-bar {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+    }
+    .nav-logo img {
+      width: 100px;
+    }
+    .nav-list {
+      display: flex;
+      .nav-item {
+        display: flex;
+        align-items: center;
+        height: 95px;
+        position: relative;
+        cursor: pointer;
+        &:hover .menu-dropdown {
+          visibility: visible;
+        }
+        &:hover .nav-link {
+          color: #f76b6a;
+          transition: 0.3s;
+        }
+        .nav-link {
+          padding: 0 18px;
+          color: #333;
+          font-weight: 700;
+          text-transform: uppercase;
+          i {
+            font-size: 10px;
+            padding-left: 0.5rem;
+          }
+          &.nav-link-active {
+            color: #f76b6a;
+            i {
+              font-size: 20px;
+              color: #f76b6a;
+              padding-right: 0.5rem;
+            }
+          }
+        }
+        .menu-dropdown {
+          visibility: hidden;
+          position: absolute;
+          top: 100%;
+          left: -243.175px;
+          right: 0;
+          z-index: 100;
+          background: #ffffff;
+          max-height: 75vh;
+          width: 1000px;
+          box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+          .list-dropdown {
+            display: flex;
+            padding: 3rem 2.5rem;
+            .dropdown-item {
+              .dropdown-item-title {
+                color: #333;
+                font-weight: 700;
+                font-size: 16px;
+                padding: 13px 0;
+                &:hover {
+                  color: #f76b6a;
+                  transition: 0.3s;
+                }
+              }
+              .list-submenu {
+                .submenu-item {
+                  padding: 1rem 0;
+                  a:hover {
+                    color: #f76b6a;
+                    transition: 0.3s;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0 -0.7rem;
+      .action-item {
+        position: relative;
+        padding: 0 0.7rem;
+        i {
+          font-size: 22px;
+          cursor: pointer;
+          &:hover {
+            color: #f76b6a;
+            transition: 0.3s;
+          }
+        }
+        .count {
+          position: absolute;
+          top: -5px;
+          right: 0;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          color: #ffffff;
+          background: #f76b6a;
+          font-size: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    .header-top {
+      display: none;
+    }
+    .nav-main {
+      min-height: 62px;
+      .menu-bar {
+        display: block;
+      }
+      .nav-logo {
+        margin-left: -2rem;
+      }
+      .nav-list {
+        display: none;
+      }
+      .action-user,
+      .action-heart {
+        display: none;
+      }
+    }
+  }
+}
